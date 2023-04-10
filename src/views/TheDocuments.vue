@@ -1,3 +1,3 @@
 <template>
-	<div>FormPage</div>
+	<div>DOCS PAGE</div>
 </template>

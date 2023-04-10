@@ -1,6 +1,6 @@
 <template>
 	<the-header />
-	<h1>Application</h1>
+	<router-view />
 	<the-footer />
 </template>
 
