@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-secondary">
+	<footer class="bg-primary">
 		<div class="mx-auto w-full max-w-screen-xl px-6 py-6 lg:py-8">
 			<div class="md:flex md:justify-between">
 				<div class="mb-6 md:mb-0">
