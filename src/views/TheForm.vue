@@ -5,6 +5,7 @@
 			<TheStaticInfo />
 			<div class="col-span-6 p-8 bg-white rounded-[10px]">
 				<FromOne />
+				<!-- <FormTwo /> -->
 			</div>
 		</div>
 	</div>
@@ -14,7 +15,8 @@
 	import StepProgressBar from "../components/FormPage/StepProgressBar.vue";
 	import TheStaticInfo from "../components/FormPage/TheStaticInfo.vue";
 	import FromOne from "../components/FormPage/FromOne.vue";
+	import FormTwo from "../components/FormPage/FormTwo.vue";
 	export default {
-		components: { TheStaticInfo, StepProgressBar, FromOne },
+		components: { TheStaticInfo, StepProgressBar, FromOne, FormTwo },
 	};
 </script>
