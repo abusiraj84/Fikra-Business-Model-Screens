@@ -18,7 +18,7 @@
 	import FormTwo from "../components/FormPage/FormTwo.vue";
 	import { ref } from "vue";
 
-	const step = ref(1);
+	const step = ref(2);
 
 	function goToNextStep(data) {
 		console.log("Data", data);
