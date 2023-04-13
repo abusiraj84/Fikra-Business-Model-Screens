@@ -22,7 +22,7 @@
 					v-bind="phoneOptions"
 					@on-input="checkPhone">
 					<template #icon-right> <img src="../../assets/img/phone.svg" alt="Icon" class="w-5" /></template>
-					<template #arrow-icon> <img src="../../assets/img/down-arrow.svg" alt="Icon" class="ml-2" /></template>
+					<template #arrow-icon> <span class="icon arrow-downward"></span></template>
 				</vue-tel-input>
 			</div>
 			<!-- Email -->
@@ -83,6 +83,8 @@
 	const phoneOptions = {
 		mode: "international",
 		defaultCountry: "SA",
+		// Hide Israel From Counrty Options
+		ignoredCountries: ["IL"],
 		autoDefaultCountry: false,
 		validCharactersOnly: true,
 		autoFormat: true,
@@ -93,7 +95,6 @@
 		},
 		dropdownOptions: {
 			showFlags: true,
-			showSearchBox: true,
 			showDialCodeInSelection: true,
 		},
 	};
@@ -194,5 +195,22 @@
 	.vue-tel-input.isError:has(.vti__input:focus) {
 		border: 1px solid #fda29b !important;
 		box-shadow: #fee4e2 0px 1px 0px, #fee4e2 0px 0px 8px !important;
+	}
+
+	.icon.arrow-downward {
+		box-sizing: border-box;
+		height: 10px;
+		width: 10px;
+		margin-left: 12px;
+		margin-bottom: 5px;
+		border-style: solid;
+		border-color: black;
+		border-width: 0px 1px 1px 0px;
+		transform: rotate(45deg);
+		transition: border-width 150ms ease-in-out;
+	}
+
+	.icon.arrow-downward.active {
+		transform: rotate(45deg);
 	}
 </style>
