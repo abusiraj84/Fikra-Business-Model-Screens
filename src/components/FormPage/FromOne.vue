@@ -52,6 +52,7 @@
 				<vue-select
 					class="bg-white border border-gray-300 text-grey sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full py-1.5 px-2.5 outline-none"
 					:class="{ isError: unSelectedProjectType }"
+					:multiple="false"
 					v-model="projectType"
 					:options="options"
 					:placeholder="'يرجى الاختيـار'"
@@ -69,6 +70,8 @@
 	import { useField, useForm } from "vee-validate";
 	import { firstFormSchema } from "../../utils/zodSchema";
 	import { ref } from "vue";
+
+	const emit = defineEmits(["validSubmission"]);
 
 	const { handleSubmit, errors } = useForm({
 		validationSchema: firstFormSchema,
@@ -102,7 +105,7 @@
 
 	// Project Type Related Login Initialization
 	const projectType = ref(null);
-	const options = ["Red", "Green", "Red", "Green", "Red", "Green", "Red", "Green", "Red", "Green"];
+	const options = ["Red", "Green"];
 	const unSelectedProjectType = ref(false);
 
 	// Change the selection error state
@@ -153,7 +156,8 @@
 		unSelectedProjectType.value = false;
 		values.phone = phone.value;
 		values.projectType = projectType.value;
-		console.log(values);
+
+		emit("validSubmission", values);
 	}, onInvalidSubmit);
 </script>
 
