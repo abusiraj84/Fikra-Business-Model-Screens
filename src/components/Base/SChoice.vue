@@ -5,12 +5,14 @@
 		<div class="flex flex-wrap items-center justify-start">
 			<div class="flex justify-start item-center min-w-[120px] m-2" v-for="option in options" :key="option">
 				<input
-					:id="option.id + 'test'"
+					:id="option.id + questionID"
 					type="radio"
 					:value="option.id"
 					:checked="option.id === value"
 					@change="$emit('update:value', option.id)" />
-				<label :for="option.id + 'test'" class="text-[#042925] text-lg mx-2">{{ option.name }}</label>
+				<label :for="option.id + questionID" class="text-[#042925] text-lg mx-2">
+					{{ option.name }}
+				</label>
 			</div>
 		</div>
 		<p v-if="description" class="text-[#344054] text-base font-normal max-w-[75%]">
