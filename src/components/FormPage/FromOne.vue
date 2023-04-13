@@ -1,7 +1,8 @@
 <template>
-	<form class="" @submit.prevent="onSubmit">
+	<form @submit="onSubmit">
 		<div class="mb-20 space-y-4 md:space-y-6">
 			<h2 class="text-[#1C1C1C] text-xl font-bold">المعلومات الشخصية</h2>
+			<!-- Name -->
 			<BaseInput
 				type="text"
 				name="name"
@@ -11,15 +12,20 @@
 				:icon="true"
 				:errorState="errors.name">
 			</BaseInput>
-			<BaseInput
-				type="text"
-				name="phone"
-				label="رقم الجوال *"
-				placeholder="○○○○○○○○"
-				v-model="phone"
-				:icon="true"
-				:errorState="errors.phone">
-			</BaseInput>
+			<!-- Phone Number -->
+			<div>
+				<label class="block mb-2 text-sm font-medium text-grey">رقم الجوال *</label>
+				<vue-tel-input
+					dir="ltr"
+					:class="{ isError: invalidPhoneNumber }"
+					v-model="phone"
+					v-bind="phoneOptions"
+					@on-input="checkPhone">
+					<template #icon-right> <img src="../../assets/img/phone.svg" alt="Icon" class="w-5" /></template>
+					<template #arrow-icon> <img src="../../assets/img/down-arrow.svg" alt="Icon" class="ml-2" /></template>
+				</vue-tel-input>
+			</div>
+			<!-- Email -->
 			<BaseInput
 				type="email"
 				name="email"
@@ -31,6 +37,7 @@
 		</div>
 		<div class="mb-8 space-y-4 md:space-y-6">
 			<h2 class="text-[#1C1C1C] text-xl font-bold">معلومات المشروع</h2>
+			<!-- Project Name -->
 			<BaseInput
 				type="text"
 				name="project"
@@ -39,6 +46,7 @@
 				v-model="project"
 				:errorState="errors.project">
 			</BaseInput>
+			<!-- Project Type Option -->
 			<div>
 				<label class="block mb-2 text-sm font-medium text-grey">مجال المشروع *</label>
 				<vue-select
@@ -67,38 +75,124 @@
 	});
 
 	const { value: name } = useField("name");
-	const { value: phone } = useField("phone");
 	const { value: email } = useField("email");
 	const { value: project } = useField("project");
 
+	// Phone Related Login Initialization
+	const phone = ref(null);
+	const phoneOptions = {
+		mode: "international",
+		defaultCountry: "SA",
+		autoDefaultCountry: false,
+		validCharactersOnly: true,
+		autoFormat: true,
+		inputOptions: {
+			autocomplete: "off",
+			maxlength: 25,
+			placeholder: "000000000",
+		},
+		dropdownOptions: {
+			showFlags: true,
+			showSearchBox: true,
+			showDialCodeInSelection: true,
+		},
+	};
+	const invalidPhoneNumber = ref(false);
+
+	// Project Type Related Login Initialization
 	const projectType = ref(null);
 	const options = ["Red", "Green", "Red", "Green", "Red", "Green", "Red", "Green", "Red", "Green"];
 	const unSelectedProjectType = ref(false);
 
-	const onSubmit = handleSubmit((values) => {
-		if (!projectType.value) {
-			unSelectedProjectType.value = true;
-		} else {
-			unSelectedProjectType.value = false;
-			values.projectType = projectType.value;
-			console.log("Form Submitted", values);
-		}
-	}, onInvalidSubmit);
-
-	function onInvalidSubmit({ values, errors, results }) {
-		if (!projectType.value) {
-			unSelectedProjectType.value = true;
-		}
-	}
-
+	// Change the selection error state
 	function toggleSelectErrorState() {
 		unSelectedProjectType.value = false;
 	}
+
+	// Validate Phone Number (Currently Only For Saudi Arabia)
+	function checkPhone(num) {
+		if (num) {
+			const pattern = /^(?:(?:\+|00)966)?5\d{8}$/;
+			let trimmed = num.replace(/\s+/g, "").trim();
+			if (!pattern.test(trimmed)) {
+				invalidPhoneNumber.value = true;
+			} else {
+				invalidPhoneNumber.value = false;
+			}
+		}
+	}
+
+	// Handle Invalid Form Submission (Check for Invalid Phone or Unselected Project Type)
+	function onInvalidSubmit() {
+		if (!projectType.value) {
+			unSelectedProjectType.value = true;
+		}
+
+		if (!phone.value) {
+			invalidPhoneNumber.value = true;
+		}
+	}
+
+	// Handle Submission
+	const onSubmit = handleSubmit((values) => {
+		console.log("FORM SUBMITTED");
+
+		// Check Project Type Selection
+		if (!projectType.value) {
+			unSelectedProjectType.value = true;
+			return;
+		}
+
+		// Check Phone Number Entry
+		if (!phone.value || invalidPhoneNumber.value) {
+			invalidPhoneNumber.value = true;
+			return;
+		}
+
+		unSelectedProjectType.value = false;
+		values.phone = phone.value;
+		values.projectType = projectType.value;
+		console.log(values);
+	}, onInvalidSubmit);
 </script>
 
 <style>
 	.isError {
 		border: 1px solid #fda29b !important;
-		box-shadow: #fee4e2 0px 1px 0px, #fee4e2 0px 0px 8px;
+		box-shadow: #fee4e2 0px 1px 0px, #fee4e2 0px 0px 8px !important;
+	}
+
+	.vue-tel-input {
+		background-color: white !important;
+		border: 1px solid rgb(209, 213, 219) !important;
+		color: rgb(30, 30, 30) !important;
+		border-radius: 8px !important;
+		box-shadow: none !important;
+		padding-right: 10px !important;
+	}
+
+	.vti__input {
+		border-radius: 8px !important;
+		padding: 8px !important;
+	}
+
+	.vti__dropdown {
+		border-radius: 8px !important;
+		width: 128px !important;
+	}
+
+	.vue-tel-input:has(.vti__input:focus) {
+		border: 1px solid rgb(42, 100, 144) !important;
+	}
+
+	.vue-tel-input:has(.vti__dropdown.open) {
+		border: 1px solid rgb(42, 100, 144) !important;
+		border-radius: 8px !important;
+	}
+
+	.vue-tel-input.isError,
+	.vue-tel-input.isError:has(.vti__input:focus) {
+		border: 1px solid #fda29b !important;
+		box-shadow: #fee4e2 0px 1px 0px, #fee4e2 0px 0px 8px !important;
 	}
 </style>

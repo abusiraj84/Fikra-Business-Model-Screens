@@ -13,7 +13,8 @@
     "vee-validate": "^4.8.4",
     "vue": "^3.2.47",
     "vue-next-select": "^2.10.5",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue-tel-input": "^6.0.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
