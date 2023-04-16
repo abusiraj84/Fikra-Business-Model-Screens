@@ -1,12 +1,12 @@
 <template>
 	<header>
 		<nav class="bg-white border-gray-200 px-6 py-2.5">
-			<div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+			<div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
 				<a href="https://flowbite.com" class="flex items-center">
 					<img src="../assets/img/logo.svg" class="h-16 xl:h-20" alt="Logo" />
 				</a>
 				<div class="flex items-center lg:order-2">
-					<a href="#" class="linearBG text-white py-2 px-5 rounded-full">تسجيل الدخول</a>
+					<a href="#" class="px-5 py-2 text-white rounded-full linearBG">تسجيل الدخول</a>
 					<button
 						data-collapse-toggle="mobile-menu-2"
 						type="button"
@@ -28,7 +28,7 @@
 						</svg>
 					</button>
 				</div>
-				<div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+				<div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
 					<ul class="flex flex-col mt-4 font-medium text-grey lg:flex-row-reverse lg:items-start lg:space-x-7">
 						<li>
 							<a href="#" class="block pb-4">جائزة ابتكر</a>
@@ -43,7 +43,7 @@
 							<a href="#" class="block pb-4">رحلة المبتكر التجاري</a>
 						</li>
 						<li>
-							<a href="#" class="block pb-4">الرئيسية</a>
+							<router-link to="/" class="block pb-4">الرئيسية</router-link>
 						</li>
 					</ul>
 				</div>

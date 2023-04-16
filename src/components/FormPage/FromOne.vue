@@ -54,7 +54,7 @@
 					:class="{ isError: unSelectedProjectType }"
 					:multiple="false"
 					v-model="projectType"
-					:options="options"
+					:options="projectDomains"
 					:placeholder="'يرجى الاختيـار'"
 					:close-on-select="true"
 					@selected="toggleSelectErrorState">
@@ -67,6 +67,7 @@
 
 <script setup>
 	import BaseInput from "../Base/Input.vue";
+	import { projectDomains } from "../../utils/formQuestions";
 	import { useField, useForm } from "vee-validate";
 	import { firstFormSchema } from "../../utils/zodSchema";
 	import { ref } from "vue";
@@ -105,7 +106,6 @@
 
 	// Project Type Related Login Initialization
 	const projectType = ref(null);
-	const options = ["Red", "Green"];
 	const unSelectedProjectType = ref(false);
 
 	// Change the selection error state
@@ -139,7 +139,7 @@
 
 	// Handle Submission
 	const onSubmit = handleSubmit((values) => {
-		console.log("FORM SUBMITTED");
+		// console.log("FORM ONE SUBMITTED");
 
 		// Check Project Type Selection
 		if (!projectType.value) {
@@ -157,7 +157,7 @@
 		values.phone = phone.value;
 		values.projectType = projectType.value;
 
-		emit("validSubmission", values);
+		emit("validSubmission", "formOne", values);
 	}, onInvalidSubmit);
 </script>
 

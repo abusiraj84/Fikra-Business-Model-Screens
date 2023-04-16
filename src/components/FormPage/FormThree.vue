@@ -1,7 +1,7 @@
 <template>
 	<form @submit.prevent="onSubmit">
 		<MChoice
-			v-for="question in formTwoQuestions"
+			v-for="question in formThreeQuestions"
 			:key="question.id"
 			:questionID="question.id"
 			:questionType="question.type"
@@ -29,13 +29,13 @@
 <script setup>
 	import MChoice from "../Base/MChoice.vue";
 	import { ref } from "vue";
-	import { formTwoQuestions } from "../../utils/formQuestions";
+	import { formThreeQuestions } from "../../utils/formQuestions";
 
 	const emit = defineEmits(["validSubmission", "moveBack"]);
 
 	const results = ref({});
 	const errorStates = ref({});
-	formTwoQuestions.forEach((el) => {
+	formThreeQuestions.forEach((el) => {
 		if (el.type === "Multiple") {
 			results.value[el.id] = [];
 		}
@@ -74,7 +74,7 @@
 		});
 
 		if (!errorFound) {
-			emit("validSubmission", "formTwo", toSubmit);
+			emit("validSubmission", "formThree", toSubmit);
 		}
 	};
 </script>

@@ -33,8 +33,6 @@
 </template>
 
 <script setup>
-	import CheckBox from "./CheckBox.vue";
-
 	const emits = defineEmits(["update:value", "updateErrorState"]);
 	const props = defineProps({
 		questionID: {
