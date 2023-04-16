@@ -1,5 +1,5 @@
 <template>
-	<form @submit="onSubmit">
+	<form @submit.prevent="onSubmit">
 		<MChoice
 			v-for="question in formTwoQuestions"
 			:key="question.id"
@@ -9,6 +9,8 @@
 			:subHeading="question.subHeading"
 			:description="question.description"
 			:options="question.options"
+			:errorState="errorStates[question.id]"
+			@updateErrorState="checkError"
 			v-model:value="results[question.id]" />
 
 		<div class="mt-4 font-bold text-gray-800" dir="ltr">{{ results }}</div>
@@ -31,15 +33,47 @@
 
 	const emit = defineEmits(["validSubmission", "moveBack"]);
 
-	let temp = {};
+	const results = ref({});
+	const errorStates = ref({});
 	formTwoQuestions.forEach((el) => {
-		if (el.type === "Multiple") temp[el.id] = [];
-		if (el.type === "Single") temp[el.id] = el.options[0].id;
+		if (el.type === "Multiple") {
+			results.value[el.id] = [];
+		}
+
+		if (el.type === "Single") {
+			results.value[el.id] = "";
+		}
+
+		errorStates.value[el.id] = false;
 	});
 
-	const results = ref(temp);
+	const checkError = (optionId) => {
+		if (results.value[optionId].length) errorStates.value[optionId] = false;
+	};
 
 	const onSubmit = () => {
-		emit("validSubmission", { age: 12, sex: "male" });
+		let toSubmit = {};
+		let errorFound = false;
+
+		Object.entries(results.value).forEach((el) => {
+			// console.log("el", el);
+			if (!el[1].length) {
+				errorStates.value[el[0]] = true;
+				errorFound = true;
+			} else {
+				if (Array.isArray(el[1])) {
+					let temp = [];
+					Object.values(el[1]).forEach((el) => temp.push(el.value));
+					toSubmit[el[0]] = temp;
+				} else {
+					toSubmit[el[0]] = el[1];
+				}
+			}
+		});
+
+		if (!errorFound) {
+			console.log("To Be Submitted", toSubmit);
+			// emit("validSubmission", { age: 12, sex: "male" });
+		}
 	};
 </script>

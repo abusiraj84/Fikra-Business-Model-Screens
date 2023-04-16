@@ -8,15 +8,16 @@
 					v-if="questionType === 'Multiple'"
 					:id="option.id + questionID"
 					type="checkbox"
+					:value="option.id"
 					:checked="value.includes(option.value)"
-					@input="check(option.id, $event.target.checked)" />
+					@input="selectCheckbox(questionID, option.id, $event.target.checked)" />
 				<input
 					v-if="questionType === 'Single'"
 					:id="option.id + questionID"
 					type="radio"
 					:value="option.id"
 					:checked="option.id === value"
-					@change="$emit('update:value', option.id)" />
+					@change="selectRadio(questionID, option.id)" />
 				<label :for="option.id + questionID" class="text-[#042925] text-lg mx-2">
 					{{ option.value }}
 				</label>
@@ -25,13 +26,16 @@
 		<p v-if="description" class="text-[#344054] text-base font-normal max-w-[74%]">
 			{{ description }}
 		</p>
+		<p v-if="errorState" class="block mt-2 text-sm font-medium text-red-500">
+			{{ questionType === "Multiple" ? "الرجاء اختيار خيار واحد على الاقل." : "الرجاء اختيار احد الخيارات الموجودة." }}
+		</p>
 	</div>
 </template>
 
 <script setup>
 	import CheckBox from "./CheckBox.vue";
 
-	const emits = defineEmits(["update:value"]);
+	const emits = defineEmits(["update:value", "updateErrorState"]);
 	const props = defineProps({
 		questionID: {
 			type: String,
@@ -45,16 +49,20 @@
 		subHeading: String,
 		description: String,
 		value: {
-			type: Array,
+			type: [Array, String],
 			required: true,
 		},
 		options: {
 			type: Array,
 			required: true,
 		},
+		errorState: {
+			type: Boolean,
+			required: true,
+		},
 	});
 
-	const check = (optionId, checked) => {
+	const selectCheckbox = (questionID, optionId, checked) => {
 		let updatedValue = [...props.value];
 		if (checked) {
 			updatedValue.push(props.options.find((obj) => obj.id === optionId));
@@ -65,6 +73,12 @@
 			);
 		}
 		emits("update:value", updatedValue);
+		emits("updateErrorState", questionID);
+	};
+
+	const selectRadio = (questionID, optionId) => {
+		emits("update:value", optionId);
+		emits("updateErrorState", questionID);
 	};
 </script>
 
