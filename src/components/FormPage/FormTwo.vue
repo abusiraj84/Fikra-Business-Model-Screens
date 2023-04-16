@@ -41,14 +41,14 @@
 		}
 
 		if (el.type === "Single") {
-			results.value[el.id] = "";
+			results.value[el.id] = {};
 		}
 
 		errorStates.value[el.id] = false;
 	});
 
 	const checkError = (optionId) => {
-		if (results.value[optionId].length) errorStates.value[optionId] = false;
+		if (results.value[optionId].length || results.value[optionId].id) errorStates.value[optionId] = false;
 	};
 
 	const onSubmit = () => {
@@ -56,8 +56,10 @@
 		let errorFound = false;
 
 		Object.entries(results.value).forEach((el) => {
-			// console.log("el", el);
-			if (!el[1].length) {
+			if (Array.isArray(el[1]) && !el[1].length) {
+				errorStates.value[el[0]] = true;
+				errorFound = true;
+			} else if (!Array.isArray(el[1]) && !el[1].id) {
 				errorStates.value[el[0]] = true;
 				errorFound = true;
 			} else {
@@ -66,7 +68,7 @@
 					Object.values(el[1]).forEach((el) => temp.push(el.value));
 					toSubmit[el[0]] = temp;
 				} else {
-					toSubmit[el[0]] = el[1];
+					toSubmit[el[0]] = el[1].value;
 				}
 			}
 		});

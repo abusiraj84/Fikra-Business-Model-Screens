@@ -16,8 +16,8 @@
 					:id="option.id + questionID"
 					type="radio"
 					:value="option.id"
-					:checked="option.id === value"
-					@change="selectRadio(questionID, option.id)" />
+					:checked="option.id === value.id"
+					@change="selectRadio(questionID, option)" />
 				<label :for="option.id + questionID" class="text-[#042925] text-lg mx-2">
 					{{ option.value }}
 				</label>
@@ -49,7 +49,7 @@
 		subHeading: String,
 		description: String,
 		value: {
-			type: [Array, String],
+			type: [Array, Object],
 			required: true,
 		},
 		options: {
