@@ -4,7 +4,7 @@
 		<div class="flex flex-col w-full p-3">
 			<div class="flex flex-col flex-1 overflow-hidden bg-white rounded-lg shadow-sm">
 				<div class="flex items-center justify-start px-6 bm_img">
-					<h1 class="w-96 text-[48px] font-medium text-center text-grey">أداة اختيار نموذج العمل التجاري</h1>
+					<h1 class="w-[370px] text-[48px] font-medium text-center text-grey">أداة اختيار نموذج العمل التجاري</h1>
 				</div>
 				<div class="flex flex-col justify-start flex-1 p-8">
 					<h3 class="mb-8 text-lg">
