@@ -52,15 +52,15 @@
 				<label class="block mb-2 text-sm font-medium text-grey">مجال المشروع *</label>
 				<vue-select
 					class="bg-white border border-gray-300 text-grey sm:text-sm rounded-lg focus:ring-primary focus:border-primary block w-full py-1.5 px-2.5 outline-none"
-					:class="{ isError: unSelectedProjectType }"
+					:class="{ isError: unSelectedprojectDomain }"
 					:multiple="false"
-					v-model="projectType"
+					v-model="projectDomain"
 					:options="projectDomains"
 					:placeholder="'يرجى الاختيـار'"
 					:close-on-select="true"
 					@selected="toggleSelectErrorState">
 				</vue-select>
-				<p v-if="unSelectedProjectType" class="block mt-2 text-sm font-medium text-red-500">هذا الحقل مطلوب</p>
+				<p v-if="unSelectedprojectDomain" class="block mt-2 text-sm font-medium text-red-500">هذا الحقل مطلوب</p>
 			</div>
 		</div>
 		<button type="submit" class="w-full py-2 mt-6 text-center text-white rounded-full bg-primary">التالي</button>
@@ -107,12 +107,12 @@
 	const invalidPhoneNumber = ref(false);
 
 	// Project Type Related Login Initialization
-	const projectType = ref(null);
-	const unSelectedProjectType = ref(false);
+	const projectDomain = ref(null);
+	const unSelectedprojectDomain = ref(false);
 
 	// Change the selection error state
 	function toggleSelectErrorState() {
-		unSelectedProjectType.value = false;
+		unSelectedprojectDomain.value = false;
 	}
 
 	// Validate Phone Number (Currently Only For Saudi Arabia)
@@ -130,8 +130,8 @@
 
 	// Handle Invalid Form Submission (Check for Invalid Phone or Unselected Project Type)
 	function onInvalidSubmit() {
-		if (!projectType.value) {
-			unSelectedProjectType.value = true;
+		if (!projectDomain.value) {
+			unSelectedprojectDomain.value = true;
 		}
 
 		if (!phone.value) {
@@ -144,8 +144,8 @@
 		// console.log("FORM ONE SUBMITTED");
 
 		// Check Project Type Selection
-		if (!projectType.value) {
-			unSelectedProjectType.value = true;
+		if (!projectDomain.value) {
+			unSelectedprojectDomain.value = true;
 			return;
 		}
 
@@ -155,9 +155,9 @@
 			return;
 		}
 
-		unSelectedProjectType.value = false;
+		unSelectedprojectDomain.value = false;
 		values.phone = phone.value;
-		values.projectType = projectType.value;
+		values.projectDomain = projectDomain.value;
 
 		emit("validSubmission", "formOne", values);
 	}, onInvalidSubmit);
