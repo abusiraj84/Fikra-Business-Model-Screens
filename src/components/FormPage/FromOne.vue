@@ -24,6 +24,7 @@
 					<template #icon-right> <img src="../../assets/img/phone.svg" alt="Icon" class="w-5" /></template>
 					<template #arrow-icon> <span class="icon arrow-downward"></span></template>
 				</vue-tel-input>
+				<p v-if="invalidPhoneNumber" class="block mt-2 text-sm font-medium text-red-500">يجب أن يكون رقم الجوال 9 أرقام</p>
 			</div>
 			<!-- Email -->
 			<BaseInput
@@ -59,6 +60,7 @@
 					:close-on-select="true"
 					@selected="toggleSelectErrorState">
 				</vue-select>
+				<p v-if="unSelectedProjectType" class="block mt-2 text-sm font-medium text-red-500">هذا الحقل مطلوب</p>
 			</div>
 		</div>
 		<button type="submit" class="w-full py-2 mt-6 text-center text-white rounded-full bg-primary">التالي</button>
