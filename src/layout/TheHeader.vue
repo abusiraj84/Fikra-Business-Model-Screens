@@ -1,9 +1,9 @@
 <template>
 	<header>
-		<nav class="bg-white border-gray-200 px-6 py-2.5">
+		<nav class="bg-white border-gray-200 px-1 md:px-6 py-2.5">
 			<div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
 				<a href="https://flowbite.com" class="flex items-center">
-					<img src="../assets/img/logo.svg" class="h-16 xl:h-20" alt="Logo" />
+					<img src="../assets/img/logo.svg" class="h-14 xl:h-20" alt="Logo" />
 				</a>
 				<div class="flex items-center lg:order-2">
 					<a href="#" class="px-5 py-2 text-white rounded-full linearBG">تسجيل الدخول</a>

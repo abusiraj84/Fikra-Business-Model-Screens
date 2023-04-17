@@ -3,7 +3,7 @@
 		class="flex flex-col items-start justify-center col-span-full md:col-span-4 p-6 bg-white gap-y-4 rounded-[10px] h-max">
 		<div class="flex items-center w-full">
 			<img src="../../assets/img/create_bm.svg" alt="Image" class="h-[84px] w-[84px]" />
-			<h3 class="text-grey text-[32px] max-w-[200px] leading-tight mx-3">إنشاء نمــوذج العمل الابتكاري</h3>
+			<h3 class="text-grey text-[28px] md:text-[32px] max-w-[200px] leading-tight mx-3">إنشاء نمــوذج العمل الابتكاري</h3>
 		</div>
 		<p class="text-lg leading-7 text-grey">
 			هذه الخدمة تتيح لك معرفة نموذج العمل التجاري الأقرب لفكرتك الابتكارية عن طريق الإجابة عن بعض الأسئلة الخاصة بفكرة مشروعك

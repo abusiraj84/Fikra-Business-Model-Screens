@@ -2,9 +2,9 @@
 	<div class="flex items-center justify-center pb-6 col-span-full">
 		<div class="container">
 			<ul class="progressbar">
-				<li :class="{ active: isActive(1) }">خطوة 1</li>
-				<li :class="{ active: isActive(2) }">خطوة 2</li>
-				<li :class="{ active: isActive(3) }">خطوة 3</li>
+				<li :class="[isActive(1) ? 'active' : '', progress === 1 ? 'font-bold' : '']">خطوة 1</li>
+				<li :class="[isActive(2) ? 'active' : '', progress === 2 ? 'font-bold' : '']">خطوة 2</li>
+				<li :class="[isActive(3) ? 'active' : '', progress === 3 ? 'font-bold' : '']">خطوة 3</li>
 			</ul>
 		</div>
 	</div>
