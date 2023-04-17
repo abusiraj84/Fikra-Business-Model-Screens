@@ -23,7 +23,7 @@
 				</label>
 			</div>
 		</div>
-		<p v-if="description" class="text-[#344054] text-base font-normal max-w-[74%]">
+		<p v-if="description" class="text-[#344054] text-base font-normal max-w-[90%] md:max-w-[74%]">
 			{{ description }}
 		</p>
 		<p v-if="errorState" class="block mt-2 text-sm font-medium text-red-500">

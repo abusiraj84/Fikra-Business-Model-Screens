@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="h-auto min-h-[80vh] flex flex-col items-center justify-center px-[20px] py-[30px] md:px-[62px] md:py-[72px] lg:px-[170px] lg:py-[108px] xl:px-[220px] xl:py-[108px] mx-auto">
+		class="h-auto min-h-[80vh] flex flex-col items-center justify-center px-[20px] py-[30px] md:px-[62px] md:py-[72px] lg:px-[220px] lg:py-[108px] mx-auto">
 		<div class="flex flex-col w-full p-3">
 			<div class="flex flex-col flex-1 overflow-hidden bg-white rounded-lg shadow-sm">
 				<div class="flex items-center justify-start px-6 bm_img">

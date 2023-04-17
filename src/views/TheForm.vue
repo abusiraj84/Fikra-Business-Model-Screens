@@ -1,16 +1,16 @@
 <template>
 	<div class="flex flex-col h-auto py-20">
-		<div v-if="!outputInfoReady" class="grid w-[77.5%] xl:w-[57.6%] grid-cols-10 gap-3 mx-auto">
+		<div v-if="!outputInfoReady" class="grid w-[85%] md:w-[77.5%] xl:w-[57.6%] grid-cols-10 gap-3 mx-auto">
 			<StepProgressBar :progress="step" />
 			<TheStaticInfo />
-			<div class="col-span-6 p-8 bg-white rounded-[10px]">
+			<div class="col-span-full md:col-span-6 p-8 bg-white rounded-[10px]">
 				<FromOne v-show="step === 1" @validSubmission="appendData" />
 				<FormTwo v-show="step === 2" @validSubmission="appendData" @moveBack="goToPrevStep" />
 				<FormThree v-show="step === 3" @validSubmission="appendData" @moveBack="goToPrevStep" />
 				<BusinessModelCreation v-if="step === 4" />
 			</div>
 		</div>
-		<div v-else class="br-test">OUTPUT PAGE</div>
+		<OutpuBusinessModels v-else :output="outputData" />
 	</div>
 </template>
 
@@ -21,6 +21,7 @@
 	import FormTwo from "../components/FormPage/FormTwo.vue";
 	import FormThree from "../components/FormPage/FormThree.vue";
 	import BusinessModelCreation from "../components/FormPage/BusinessModelCreation.vue";
+	import OutpuBusinessModels from "../components/FormPage/OutpuBusinessModels.vue";
 	import { ref } from "vue";
 
 	const step = ref(1);
@@ -30,11 +31,57 @@
 		formThree: null,
 	});
 	const outputInfoReady = ref(false);
-	const outputInfo = ref([]);
+	const outputData = ref([
+		{
+			id: "bm1",
+			nameAR: "اسم النموذج",
+			nameEN: "Subscription Business Model",
+			imgURL:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			viewLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			downloadLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+		},
+		{
+			id: "bm2",
+			nameAR: "اسم النموذج",
+			nameEN: "Subscription Business Model",
+			imgURL:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			viewLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			downloadLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+		},
+		{
+			id: "bm3",
+			nameAR: "اسم النموذج",
+			nameEN: "Subscription Business Model",
+			imgURL:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			viewLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			downloadLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+		},
+		{
+			id: "bm4",
+			nameAR: "اسم النموذج",
+			nameEN: "Subscription Business Model",
+			imgURL:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			viewLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+			downloadLink:
+				"https://img.freepik.com/premium-vector/document-file-with-check-mark-concept-flat-vector-illustration_776222-3.jpg",
+		},
+	]);
 
 	function appendData(formId, data) {
 		completeInfo.value[formId] = data;
 		step.value = step.value + 1;
+		window.scrollTo(0, 0);
 		if (step.value === 4) fetchBMs();
 	}
 
@@ -44,6 +91,7 @@
 
 	function fetchBMs() {
 		console.log("FINAL RESULTS", completeInfo.value);
+		//! HERE WE CALL AN AJAX CALL TO FETCH RESULTS AND STORE THEM IN THE outputData Variable
 		setTimeout(() => {
 			outputInfoReady.value = true;
 		}, 8000);

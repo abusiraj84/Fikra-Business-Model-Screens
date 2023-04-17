@@ -12,8 +12,6 @@
 			:errorState="errorStates[question.id]"
 			@updateErrorState="checkError"
 			v-model:value="results[question.id]" />
-
-		<div class="mt-4 font-bold text-gray-800" dir="ltr">{{ results }}</div>
 		<div class="flex items-center justify-between w-full">
 			<button
 				type="button"

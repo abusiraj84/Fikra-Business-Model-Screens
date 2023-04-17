@@ -201,6 +201,10 @@
 		box-shadow: #fee4e2 0px 1px 0px, #fee4e2 0px 0px 8px !important;
 	}
 
+	.vti__dropdown-list {
+		width: 300px;
+	}
+
 	.icon.arrow-downward {
 		box-sizing: border-box;
 		height: 10px;
