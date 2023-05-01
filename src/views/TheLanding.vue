@@ -287,6 +287,34 @@
 						</button>
 					</div>
 				</div>
+				<!-- SECTION 8 Courasael -->
+				<div
+					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-white rounded-[10px] border-r-transparent border-t border-t-[#F5F5F7] mt-20">
+					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
+						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">فعاليات الابتكار التجاري</h3>
+					</div>
+					COURSEL
+				</div>
+				<!-- SECTION 9 -->
+				<div
+					class="flex items-center justify-center flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20">
+					<img src="../assets/img/coinInHand.svg" alt="Coin In Hand" class="w-64 h-64 mx-2" />
+					<div class="flex flex-col items-start justify-between mx-2 w-[50%]">
+						<h3 class="text-[22px] md:text-[36px] leading-10 text-white mb-8">
+							هل لديك اهتمام بالاستثمار في الشركات الابتكارية؟ لدينا مجموعة من الفرص المتاحة..
+						</h3>
+						<button type="button" class="px-4 py-2 mx-1 text-center text-white border border-white rounded-full">
+							شاهد ماهي بوابة فكرة
+						</button>
+					</div>
+				</div>
+				<!-- SECTION 10 FAQ -->
+				<div class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-20">
+					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
+						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">الأسئلة الأكثر شيوعًا</h3>
+					</div>
+					FAQ
+				</div>
 			</div>
 		</div>
 	</div>
