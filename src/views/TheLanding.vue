@@ -224,6 +224,69 @@
 						</div>
 					</div>
 				</div>
+				<!-- SECTION 7 -->
+				<div
+					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 border-r-transparent">
+					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
+						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">فعاليات الابتكار التجاري</h3>
+					</div>
+					<div class="grid w-full grid-cols-1 gap-4">
+						<div
+							class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between">
+							<div class="flex items-center">
+								<div class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4">
+									<p class="text-[#158456] text-[28px] leading-[26px]">28</p>
+									<p class="text-[#158456] text-[16px] leading-[18px]">مارس</p>
+								</div>
+								<div class="flex flex-col items-start justify-center space-y-2">
+									<p class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold">كيف اختبر فكرتي؟</p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">ورشة عمل<span class="text-[#158456]">(قادمة)</span></p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">
+										ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”
+									</p>
+								</div>
+							</div>
+							<button class="text-[16px] text-[#307094] hover:underline mt-3 md:mt-0">سجل الآن</button>
+						</div>
+						<div
+							class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between">
+							<div class="flex items-center">
+								<div class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4">
+									<p class="text-[#158456] text-[28px] leading-[26px]">04</p>
+									<p class="text-[#158456] text-[16px] leading-[18px]">مارس</p>
+								</div>
+								<div class="flex flex-col items-start justify-center space-y-2">
+									<p class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold">ورشة ذكاء: انترنت الأشياء في صناعة المستقبل</p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">ورشة عمل<span class="text-[#158456]">(قادمة)</span></p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">
+										ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”
+									</p>
+								</div>
+							</div>
+							<button class="text-[16px] text-[#307094] hover:underline mt-3 md:mt-0">سجل الآن</button>
+						</div>
+						<div
+							class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between">
+							<div class="flex items-center">
+								<div class="bg-[#FEF3F2] border border-[#FDA29B] text-center py-4 px-2 rounded-lg ml-4">
+									<p class="text-[#912018] text-[28px] leading-[26px]">17</p>
+									<p class="text-[#912018] text-[16px] leading-[18px]">فبراير</p>
+								</div>
+								<div class="flex flex-col items-start justify-center space-y-2">
+									<p class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold">استشارات للشركات الناشئة</p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">دورة تدريبية<span class="text-[#FF3A46]">(أنتهت)</span></p>
+									<p class="text-[#3F3F3F] text-[16px] leading-[18px]">
+										تبدأ عملية اختيار الفكرة بعد وضع الاساسيات واختبارها مع مجموعة من العملاء بطرق متنوعة ومختلفة.
+									</p>
+								</div>
+							</div>
+							<button class="text-[16px] text-[#FF3A46] hover:underline mt-3 md:mt-0">التسجيل مغلق</button>
+						</div>
+						<button class="py-5 bg-[#EAECF0] rounded-lg outline outline-[#EAECF0] hover:outline-1 hover:outline-primary">
+							<p class="text-[16px] text-center w-full text-[#307094]">عرض كل الفعاليات</p>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
