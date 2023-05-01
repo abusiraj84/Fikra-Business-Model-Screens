@@ -176,6 +176,60 @@
 						</div>
 					</div>
 				</div>
+				<!-- SECTION 6 -->
+				<div>
+					<div
+						class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 border-r-transparent">
+						<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
+							<div class="flex flex-col items-start justify-start">
+								<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">خدمات منظومة الابتكار</h3>
+								<p class="text-[22px] leading-[26px] w-[70%]">
+									هل تمثل منشأة صغيرة أو متوسطة نجحت في تنفيذ ابتكار أو تقنية صاعدة؟ أحصل على الشهادة اليوم واستفد من المزايا!
+								</p>
+							</div>
+							<button
+								type="button"
+								class="px-4 md:px-6 md:mt-0 mt-2 py-2 text-center bg-[#2A6490] rounded-full max-w-[150px text-white">
+								اطلب الشهادة
+							</button>
+						</div>
+						<div class="bg-[#E8F1F8] p-12 rounded-lg">
+							<h1 class="text-center text-[22px] md:text-[32px] leading-9 text-[#042925] mb-6">الحاصلون على الشهادة</h1>
+							<div class="grid w-full grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/dell.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/huwawai.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/jahez.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/highberbary.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/marn.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/tyme.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/sushi.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/fodex.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/dyson.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+								<div class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]">
+									<img src="../assets/img/sushi.svg" class="w-[140px] h-[36px]" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
