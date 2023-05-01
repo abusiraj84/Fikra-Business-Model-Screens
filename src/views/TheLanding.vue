@@ -88,14 +88,14 @@
 							<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">خدمات منظومة الابتكار</h3>
 							<button
 								type="button"
-								class="px-4 md:px-6 py-2 text-center bg-white border rounded-full max-w-[140px] text-primary border-primary">
+								class="px-4 md:px-6 py-2 text-center bg-white border rounded-full max-w-[150px] text-primary border-primary">
 								عرض كل الخدمات
 							</button>
 						</div>
-						<div class="flex flex-wrap items-start justify-start w-full gap-2">
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+						<div class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4">
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
 								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
+								<div class="flex items-start">
 									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
 									<div>
 										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
@@ -103,9 +103,39 @@
 									</div>
 								</div>
 							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
 								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
+								<div class="flex items-start">
+									<img src="../assets/img/checkboard.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+									<div>
+										<p class="text-[22px] text-[#042925] font-bold">دراسة السوق</p>
+										<p class="text-[16px] text-[#78787A]">اكتشاف الفرص والاحتياجات لفكرتك</p>
+									</div>
+								</div>
+							</div>
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+								<p class="text-[14px] text-left w-full">10 جهات</p>
+								<div class="flex items-start">
+									<img src="../assets/img/ruler.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+									<div>
+										<p class="text-[22px] text-[#042925] font-bold">اختبار الافكار</p>
+										<p class="text-[16px] text-[#78787A]">ابحث عن صحة فكرتك قبل الإطلاق</p>
+									</div>
+								</div>
+							</div>
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+								<p class="text-[14px] text-left w-full">10 جهات</p>
+								<div class="flex items-start">
+									<img src="../assets/img/tv_input.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+									<div>
+										<p class="text-[22px] text-[#042925] font-bold">التصميم والتنفيذ</p>
+										<p class="text-[16px] text-[#78787A]">طور وابدأ بعملية اختبار فكرتك</p>
+									</div>
+								</div>
+							</div>
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+								<p class="text-[14px] text-left w-full">10 جهات</p>
+								<div class="flex items-start">
 									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
 									<div>
 										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
@@ -113,63 +143,33 @@
 									</div>
 								</div>
 							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
 								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+								<div class="flex items-start">
+									<img src="../assets/img/checkboard.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
 									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
+										<p class="text-[22px] text-[#042925] font-bold">دراسة السوق</p>
+										<p class="text-[16px] text-[#78787A]">اكتشاف الفرص والاحتياجات لفكرتك</p>
 									</div>
 								</div>
 							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
 								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+								<div class="flex items-start">
+									<img src="../assets/img/ruler.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
 									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
+										<p class="text-[22px] text-[#042925] font-bold">اختبار الافكار</p>
+										<p class="text-[16px] text-[#78787A]">ابحث عن صحة فكرتك قبل الإطلاق</p>
 									</div>
 								</div>
 							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
+							<div class="py-3 px-4 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
 								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
+								<div class="flex items-start">
+									<img src="../assets/img/tv_input.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
 									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
-									</div>
-								</div>
-							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
-								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
-									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
-									</div>
-								</div>
-							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
-								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
-									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
-									</div>
-								</div>
-							</div>
-							<div class="min-w-full md:min-w-[340px] lg:min-w-[24.5%] py-3 px-6 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]">
-								<p class="text-[14px] text-left w-full">10 جهات</p>
-								<div class="flex items-start justify-between">
-									<img src="../assets/img/training_icon.svg" class="w-[37px] h-[37px] ml-1" alt="Icon" />
-									<div>
-										<p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-										<p class="text-[16px] text-[#78787A]">يهدف اكتساب مهارات لبناء فكرتك</p>
+										<p class="text-[22px] text-[#042925] font-bold">التصميم والتنفيذ</p>
+										<p class="text-[16px] text-[#78787A]">طور وابدأ بعملية اختبار فكرتك</p>
 									</div>
 								</div>
 							</div>
