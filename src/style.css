@@ -13,7 +13,16 @@
 
 .bm_img {
 	height: 400px;
-	background-image: url("./assets/img/bm_img.jpg");
+	background-image: url("./assets/img/bg-pattern.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero_img {
+	height: 620px;
+	width: 630px;
+	background-image: url("./assets/img/ppl_talking.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
