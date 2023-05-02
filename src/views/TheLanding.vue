@@ -324,10 +324,49 @@
 				<!-- SECTION 8 Courasael -->
 				<div
 					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] border-t border-t-[#F5F5F7] mt-20">
-					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
-						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">فعاليات الابتكار التجاري</h3>
+					<div class="flex items-center justify-between w-full mb-6">
+						<h3 class="text-[20px] md:text-[32px] leading-9 text-[#042925]">مكتبة الريادة و الإبتكار</h3>
+						<button
+							type="button"
+							class="text-[14px] md:text-[16px] px-4 py-2 text-center bg-white border rounded-full md:px-6 text-primary border-primary">
+							عرض محتويات المكتبة
+						</button>
 					</div>
-					COURSEL
+					<Carousel
+						:items-to-show="1"
+						dir="rtl"
+						:breakpoints="{
+							768: {
+								itemsToShow: 2,
+							},
+							1130: {
+								itemsToShow: 3,
+							},
+						}">
+						<template #addons>
+							<Navigation />
+						</template>
+						<Slide v-for="item in carouselItems" :key="item.title">
+							<div class="carousel__item">
+								<div class="relative">
+									<div class="text-[16px] leading-[22px] py-1 px-3 top-5 right-5 absolute bg-[#FFFFFFCC] rounded-xl">
+										{{ item.category }}
+									</div>
+									<img :src="item.img" :alt="item.title" class="rounded-t-lg" />
+									<div class="border rounded-b-lg border-[#EAECF0] p-4 text-right">
+										<p class="text-[22px] leading-[26px] text-[#042925] mb-1">{{ item.title }}</p>
+										<p class="text-[16px] leading-[22px] mb-7">
+											{{ truncateString(item.desc) }}
+										</p>
+										<div class="flex items-center justify-between">
+											<p class="text-[18px] leading-[22px] text-[#00000046]">{{ item.date }}</p>
+											<a href="#" class="text-[16px] leading-[22px] text-primary underline">قراءة المقال</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</Slide>
+					</Carousel>
 				</div>
 				<!-- SECTION 9 -->
 				<div
@@ -344,7 +383,7 @@
 				</div>
 				<!-- SECTION 10 -->
 				<div
-					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-20">
+					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] xl:w-[72.5%] z-10 bg-white rounded-[10px] mt-20">
 					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
 						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">الأسئلة الأكثر شيوعًا</h3>
 					</div>
@@ -376,7 +415,46 @@
 </template>
 
 <script setup>
+	import { Carousel, Slide, Navigation } from "vue3-carousel";
 	import { ref } from "vue";
+	const carouselItems = [
+		{
+			title: "كيف اختبر فكرتي؟",
+			desc: "تبدأ عملية اختيار الفكرة بعد وضع الأساسيات واختبارها مع مجموعة من العملاء بطرق مختلفة ومتنوعة",
+			date: "28 فبراير 2022",
+			img: "https://images.pexels.com/photos/1314410/pexels-photo-1314410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			category: "مرحلة الفكرة",
+		},
+		{
+			title: "كيف اختار الشركة المناسبة؟",
+			desc: "من أهم المقومات لنجاح الفكرة هو اختيار الشركة المناسبة لتنفيذ وتصميم الفكرة",
+			date: "28 فبراير 2022",
+			img: "https://images.pexels.com/photos/207607/pexels-photo-207607.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			category: "تأسيس الشركات",
+		},
+		{
+			title: "ما أهمية التدريب؟",
+			desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
+			date: "28 فبراير 2022",
+			img: "https://images.pexels.com/photos/45718/pexels-photo-45718.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			category: "التوجيه والارشاد",
+		},
+		{
+			title: "ما أهمية التدريب؟",
+			desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
+			date: "28 فبراير 2022",
+			img: "https://images.pexels.com/photos/3153207/pexels-photo-3153207.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			category: "مرحلة الفكرة",
+		},
+		{
+			title: "ما أهمية التدريب؟",
+			desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
+			date: "28 فبراير 2022",
+			img: "https://images.pexels.com/photos/3183190/pexels-photo-3183190.jpeg?auto=compress&cs=tinysrgb&w=1600",
+			category: "تأسيس الشركات",
+		},
+	];
+
 	const faqs = [
 		{
 			question: "ما هي المنشأة الابتكارية؟",
@@ -414,5 +492,9 @@
 	function toggleFaq(index) {
 		if (openIndex.value !== index) return (openIndex.value = index);
 		openIndex.value = null;
+	}
+
+	function truncateString(str) {
+		return str.length > 80 ? str.slice(0, 80) + "..." : str;
 	}
 </script>

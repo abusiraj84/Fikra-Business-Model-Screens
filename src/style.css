@@ -28,3 +28,53 @@
 .br-test {
 	border: 2px solid red;
 }
+
+.carousel--rtl .carousel__next {
+	right: auto;
+	left: 180px;
+	top: -45px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	border: 1px solid #eaecf0;
+	color: #2a6490;
+}
+.carousel--rtl .carousel__next:hover {
+	background: #2a64902c;
+}
+.carousel--rtl .carousel__prev {
+	left: 240px;
+	right: auto;
+	top: -45px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	border: 1px solid #eaecf0;
+	color: #2a6490;
+}
+.carousel--rtl .carousel__prev:hover {
+	background: rgba(197, 195, 195, 0.212);
+}
+
+@media (max-width: 767px) {
+	.carousel--rtl .carousel__next {
+		top: auto;
+		bottom: -75px;
+		left: 0;
+	}
+	.carousel--rtl .carousel__prev {
+		top: auto;
+		bottom: -75px;
+		left: 60px;
+	}
+}
+
+.carousel__slide {
+	padding: 8px;
+}
