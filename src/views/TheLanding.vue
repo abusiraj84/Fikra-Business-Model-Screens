@@ -19,11 +19,12 @@
 					</div>
 				</div>
 				<!-- SECTION 2 -->
-				<div class="z-0 flex items-center justify-center px-6 bm_img h-[200px] md:h-[400px]">
+				<div class="z-0 flex items-center justify-center px-6 bm_img h-[200px] md:h-[400px] md:-mt-2">
 					<div class="hero_img h-[420px] w-[430px] md:h-[620px] md:w-[630px]"></div>
 				</div>
 				<!-- SECTION 11 (Logged In Only) -->
 				<div
+					v-if="isLoggedIn"
 					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] opacity-95 -mt-[128px] mb-12">
 					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
 						<div class="flex flex-col items-start justify-start">
@@ -486,6 +487,8 @@
 				'هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث.',
 		},
 	];
+
+	let isLoggedIn = ref(false);
 
 	const openIndex = ref(null);
 
