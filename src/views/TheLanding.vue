@@ -297,9 +297,9 @@
 				</div>
 				<!-- SECTION 9 -->
 				<div
-					class="flex items-center justify-center flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20">
-					<img src="../assets/img/coinInHand.svg" alt="Coin In Hand" class="w-64 h-64 mx-2" />
-					<div class="flex flex-col items-start justify-between mx-2 w-[50%]">
+					class="flex items-center justify-center flex-1 px-8 py-14 mx-auto w-[95%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20">
+					<img src="../assets/img/stockMarket.svg" alt="Coin In Hand" class="w-40 h-40 mx-3" />
+					<div class="flex flex-col items-start justify-between mx-3 w-[50%]">
 						<h3 class="text-[22px] md:text-[36px] leading-10 text-white mb-8">
 							هل لديك اهتمام بالاستثمار في الشركات الابتكارية؟ لدينا مجموعة من الفرص المتاحة..
 						</h3>
@@ -308,14 +308,76 @@
 						</button>
 					</div>
 				</div>
-				<!-- SECTION 10 FAQ -->
+				<!-- SECTION 10 -->
 				<div class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-20">
 					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
 						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">الأسئلة الأكثر شيوعًا</h3>
 					</div>
-					FAQ
+					<div class="flex flex-col gap-y-[12px]">
+						<div
+							v-for="(item, index) in faqs"
+							:key="index"
+							class="rounded-[8px] px-[32px] cursor-pointer border border-[#EAECF0] hover:border-primary transition-all duration-100 ease-in-out"
+							:class="openIndex === index ? `border-[#BACDDB] bg-[#E8F1F8] py-[32px]` : 'bg-[#fff] py-[16px]'"
+							@click="toggleFaq(index)">
+							<div class="flex items-center justify-between mb-[8px]">
+								<h3 class="text-[22px] leading-[26px] font-bold w-[75%]">
+									{{ item.question }}
+								</h3>
+								<div class="flex">
+									<img v-if="openIndex !== index" src="../assets/img/plus.svg" class="w-6 h-6" />
+									<img v-if="openIndex === index" src="../assets/img/circle.svg" class="w-6 h-6" />
+								</div>
+							</div>
+							<p v-if="openIndex === index" class="text-[16px] leading-[22px] font-medium w-[75%]">
+								{{ item.answer }}
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
+
+<script setup>
+	import { ref } from "vue";
+	const faqs = [
+		{
+			question: "ما هي المنشأة الابتكارية؟",
+			answer:
+				"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
+		},
+		{
+			question: "ماهي الابتكارات؟",
+			answer: `الابتكارات (Innovations) هي ما يقدمه الكيان من سلع (منتجات أو خدمات) أو عمليات (نموذج عمل تجاري أو بيئة عمل أو عمليات داخلية) أو مزيج من السلع والعمليات، بحيث تكون جديدة أو مطورة بشكل ملحوظ، وتكون جاهزة أو شبه جاهزة للاستخدام من قبل الكيان نفسه أو من خلال عملائه.`,
+		},
+		{
+			question: "ماهي التقنيات الصاعدة؟",
+			answer:
+				"لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص.",
+		},
+		{
+			question: "ما هي آلية الانضمام إلى منصة فكرة؟",
+			answer:
+				'هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث.',
+		},
+		{
+			question: "ما هي شروط المشاركة في جائزة ابتكر؟",
+			answer:
+				'للمهتمين قمنا بوضع نص لوريم إبسوم القياسي والمُستخدم منذ القرن الخامس عشر في الأسفل. وتم أيضاً توفير الأقسام 1.10.32 و 1.10.33 من "حول أقاصي الخير والشر" (de Finibus Bonorum et Malorum) لمؤلفه شيشيرون (Cicero) بصيغها الأصلية',
+		},
+		{
+			question: "كيف يمكننا متابعة الفعاليات والإعلانات الجديدة؟",
+			answer:
+				'هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث.',
+		},
+	];
+
+	const openIndex = ref(null);
+
+	function toggleFaq(index) {
+		if (openIndex.value !== index) return (openIndex.value = index);
+		openIndex.value = null;
+	}
+</script>
