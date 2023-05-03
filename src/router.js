@@ -17,4 +17,9 @@ const router = createRouter({
 	],
 });
 
+//Function called before the user enter each route (page)
+// router.beforeEach(function (_, _1, _2) {
+// 	window.scroll(0, 0);
+// });
+
 export default router;

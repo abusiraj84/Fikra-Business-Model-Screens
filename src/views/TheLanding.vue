@@ -327,11 +327,11 @@
 					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] border-t border-t-[#F5F5F7] mt-20">
 					<div class="flex items-center justify-between w-full mb-6">
 						<h3 class="text-[20px] md:text-[32px] leading-9 text-[#042925]">مكتبة الريادة و الإبتكار</h3>
-						<button
-							type="button"
+						<router-link
+							to="/library"
 							class="text-[14px] md:text-[16px] px-4 py-2 text-center bg-white border rounded-full md:px-6 text-primary border-primary">
 							عرض محتويات المكتبة
-						</button>
+						</router-link>
 					</div>
 					<Carousel
 						:items-to-show="1"

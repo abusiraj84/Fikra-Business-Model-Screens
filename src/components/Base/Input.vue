@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<label :for="name" class="block mb-2 text-sm font-medium text-grey"> {{ label }} </label>
+		<label v-if="label" :for="name" class="block mb-2 text-sm font-medium text-grey"> {{ label }} </label>
 
 		<div class="relative w-full">
 			<div
