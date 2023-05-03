@@ -196,8 +196,7 @@
 	}
 
 	.disable-scrollbars::-webkit-scrollbar {
-		background: transparent; /* Chrome/Safari/Webkit */
-		width: 0px;
+		display: none;
 	}
 
 	.disable-scrollbars {
