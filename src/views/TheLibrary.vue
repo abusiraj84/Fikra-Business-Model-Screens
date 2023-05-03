@@ -16,27 +16,28 @@
 				<p class="mr-2 text-[20px] leading-5">فرز</p>
 			</button>
 		</div>
-		<div class="flex items-start mb-6 border-b border-b-[#F2F2F2] w-max">
+		<div
+			class="flex items-start mb-6 border-b border-b-[#F2F2F2] -w-full overflow-x-scroll snap-x snap-proximity disable-scrollbars">
 			<div
-				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3"
+				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3 min-w-max snap-center"
 				:class="{ selected: selectedTab === 0 }"
 				@click="changeTab(0)">
 				عرض الجميع (74)
 			</div>
 			<div
-				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3"
+				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3 min-w-max snap-center"
 				:class="{ selected: selectedTab === 1 }"
 				@click="changeTab(1)">
 				أسرار الريادة
 			</div>
 			<div
-				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3"
+				class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3 min-w-max snap-center"
 				:class="{ selected: selectedTab === 2 }"
 				@click="changeTab(2)">
 				سوق الابتكار السعودي
 			</div>
 			<div
-				class="text-[16px] text-[#1e1e1e] cursor-pointer pb-3"
+				class="text-[16px] text-[#1e1e1e] cursor-pointer pb-3 min-w-max snap-center"
 				:class="{ selected: selectedTab === 3 }"
 				@click="changeTab(3)">
 				استطلاعات منظومة الإبتكار
@@ -192,5 +193,15 @@
 		color: #307094;
 		font-weight: bold;
 		border-bottom: 2px solid #307094;
+	}
+
+	.disable-scrollbars::-webkit-scrollbar {
+		background: transparent; /* Chrome/Safari/Webkit */
+		width: 0px;
+	}
+
+	.disable-scrollbars {
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* IE 10+ */
 	}
 </style>
