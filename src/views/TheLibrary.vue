@@ -63,7 +63,7 @@
 		</div>
 		<div class="flex items-center justify-center w-full mt-12">
 			<button class="py-2 px-4 border-[1.5px] border-black rounded-full hover:bg-[#afafaf13] leading-[20px] hover:font-bold">
-				<p>تحميل المزيد</p>
+				<p>المزيد</p>
 			</button>
 		</div>
 	</div>

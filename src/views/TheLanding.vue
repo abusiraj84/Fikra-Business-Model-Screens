@@ -74,7 +74,7 @@
 						<div class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5">
 							<div class="flex flex-col items-start">
 								<p class="text-[#042925] text-3xl md:text-4xl">220+</p>
-								<p class="text-black font-bold text-md md:text-xl leading-[20px]">ريادي</p>
+								<p class="text-black font-bold text-md md:text-xl leading-[20px]">مبتكر تجاري</p>
 							</div>
 							<img src="../assets/img/businessman.svg" class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" alt="Icon" />
 						</div>
@@ -118,10 +118,8 @@
 					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8">
 					<div class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row">
 						<h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">خدمات منظومة الابتكار</h3>
-						<button
-							type="button"
-							class="px-4 md:px-6 py-2 text-center bg-white border rounded-full max-w-[150px] text-primary border-primary">
-							عرض كل الخدمات
+						<button type="button" class="px-4 py-2 text-center bg-white border rounded-full md:px-6 text-primary border-primary">
+							عرض جميع الخدمات
 						</button>
 					</div>
 					<div class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4">
@@ -318,7 +316,7 @@
 							<button class="text-[16px] text-[#FF3A46] hover:underline mt-3 md:mt-0">التسجيل مغلق</button>
 						</div>
 						<button class="py-5 bg-[#EAECF0] rounded-lg outline outline-[#EAECF0] hover:outline-1 hover:outline-primary">
-							<p class="text-[16px] text-center w-full text-[#307094]">عرض كل الفعاليات</p>
+							<p class="text-[16px] text-center w-full text-[#307094]">عرض جميع الفعاليات</p>
 						</button>
 					</div>
 				</div>
@@ -326,7 +324,7 @@
 				<div
 					class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] border-t border-t-[#F5F5F7] mt-20">
 					<div class="flex items-center justify-between w-full mb-6">
-						<h3 class="text-[20px] md:text-[32px] leading-9 text-[#042925]">مكتبة الريادة و الإبتكار</h3>
+						<h3 class="text-[20px] md:text-[32px] leading-9 text-[#042925]">مكتبة الابتكار</h3>
 						<router-link
 							to="/library"
 							class="text-[14px] md:text-[16px] px-4 py-2 text-center bg-white border rounded-full md:px-6 text-primary border-primary">
@@ -371,9 +369,9 @@
 				</div>
 				<!-- SECTION 9 -->
 				<div
-					class="flex flex-col md:flex-row items-center justify-center flex-1 px-8 py-14 mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20">
-					<img src="../assets/img/stockMarket.svg" alt="Coin In Hand" class="w-40 h-40 mx-3 mb-8 md:mb-0" />
-					<div class="flex flex-col items-start justify-between mx-3 w-[85%] md:w-[50%]">
+					class="flex items-center justify-center mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20 overflow-hidden">
+					<img src="../assets/img/IntrestedIndividual.svg" alt="Coin In Hand" class="hidden h-full mx-3 -mb-1 md:block" />
+					<div class="flex flex-col items-start justify-between mx-3 w-[85%] md:w-[50%] py-14">
 						<h3 class="text-[22px] md:text-[36px] leading-10 text-white mb-8">
 							هل لديك اهتمام بالاستثمار في الشركات الابتكارية؟ لدينا مجموعة من الفرص المتاحة..
 						</h3>
@@ -483,6 +481,11 @@
 		},
 		{
 			question: "كيف يمكننا متابعة الفعاليات والإعلانات الجديدة؟",
+			answer:
+				'هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث.',
+		},
+		{
+			question: "من هو المبتكر التجاري؟",
 			answer:
 				'هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث.',
 		},
