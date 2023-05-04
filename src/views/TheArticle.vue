@@ -35,20 +35,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
-			<div class="relative" v-for="item in similarArticles" :key="item.id">
-				<div class="text-[16px] leading-[22px] py-1 px-3 top-5 right-5 absolute bg-[#FFFFFFCC] rounded-xl">
-					{{ item.category }}
-				</div>
-				<img :src="item.img" :alt="item.title" class="rounded-t-lg" />
-				<div class="border rounded-b-lg border-[#EAECF0] p-4 text-right">
-					<p class="text-[22px] leading-[26px] text-[#042925] mb-1">{{ item.title }}</p>
-					<p class="text-[16px] leading-[22px] mb-7">
-						{{ truncateString(item.desc) }}
-					</p>
-					<div class="flex items-center justify-between">
-						<p class="text-[18px] leading-[22px] text-[#00000046]">{{ item.date }}</p>
-						<a href="#" class="text-[16px] leading-[22px] text-primary underline">قراءة المقال</a>
+		<div class="flex flex-col items-start justify-between w-full mb-6">
+			<h3 class="text-[22px] md:text-[32px] leading-9 font-bold text-[#042925] mb-8">تصفح المزيد</h3>
+			<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
+				<div class="relative" v-for="item in similarArticles" :key="item.id">
+					<div class="text-[16px] leading-[22px] py-1 px-3 top-5 right-5 absolute bg-[#FFFFFFCC] rounded-xl">
+						{{ item.category }}
+					</div>
+					<img :src="item.img" :alt="item.title" class="rounded-t-lg" />
+					<div class="border rounded-b-lg border-[#EAECF0] p-4 text-right">
+						<p class="text-[22px] leading-[26px] text-[#042925] mb-1">{{ item.title }}</p>
+						<p class="text-[16px] leading-[22px] mb-7">
+							{{ truncateString(item.desc) }}
+						</p>
+						<div class="flex items-center justify-between">
+							<p class="text-[18px] leading-[22px] text-[#00000046]">{{ item.date }}</p>
+							<a href="#" class="text-[16px] leading-[22px] text-primary underline">قراءة المقال</a>
+						</div>
 					</div>
 				</div>
 			</div>
