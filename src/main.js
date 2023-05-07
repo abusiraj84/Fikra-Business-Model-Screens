@@ -4,6 +4,7 @@ import "vue-next-select/dist/index.css";
 import VueTelInput from "vue-tel-input";
 import "vue-tel-input/dist/vue-tel-input.css";
 import "vue3-carousel/dist/carousel.css";
+import YouTube from "vue3-youtube";
 // Main Sytle
 import "./style.css";
 // App
@@ -14,5 +15,6 @@ const app = createApp(App);
 app.use(router);
 app.use(VueTelInput, { mode: "auto" });
 app.component("vue-select", VueSelect);
+app.component("Youtube", YouTube);
 
 app.mount("#app");
