@@ -14,3 +14,10 @@
 		},
 	};
 </script>
+
+<style>
+	ul li .router-link-exact-active {
+		color: #4882ae;
+		border-bottom: 3px solid #4882ae;
+	}
+</style>
