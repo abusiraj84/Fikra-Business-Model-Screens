@@ -6,6 +6,7 @@ import TheDocuments from "./views/TheDocuments.vue";
 import TheLibrary from "./views/TheLibrary.vue";
 import TheArticle from "./views/TheArticle.vue";
 import ThePrize from "./views/ThePrize.vue";
+import TheEvents from "./views/TheEvents.vue";
 
 const router = createRouter({
 	history: createWebHistory(),
@@ -16,6 +17,7 @@ const router = createRouter({
 		{ path: "/library", component: TheLibrary },
 		{ path: "/article", children: [{ path: ":id", component: TheArticle }] },
 		{ path: "/prize", component: ThePrize },
+		{ path: "/events", component: TheEvents },
 	],
 });
 
