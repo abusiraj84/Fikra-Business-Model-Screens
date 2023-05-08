@@ -56,7 +56,7 @@
 					</p>
 					<div class="flex items-center justify-between">
 						<p class="text-[18px] leading-[22px] text-[#00000046]">{{ item.date }}</p>
-						<a href="#" class="text-[16px] leading-[22px] text-primary underline">قراءة المقال</a>
+						<router-link to="/article/1" class="text-[16px] leading-[22px] text-primary underline">قراءة المقال</router-link>
 					</div>
 				</div>
 			</div>

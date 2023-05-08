@@ -167,7 +167,7 @@
 	const videos = [
 		{ id: "https://www.youtube.com/watch?v=M3_ZRe7Akp0", title: "شركة ملاdءة" },
 		{ id: "https://www.youtube.com/watch?v=QxccbxJU7eo", title: "تطبيق يوما" },
-		{ id: "https://www.youtube.com/watch?v=ngRzJY7YCZ0", title: "شركة IBoat" },
+		{ id: "https://www.youtube.com/watch?v=ngRzJY7YCZ0", title: "شركة Ioat" },
 		{ id: "https://www.youtube.com/watch?v=lH5ds5bky9M", title: "حاضنة قوام" },
 	];
 </script>
