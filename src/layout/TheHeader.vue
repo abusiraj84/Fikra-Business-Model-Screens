@@ -26,9 +26,7 @@
 				<li @click="closeMenu">
 					<router-link to="/library">مكتبة الابتكار</router-link>
 				</li>
-				<li @click="closeMenu">
-					<router-link to="/services">الخدمات</router-link>
-				</li>
+				<li><Dropdown /></li>
 				<li @click="closeMenu">
 					<router-link to="/">الرئيسية</router-link>
 				</li>
@@ -38,6 +36,7 @@
 </template>
 
 <script setup>
+	import Dropdown from "../components/Dropdown.vue";
 	import { ref } from "vue";
 	const isLoggedIn = ref(true);
 
