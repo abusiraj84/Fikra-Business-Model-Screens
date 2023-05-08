@@ -61,7 +61,7 @@
 				</div>
 				<div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 pb-1">
 					<div class="px-2 mb-5">
-						<h3 class="text-[24px] leading-5 font-bold">أهداف المعرض والجائزة</h3>
+						<h3 class="text-[24px] leading-10 font-bold">أهداف المعرض والجائزة</h3>
 						<ul class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px]">
 							<li>المساهمة في نمو الاقتصاد الوطني من خلال تشجيع المنشآت الابتكارية على النمو و التوسع</li>
 							<li>دعم وتمكين المنشآت الابتكارية السعودية وتسهيل وصولهم للشركاء في منظومة الابتكار</li>
@@ -69,7 +69,7 @@
 						</ul>
 					</div>
 					<div class="px-2">
-						<h3 class="text-[24px] leading-5 font-bold">كيف يمكن لمنشأتك الابتكارية أن تشارك؟</h3>
+						<h3 class="text-[24px] leading-10 font-bold">كيف يمكن لمنشأتك الابتكارية أن تشارك؟</h3>
 						<ul class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px]">
 							<li>أن يكون مقر المنشأة الرئيسي في المملكة العربية السعودية</li>
 							<li>أن يكون للمنشأة سجل تجاري قائم</li>
@@ -168,7 +168,7 @@
 		{ id: "https://www.youtube.com/watch?v=M3_ZRe7Akp0", title: "شركة ملاdءة" },
 		{ id: "https://www.youtube.com/watch?v=QxccbxJU7eo", title: "تطبيق يوما" },
 		{ id: "https://www.youtube.com/watch?v=ngRzJY7YCZ0", title: "شركة Ioat" },
-		{ id: "https://www.youtube.com/watch?v=lH5ds5bky9M", title: "حاضنة قوام" },
+		{ id: "https://www.youtube.com/watch?v=M3_ZRe7Akp0", title: "حاضنة قوام" },
 	];
 </script>
 
