@@ -85,7 +85,7 @@
 						</h3>
 						<div class="grid w-full grid-cols-2 gap-7 md:grid-cols-3 lg:grid-cols-5">
 							<div class="flex flex-col items-center justify-center px-3 py-8 space-y-3 text-center bg-white rounded-lg">
-								<img src="../assets/img/camera.svg" alt="Calendar" />
+								<img src="../assets/img/Camera.svg" alt="Calendar" />
 								<h4 class="text-[18px] leading-5">تطوير و توجيه</h4>
 							</div>
 							<div class="flex flex-col items-center justify-center px-3 py-8 space-y-3 text-center bg-white rounded-lg">
