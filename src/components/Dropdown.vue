@@ -41,7 +41,7 @@ window.onclick = function (event) {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin-left: 50px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;

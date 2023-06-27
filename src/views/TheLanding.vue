@@ -7,28 +7,30 @@
           class="flex flex-col items-center justify-center bg-[#BED8ED] pt-20 pb-28"
         >
           <div
-            class="w-[85%] md:w-[40%] xl:w-[30%] text-center text-[48px] md:text-[62px] leading-[68px] font-medium text-[#1E1E1E]"
+            class="w-[85%] md:w-[40%] xl:w-[30%] text-center text-[48px] md:text-[62px] leading-[68px] font-[460] whitespace-nowrap text-[#1E1E1E] flex justify-center"
           >
             <h1>
-              <span class="text-[#307094]">فكـرة</span> لديك نحوّلها إلى كيان
-              تجاري ابتكاري قـائـم وفعّـال
+              <span class="text-[#307094]">فكـرة</span> لديك نحوّلها إلى
+              <br />
+              كيان تجاري ابتكاري <br />
+              قـائـم وفعّـال
             </h1>
           </div>
           <p
-            class="text-[20px] md:text-[24px] leading-[32px] text-[#1E1E1E] mt-4 mb-7 w-[80%] md:w-full text-center"
+            class="text-[20px] md:text-[24px] leading-[32px] text-[#1E1E1E] mt-4 mb-7 w-[80%] md:w-full text-center font-extralight"
           >
             من خلال تسخير خدمات أكثر من 100 جهة حكومية وخاصة
           </p>
-          <div class="flex items-center justify-between w-[85%] lg:w-[23%]">
+          <div class="flex items-center justify-center w-[85%] lg:w-[23%]">
             <button
               type="submit"
-              class="w-full py-2 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300"
+              class="w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300"
             >
               التالي
             </button>
             <button
               type="button"
-              class="w-full py-2 mx-1 text-center border border-black rounded-full text-balck hover:bg-white transition-all duration-300"
+              class="w-fit py-2 px-3 mx-1 text-center border border-black rounded-full text-balck hover:bg-white transition-all duration-300 whitespace-nowrap"
             >
               شاهد ماهي بوابة فكرة
             </button>

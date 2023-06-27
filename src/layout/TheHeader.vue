@@ -1,40 +1,42 @@
 <template>
   <header class="header">
-    <nav>
+    <nav class="flex items-center justify-between w-full">
       <div class="logo">
         <img src="../assets/img/logo.svg" class="h-16" />
       </div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li @click="closeMenu">
-          <router-link
-            v-if="!isLoggedIn"
-            to="/signin"
-            class="px-5 py-2 text-white rounded-full loginBtn"
-          >
-            تسجيل الدخول
-          </router-link>
-        </li>
-        <!-- <li @click="closeMenu">
-					<router-link v-if="isLoggedIn" to="/profile" class="profileImg">
-						<img src="../assets/img/user.svg" class="h-[50px]" alt="User" />
-					</router-link>
-				</li> -->
-        <li @click="closeMenu">
-          <router-link to="/prize">جائزة ابتكر </router-link>
-        </li>
-        <li @click="closeMenu">
-          <router-link to="/events">الفعاليات</router-link>
-        </li>
-        <li @click="closeMenu">
-          <router-link to="/library">مكتبة الابتكار</router-link>
-        </li>
-        <li><Dropdown /></li>
-        <li @click="closeMenu">
-          <router-link to="/">الرئيسية</router-link>
-        </li>
-      </ul>
+      <div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="flex items-center gap-x-5 flex-row-reverse h-[60px] menu">
+          <li @click="closeMenu" class="">
+            <router-link
+              v-if="!isLoggedIn"
+              to="/signin"
+              class="px-5 py-2 text-white rounded-full loginBtn"
+            >
+              تسجيل الدخول
+            </router-link>
+          </li>
+          <!-- <li @click="closeMenu">
+                  <router-link v-if="isLoggedIn" to="/profile" class="profileImg">
+                    <img src="../assets/img/user.svg" class="h-[50px]" alt="User" />
+                  </router-link>
+                </li> -->
+          <li @click="closeMenu">
+            <router-link to="/prize">جائزة ابتكر </router-link>
+          </li>
+          <li @click="closeMenu">
+            <router-link to="/events">الفعاليات</router-link>
+          </li>
+          <li @click="closeMenu">
+            <router-link to="/library">مكتبة الابتكار</router-link>
+          </li>
+          <li><Dropdown /></li>
+          <li @click="closeMenu">
+            <router-link to="/">الرئيسية</router-link>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 </template>
@@ -68,7 +70,7 @@ nav {
 .menu {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+
   align-items: center;
 }
 
@@ -78,7 +80,7 @@ nav {
   font-size: 17px;
   font-weight: 500;
   color: #1e1e1e;
-  margin-left: 50px;
+
   white-space: nowrap;
 }
 

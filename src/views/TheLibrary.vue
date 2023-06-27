@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
+    class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] z-10 bg-white rounded-[10px] mt-4 mb-8"
   >
     <div
       class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -10,7 +10,7 @@
       </h3>
     </div>
     <div class="flex items-center justify-between w-full mb-6">
-      <div class="relative w-full ml-4">
+      <div class="relative w-full">
         <BaseInput
           type="text"
           name="search"
@@ -71,7 +71,7 @@
     </div>
 
     <div
-      class="grid w-full grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-4"
+      class="grid w-full grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3"
       v-else
     >
       <router-link
