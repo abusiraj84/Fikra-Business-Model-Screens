@@ -1,7 +1,7 @@
 <template>
   <!-- SECTION 5 -->
   <div
-    class="flex flex-col justify-start flex-1 p-8 mx-auto w-[95%] md:w-[90%] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
+    class="flex flex-col justify-start flex-1 p-8 mx-auto ] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
   >
     <div class="flex flex-col items-start justify-between w-full mb-6">
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">

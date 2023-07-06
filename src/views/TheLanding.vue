@@ -71,7 +71,7 @@
         <!-- SECTION 11 (Logged In Only) -->
         <div
           v-if="isLoggedIn"
-          class="flex flex-col justify-start flex-1 p-8 mx-auto max-w-[1200px] w-full md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] opacity-95 -mt-[128px] mb-12"
+          class="flex flex-col justify-start flex-1 p-8 mx-auto max-w-[1200px] w-full z-10 bg-white rounded-[10px] opacity-95 -mt-[128px] mb-12"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -99,7 +99,7 @@
                 <img src="../assets/img/ns3a.svg" class="w-[137px] h-[50px]" />
                 <p class="text-[18px]">تحت الدارسة</p>
               </div>
-              <p class="text-[16px] text-[#78787A] w-[90%]">
+              <p class="text-[16px] text-[#78787A]">
                 الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد
                 التحليل العميق للشركة المستهدف
               </p>
@@ -114,7 +114,7 @@
                 />
                 <p class="text-[18px]">تم القبول</p>
               </div>
-              <p class="text-[16px] text-[#78787A] w-[90%]">
+              <p class="text-[16px] text-[#78787A]">
                 الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد
                 التحليل العميق للشركة المستهدف
               </p>
@@ -123,7 +123,7 @@
         </div>
         <!-- SECTION 3 -->
         <div
-          class="flex flex-col justify-start flex-1 p-8 max-w-[1200px] mx-auto w-full md:w-[85%] xl:w-[70%] z-10 bg-[#96B2C8] rounded-[10px] mt-4 mb-10"
+          class="flex flex-col justify-start flex-1 p-8 max-w-[1200px] mx-auto w-full z-10 bg-[#96B2C8] rounded-[10px] mt-4 mb-10"
         >
           <h3 class="mb-3 text-[32px] leading-9 text-white">
             ماهي بوابة فكرة؟
@@ -210,7 +210,7 @@
         </div>
         <!-- SECTION 4 -->
         <div
-          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] mx-auto w-[85%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-10 mb-8"
+          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] mx-auto w-[85%] z-10 bg-white rounded-[10px] mt-10 mb-8"
         >
           <h3 class="mb-6 text-[32px] leading-9 text-[#042925] font-light">
             قصص نجاح في بوابة فكرة
@@ -258,7 +258,7 @@
         </div>
         <!-- SECTION 5 -->
         <div
-          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full md:w-[90%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4"
+          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full z-10 bg-white rounded-[10px] mt-4"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -504,7 +504,7 @@
         </div>
         <!-- SECTION 6 -->
         <div
-          class="flex flex-col mt-[104px] justify-start flex-1 mx-auto w-full md:w-[90%] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px]"
+          class="flex flex-col mt-[104px] justify-start flex-1 mx-auto w-full max-w-[1200px] z-10 bg-white rounded-[10px]"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -631,7 +631,7 @@
         </div>
         <!-- SECTION 7 -->
         <div
-          class="flex flex-col justify-start flex-1 mx-auto w-full md:w-[90%] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-[104px]"
+          class="flex flex-col justify-start flex-1 mx-auto w-full max-w-[1200px] z-10 bg-white rounded-[10px] mt-[104px]"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -777,7 +777,7 @@
         </div>
         <!-- SECTION 8 Courasael -->
         <div
-          class="flex flex-col justify-start flex-1 mx-auto max-w-[1200px] w-full md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] border-t border-t-[#F5F5F7] mt-20 pt-20"
+          class="flex flex-col justify-start flex-1 mx-auto max-w-[1200px] w-full z-10 bg-white rounded-[10px] border-t border-t-[#F5F5F7] mt-20 pt-20"
         >
           <div class="flex items-center justify-between w-full mb-6">
             <h3 class="text-[20px] md:text-[32px] leading-9 text-[#042925]">
@@ -848,7 +848,7 @@
         </div>
         <!-- SECTION 9 -->
         <div
-          class="flex items-center justify-center max-w-[1200px] mx-auto w-full md:w-[85%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20 overflow-hidden"
+          class="flex items-center justify-center max-w-[1200px] mx-auto w-full z-10 bg-[#2A6490] rounded-[10px] mt-20 overflow-hidden"
         >
           <img
             src="../assets/img/IntrestedIndividual.png"
@@ -872,7 +872,7 @@
         </div>
         <!-- SECTION 10 -->
         <div
-          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full md:w-[90%] xl:w-[72.5%] z-10 bg-white rounded-[10px] mt-24"
+          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full xl:w-[72.5%] z-10 bg-white rounded-[10px] mt-24"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
