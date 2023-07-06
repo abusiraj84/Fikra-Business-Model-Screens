@@ -146,7 +146,7 @@
             class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 font-extralight"
           >
             <div
-              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5"
+              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5 hover:bg-[#f1f1f1] transition-all"
             >
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">60+</p>
@@ -163,7 +163,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5"
+              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5 hover:bg-[#f1f1f1] transition-all"
             >
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">220+</p>
@@ -180,7 +180,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5"
+              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5 hover:bg-[#f1f1f1] transition-all"
             >
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">150+</p>
@@ -197,7 +197,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5"
+              class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5 hover:bg-[#f1f1f1] transition-all"
             >
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">20+</p>
@@ -226,7 +226,7 @@
             class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
           >
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
                 src="../assets/img/fodex.svg"
@@ -235,7 +235,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
                 src="../assets/img/jahez.svg"
@@ -244,7 +244,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
                 src="../assets/img/highberbary.svg"
@@ -253,7 +253,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
                 src="../assets/img/marn.svg"
@@ -544,7 +544,7 @@
               class="grid w-full grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5"
             >
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0 hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/dell.svg"
@@ -553,7 +553,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/huwawai.svg"
@@ -562,7 +562,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/jahez.svg"
@@ -571,7 +571,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/highberbary.svg"
@@ -580,7 +580,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/marn.svg"
@@ -589,7 +589,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/tyme.svg"
@@ -598,7 +598,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/sushi.svg"
@@ -607,7 +607,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/fodex.svg"
@@ -616,7 +616,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/dyson.svg"
@@ -625,7 +625,7 @@
                 />
               </div>
               <div
-                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0]"
+                class="flex items-center justify-center py-7 px-4 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
               >
                 <img
                   src="../assets/img/sushi.svg"
