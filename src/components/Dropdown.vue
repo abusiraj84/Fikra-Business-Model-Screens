@@ -12,7 +12,7 @@
     </button>
     <div id="myDropdown" class="dropdown-content" v-if="show">
       <a href="#">رحلة المبتكر التجاري</a>
-      <a href="#">أداة اختيار نموذج العمل التجاري</a>
+      <a href="https://fikra.qewamx.com/">أداة اختيار نموذج العمل التجاري</a>
       <a href="#">شهادة المنشأة الابتكارية</a>
       <a href="#">خدمات منظومة الابتكار</a>
     </div>
