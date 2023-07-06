@@ -62,11 +62,18 @@
         </div>
         <!-- SECTION 2 -->
         <div
-          class="z-0 flex items-center justify-center px-6 bm_img h-[200px] md:h-[400px] md:-mt-2"
+          class="z-0 flex items-center justify-center px-6 bm_img h-[200px] md:h-[400px] md:-mt-2 relative"
         >
           <div
             class="hero_img h-[420px] w-[430px] md:h-[620px] md:w-[630px]"
           ></div>
+          <div>
+            <img
+              src="/images/arrow.svg"
+              alt=""
+              class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
         </div>
         <!-- SECTION 11 (Logged In Only) -->
         <div
