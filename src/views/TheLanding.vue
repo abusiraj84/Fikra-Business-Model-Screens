@@ -22,7 +22,7 @@
             من خلال تسخير خدمات أكثر من 100 جهة حكومية وخاصة
           </p>
           <div
-            class="flex items-center gap-5 justify-center max-w-[1200px] w-[85%] lg:w-[23%]"
+            class="flex items-center gap-5 justify-center max-w-[1200px] lg:w-[23%]"
           >
             <button
               type="submit"
@@ -210,7 +210,7 @@
         </div>
         <!-- SECTION 4 -->
         <div
-          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] mx-auto w-[85%] z-10 bg-white rounded-[10px] mt-10 mb-8"
+          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] mx-auto z-10 bg-white rounded-[10px] mt-10 mb-8"
         >
           <h3 class="mb-6 text-[32px] leading-9 text-[#042925] font-light">
             قصص نجاح في بوابة فكرة
@@ -514,7 +514,7 @@
                 شهادة المنشأة الابتكارية
               </h3>
               <p
-                class="md:text-[22px] leading-[26px] md:w-[70%] text-[19px] w-full font-light"
+                class="md:text-[22px] leading-[26px] text-[19px] w-full font-light"
               >
                 هل تمثل منشأة صغيرة أو متوسطة نجحت في تنفيذ ابتكار أو تقنية
                 صاعدة؟ أحصل على الشهادة اليوم واستفد من المزايا!
@@ -856,7 +856,7 @@
             class="hidden mx-3 -mb-1 md:block h-[302px]"
           />
           <div
-            class="flex flex-col items-start justify-between max-w-[1200px] mx-3 w-[85%] md:w-[50%] py-14"
+            class="flex flex-col items-start justify-between max-w-[1200px] mx-3 md:w-[50%] py-14"
           >
             <h3 class="text-[22px] md:text-[36px] leading-10 text-white mb-8">
               هل لديك اهتمام بالاستثمار في الشركات الابتكارية؟ لدينا مجموعة من
@@ -872,7 +872,7 @@
         </div>
         <!-- SECTION 10 -->
         <div
-          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full xl:w-[72.5%] z-10 bg-white rounded-[10px] mt-24"
+          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full z-10 bg-white rounded-[10px] mt-24"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
