@@ -6,7 +6,7 @@
       class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
     >
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">
-        مكتبة الريادة و الإبتكار
+        فعاليات الابتكار التجاري
       </h3>
     </div>
     <div class="flex items-center justify-between w-full mb-6">

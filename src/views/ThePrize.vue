@@ -202,8 +202,13 @@
       <div class="grid grid-cols-12 gap-[25px]">
         <!-- 1 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
+          <img
+            src="/images/quote.svg"
+            alt=""
+            class="absolute top-[-12px] start-10"
+          />
           <img src="/images/wateen.png" alt="" class="mb-5 w-[200px]" />
           <h3 class="text-[22px] font-medium text-[#2A6490]">وتين Wateen</h3>
           <p class="font-light">
@@ -344,8 +349,13 @@
       <div class="grid grid-cols-12 gap-[25px]">
         <!-- 1 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
+          <img
+            src="/images/quote.svg"
+            alt=""
+            class="absolute top-[-12px] start-10"
+          />
           <p class="font-light text-[18px] mb-5">
             "أود أن أشكر جائزة 'ابتكر' على تكريم المنشآت الابتكارية. فقد ساهمت
             هذه الجائزة في تشجيع الشركات والمؤسسات على تطوير وتبني التقنيات
@@ -371,8 +381,13 @@
         </div>
         <!-- 2 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
+          <img
+            src="/images/quote.svg"
+            alt=""
+            class="absolute top-[-12px] start-10"
+          />
           <p class="font-light text-[18px] mb-5">
             "أود أن أشكر جائزة 'ابتكر' على تكريم المنشآت الابتكارية. فقد ساهمت
             هذه الجائزة في تشجيع الشركات والمؤسسات على تطوير وتبني التقنيات
@@ -398,8 +413,13 @@
         </div>
         <!-- 3 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
+          <img
+            src="/images/quote.svg"
+            alt=""
+            class="absolute top-[-12px] start-10"
+          />
           <p class="font-light text-[18px] mb-5">
             "أود أن أشكر جائزة 'ابتكر' على تكريم المنشآت الابتكارية. فقد ساهمت
             هذه الجائزة في تشجيع الشركات والمؤسسات على تطوير وتبني التقنيات
