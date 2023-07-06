@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-start flex-1 p-8 mx-auto md:w-[90%] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-20"
+    class="flex flex-col justify-start flex-1 p-8 mx-auto max-w-[1200px] z-10 bg-white rounded-[10px] mt-4 mb-20"
   >
     <!-- Hero -->
     <div class="grid grid-cols-12 gap-x-[30px] gap-y-[48px] mb-[48px]">
