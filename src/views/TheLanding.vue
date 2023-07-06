@@ -226,7 +226,7 @@
             class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
           >
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
             >
               <img
                 src="../assets/img/fodex.svg"
@@ -235,7 +235,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
             >
               <img
                 src="../assets/img/jahez.svg"
@@ -244,7 +244,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
             >
               <img
                 src="../assets/img/highberbary.svg"
@@ -253,7 +253,7 @@
               />
             </div>
             <div
-              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0]"
+              class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1]"
             >
               <img
                 src="../assets/img/marn.svg"

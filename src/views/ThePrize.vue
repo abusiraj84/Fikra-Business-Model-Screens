@@ -204,11 +204,6 @@
         <div
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
-          <img
-            src="/images/quote.svg"
-            alt=""
-            class="absolute top-[-12px] start-10"
-          />
           <img src="/images/wateen.png" alt="" class="mb-5 w-[200px]" />
           <h3 class="text-[22px] font-medium text-[#2A6490]">وتين Wateen</h3>
           <p class="font-light">
