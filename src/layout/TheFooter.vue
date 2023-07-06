@@ -13,23 +13,16 @@
             <ul class="text-white font-light">
               <li class="mb-3">
                 <a
-                  href="https://flowbite.com/"
+                  href="https://monshaat.gov.sa/all-services-page"
                   class="hover:text-white hover:underline"
-                  >رحلة الابتكار</a
+                  >خدمات منشآت</a
                 >
               </li>
               <li class="mb-3">
                 <a
-                  href="https://tailwindcss.com/"
+                  href="https://www.thakaa.sa/"
                   class="hover:text-white hover:underline"
-                  >خدمات الإبتكار</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://tailwindcss.com/"
-                  class="hover:text-white hover:underline"
-                  >فعاليات الابتكار</a
+                  >مركز ذكاء</a
                 >
               </li>
             </ul>
@@ -39,14 +32,14 @@
             <ul class="text-white font-light">
               <li class="mb-3">
                 <a
-                  href="https://github.com/themesberg/flowbite"
+                  href="https://fikra.qewamx.com/#:~:text=%D9%85%D8%B1%D8%A7%D8%AC%D8%B9-,%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7%20%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D9%83%D8%A7%D9%85,-%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9"
                   class="hover:text-white hover:underline"
                   >الشروط والاحكام</a
                 >
               </li>
               <li>
                 <a
-                  href="https://discord.gg/4eeurUVvTy"
+                  href="https://www.monshaat.gov.sa/policy"
                   class="hover:text-white hover:underline"
                   >سياسة الخصوصية</a
                 >
@@ -57,11 +50,17 @@
             <h2 class="mb-3 text-white font-medium">عامة</h2>
             <ul class="text-white font-light">
               <li class="mb-3">
-                <a href="#" class="hover:text-white hover:underline">عن فكرة</a>
+                <a
+                  href="https://monshaat.gov.sa/about"
+                  class="hover:text-white hover:underline"
+                  >عن منشآت</a
+                >
               </li>
               <li>
-                <a href="#" class="hover:text-white hover:underline"
-                  >تواصل معنا</a
+                <a
+                  href="https://monshaat.gov.sa/media-center"
+                  class="hover:text-white hover:underline"
+                  >المركز الإعلامي</a
                 >
               </li>
             </ul>
@@ -77,13 +76,22 @@
           >جميع الحقوق محفوظة للهيئة العامة للمنشآت الصغيرة والمتوسطة © 2023
         </span>
         <div class="flex justify-between items-center">
-          <a href="#">
+          <a
+            href="https://www.youtube.com/channel/UCajQIzMWeWK9bRQv5Ue3oUQ"
+            target="_blank"
+          >
             <img src="../assets/img/youtube.svg" class="w-16 h-11" alt="" />
           </a>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/company/monshaatsa/"
+            target="_blank"
+          >
             <img src="../assets/img/linkedin.svg" class="w-16 h-11" alt="" />
           </a>
-          <a href="#">
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2FMonshaatSA%3Fs%3Dfikra"
+            target="_blank"
+          >
             <img src="../assets/img/twitter.svg" class="w-16 h-11" alt="" />
           </a>
         </div>
