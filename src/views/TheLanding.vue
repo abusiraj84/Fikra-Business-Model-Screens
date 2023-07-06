@@ -853,7 +853,7 @@
           <img
             src="../assets/img/IntrestedIndividual.png"
             alt="Coin In Hand"
-            class="hidden h-full mx-3 -mb-1 md:block"
+            class="hidden mx-3 -mb-1 md:block h-[302px]"
           />
           <div
             class="flex flex-col items-start justify-between mx-3 w-[85%] md:w-[50%] py-14"

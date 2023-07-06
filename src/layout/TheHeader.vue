@@ -11,7 +11,7 @@
           <a
             href="https://fikra-app.qewamx.com/login"
             target="_blank"
-            class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-extralight"
+            class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
           >
             تسجيل الدخول
           </a>
