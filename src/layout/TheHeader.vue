@@ -63,6 +63,7 @@ nav {
   align-items: center;
   padding: 20px 30px;
   width: 90%;
+  max-width: 1200px;
 }
 
 .menu {

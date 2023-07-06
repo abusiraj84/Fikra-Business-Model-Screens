@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-primary">
-    <div class="mx-auto w-full max-w-screen-xl px-6 py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-[1200px] py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">
@@ -70,7 +70,7 @@
     </div>
     <div class="bg-white w-full">
       <div
-        class="w-full max-w-screen-xl flex flex-col items-center justify-between space-y-4 mx-auto md:flex-row md:space-y-0 p-6"
+        class="w-full max-w-[1200px] flex flex-col items-center justify-between space-y-4 mx-auto md:flex-row md:space-y-0 py-6"
       >
         <span class="text-grey sm:text-center font-light text-sm"
           >جميع الحقوق محفوظة للهيئة العامة للمنشآت الصغيرة والمتوسطة © 2023
