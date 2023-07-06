@@ -96,7 +96,6 @@ nav {
 
 .loginBtn {
   color: #f4fafb !important;
-  border-radius: 20px;
   padding: 12px 20px;
   min-width: 156px !important;
   white-space: nowrap;

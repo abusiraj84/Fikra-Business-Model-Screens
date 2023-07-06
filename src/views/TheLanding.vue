@@ -26,7 +26,7 @@
           >
             <button
               type="submit"
-              class="w-fit py-[12px] px-[32px] text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
+              class="w-fit py-[12px] whitespace-nowrap px-[32px] text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
             >
               ابدأ رحلتك في عالم الابتكار التجاري
             </button>
