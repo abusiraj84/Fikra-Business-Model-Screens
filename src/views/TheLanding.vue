@@ -31,6 +31,7 @@
               ابدأ رحلتك في عالم الابتكار التجاري
             </button>
             <button
+              @click="openModal"
               type="button"
               class="w-fit py-[12px] px-[32px] text-center border border-black rounded-full text-balck hover:bg-white transition-all duration-300 whitespace-nowrap font-light flex gap-2"
             >
@@ -871,15 +872,49 @@
             </h3>
             <button
               type="button"
+              @click="showModal = true"
               class="px-4 py-2 mx-1 text-center text-white border border-white rounded-full hover:bg-white hover:text-[#2A6490] duration-300"
             >
               شاهد ماهي بوابة فكرة
             </button>
+
+            <div
+              v-if="showModal"
+              class="fixed z-10 inset-0 overflow-y-auto"
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+              >
+                <div
+                  class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                  aria-hidden="true"
+                  @click="showModal = false"
+                ></div>
+
+                <div
+                  class="inline-block align-bottom rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full"
+                  style="width: 916px; height: 516px"
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/xHywEra-_KQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- SECTION 10 -->
         <div
-          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full z-10 bg-white rounded-[10px] mt-24"
+          class="flex flex-col justify-start flex-1 max-w-[1200px] mx-auto w-full z-[8] bg-white rounded-[10px] mt-24"
         >
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
@@ -937,43 +972,7 @@ import { ref } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 
-// const carouselItems = [
-//   {
-//     title: "كيف اختبر فكرتي؟",
-//     desc: "تبدأ عملية اختيار الفكرة بعد وضع الأساسيات واختبارها مع مجموعة من العملاء بطرق مختلفة ومتنوعة",
-//     date: "28 فبراير 2022",
-//     img: "https://images.pexels.com/photos/1314410/pexels-photo-1314410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//     category: "مرحلة الفكرة",
-//   },
-//   {
-//     title: "كيف اختار الشركة المناسبة؟",
-//     desc: "من أهم المقومات لنجاح الفكرة هو اختيار الشركة المناسبة لتنفيذ وتصميم الفكرة",
-//     date: "28 فبراير 2022",
-//     img: "https://images.pexels.com/photos/207607/pexels-photo-207607.jpeg?auto=compress&cs=tinysrgb&w=1600",
-//     category: "تأسيس الشركات",
-//   },
-//   {
-//     title: "ما أهمية التدريب؟",
-//     desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
-//     date: "28 فبراير 2022",
-//     img: "https://images.pexels.com/photos/45718/pexels-photo-45718.jpeg?auto=compress&cs=tinysrgb&w=1600",
-//     category: "التوجيه والارشاد",
-//   },
-//   {
-//     title: "ما أهمية التدريب؟",
-//     desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
-//     date: "28 فبراير 2022",
-//     img: "https://images.pexels.com/photos/3153207/pexels-photo-3153207.jpeg?auto=compress&cs=tinysrgb&w=1600",
-//     category: "مرحلة الفكرة",
-//   },
-//   {
-//     title: "ما أهمية التدريب؟",
-//     desc: "لبناء فكرة معينة فأنت بحاجة إلى مجموعة من المهارات الي بدورها ستساعدك في بناء الفكرة",
-//     date: "28 فبراير 2022",
-//     img: "https://images.pexels.com/photos/3183190/pexels-photo-3183190.jpeg?auto=compress&cs=tinysrgb&w=1600",
-//     category: "تأسيس الشركات",
-//   },
-// ];
+const showModal = ref(false);
 
 const { result, onError, onResult, refetch, loading } = useQuery(
   gql`
@@ -1112,5 +1111,9 @@ function toggleFaq(index) {
 
 function truncateString(str) {
   return str.length > 80 ? str.slice(0, 80) + "..." : str;
+}
+
+function openModal() {
+  showModal.value = true;
 }
 </script>
