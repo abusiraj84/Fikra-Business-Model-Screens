@@ -3,31 +3,56 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Azer";
-  src: url("./assets/29LT_Azer.ttf") format("truetype");
-}
-
-// iclude bold - medium - regular
-@font-face {
-  font-family: "Azer";
-  src: url("./assets/29LT_Azer_Medium.woff") format("woff");
-  font-weight: 500;
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Azer";
-  src: url("./assets/29LT_Azer_Bold.woff") format("woff");
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Azer";
-  src: url("./assets/29LT_Azer_Regular.woff") format("woff");
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "29LTAzer";
+  src: url("./assets/29LTAzer-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 * {
-  font-family: "Azer";
+  font-family: "29LTAzer";
 }
 
 .bm_img {

@@ -17,21 +17,45 @@
             </h1>
           </div>
           <p
-            class="text-[20px] md:text-[24px] leading-[32px] text-[#1E1E1E] mt-4 mb-7 w-[80%] md:w-full text-center font-extralight"
+            class="text-[20px] md:text-[24px] leading-[32px] text-[#1E1E1E] mt-4 mb-7 w-[80%] md:w-full text-center font-light"
           >
             من خلال تسخير خدمات أكثر من 100 جهة حكومية وخاصة
           </p>
-          <div class="flex items-center justify-center w-[85%] lg:w-[23%]">
+          <div
+            class="flex items-center gap-5 justify-center w-[85%] lg:w-[23%]"
+          >
             <button
               type="submit"
-              class="w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300"
+              class="w-fit py-[12px] px-[32px] text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
             >
-              التالي
+              ابدأ رحلتك في عالم الابتكار التجاري
             </button>
             <button
               type="button"
-              class="w-fit py-2 px-3 mx-1 text-center border border-black rounded-full text-balck hover:bg-white transition-all duration-300 whitespace-nowrap"
+              class="w-fit py-[12px] px-[32px] text-center border border-black rounded-full text-balck hover:bg-white transition-all duration-300 whitespace-nowrap font-light flex gap-2"
             >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.5 8.96533C9.5 8.48805 9.5 8.24941 9.59974 8.11618C9.68666 8.00007 9.81971 7.92744 9.96438 7.9171C10.1304 7.90525 10.3311 8.03429 10.7326 8.29239L15.4532 11.3271C15.8016 11.551 15.9758 11.663 16.0359 11.8054C16.0885 11.9298 16.0885 12.0702 16.0359 12.1946C15.9758 12.337 15.8016 12.449 15.4532 12.6729L10.7326 15.7076C10.3311 15.9657 10.1304 16.0948 9.96438 16.0829C9.81971 16.0726 9.68666 15.9999 9.59974 15.8838C9.5 15.7506 9.5 15.512 9.5 15.0347V8.96533Z"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               شاهد ماهي بوابة فكرة
             </button>
           </div>
@@ -104,7 +128,7 @@
           <h3 class="mb-3 text-[32px] leading-9 text-white">
             ماهي بوابة فكرة؟
           </h3>
-          <p class="mb-4 text-[20px] leading-8 text-white">
+          <p class="mb-4 text-[20px] leading-8 text-white font-extralight">
             لكون الابتكار التجاري لا ينشأ أو ينمو إلا على قاعدة معرفية رصينة
             وشبكة علاقات فعالة. تأتي بوابة الابتكار التجاري الوطنية “فكرة” لتقدم
             لك من خلال أقسامها المختلفة مجموعة من الأدوات غير المسبوقة في السوق
@@ -112,7 +136,7 @@
             موقعك الجغرافي في المملكة.
           </p>
           <div
-            class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
+            class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 font-extralight"
           >
             <div
               class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5"
@@ -120,7 +144,7 @@
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">60+</p>
                 <p
-                  class="text-black font-bold text-md md:text-xl leading-[20px]"
+                  class="text-black font-normal text-md md:text-xl leading-[20px]"
                 >
                   جهة
                 </p>
@@ -137,7 +161,7 @@
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">220+</p>
                 <p
-                  class="text-black font-bold text-md md:text-xl leading-[20px]"
+                  class="text-black font-normal text-md md:text-xl leading-[20px]"
                 >
                   مبتكر تجاري
                 </p>
@@ -154,7 +178,7 @@
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">150+</p>
                 <p
-                  class="text-black font-bold text-md md:text-xl leading-[20px]"
+                  class="text-black font-normal text-md md:text-xl leading-[20px]"
                 >
                   الخدمات المنفذة
                 </p>
@@ -171,7 +195,7 @@
               <div class="flex flex-col items-start">
                 <p class="text-[#042925] text-3xl md:text-4xl">20+</p>
                 <p
-                  class="text-black font-bold text-md md:text-xl leading-[20px]"
+                  class="text-black font-normal text-md md:text-xl leading-[20px]"
                 >
                   قصص النجاح
                 </p>
@@ -188,7 +212,7 @@
         <div
           class="flex flex-col justify-start flex-1 py-8 mx-auto w-[85%] md:w-[85%] xl:w-[70%] z-10 bg-white rounded-[10px] mt-10 mb-8"
         >
-          <h3 class="mb-6 text-[32px] leading-9 text-[#042925]">
+          <h3 class="mb-6 text-[32px] leading-9 text-[#042925] font-light">
             قصص نجاح في بوابة فكرة
           </h3>
           <div
@@ -239,7 +263,7 @@
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
           >
-            <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">
+            <h3 class="text-[36px] md:text-[32px] leading-9 text-[#042925]">
               خدمات منظومة الابتكار
             </h3>
             <button
@@ -253,27 +277,41 @@
             class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4"
           >
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/training_icon.svg"
-                  class="w-[36px] h-[36px] ml-1"
+                  class="w-[36px] h-[36px] ml-1 group-hover:text-white"
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
+                    التدريب
+                  </p>
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     يهدف اكتساب مهارات لبناء فكرتك
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/checkboard.svg"
@@ -281,19 +319,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     دراسة السوق
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     اكتشاف الفرص والاحتياجات لفكرتك
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/ruler.svg"
@@ -301,19 +347,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     اختبار الافكار
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     ابحث عن صحة فكرتك قبل الإطلاق
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/tv_input.svg"
@@ -321,19 +375,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     التصميم والتنفيذ
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     طور وابدأ بعملية اختبار فكرتك
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/training_icon.svg"
@@ -341,17 +403,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">التدريب</p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
+                    التدريب
+                  </p>
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     يهدف اكتساب مهارات لبناء فكرتك
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/checkboard.svg"
@@ -359,19 +431,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     دراسة السوق
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     اكتشاف الفرص والاحتياجات لفكرتك
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/ruler.svg"
@@ -379,19 +459,27 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     اختبار الافكار
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                  >
                     ابحث عن صحة فكرتك قبل الإطلاق
                   </p>
                 </div>
               </div>
             </div>
             <div
-              class="py-3 px-3 bg-[#E8F1F8] rounded-lg border border-[#BACDDB]"
+              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
             >
-              <p class="text-[14px] text-left w-full">10 جهات</p>
+              <p
+                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+              >
+                10 جهات
+              </p>
               <div class="flex items-start">
                 <img
                   src="../assets/img/tv_input.svg"
@@ -399,10 +487,14 @@
                   alt="Icon"
                 />
                 <div>
-                  <p class="text-[22px] text-[#042925] font-bold">
+                  <p
+                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                  >
                     التصميم والتنفيذ
                   </p>
-                  <p class="text-[15px] text-[#78787A]">
+                  <p
+                    class="text-[15px] text-[#78787A] font-ligh group-hover:text-white"
+                  >
                     طور وابدأ بعملية اختبار فكرتك
                   </p>
                 </div>
@@ -422,7 +514,7 @@
                 شهادة المنشأة الابتكارية
               </h3>
               <p
-                class="md:text-[22px] leading-[26px] md:w-[70%] text-[19px] w-full"
+                class="md:text-[22px] leading-[26px] md:w-[70%] text-[19px] w-full font-light"
               >
                 هل تمثل منشأة صغيرة أو متوسطة نجحت في تنفيذ ابتكار أو تقنية
                 صاعدة؟ أحصل على الشهادة اليوم واستفد من المزايا!
@@ -430,14 +522,14 @@
             </div>
             <button
               type="button"
-              class="px-4 md:px-6 md:mt-0 mt-2 py-2 text-center bg-[#2A6490] rounded-full max-w-[150px text-white hover:bg-[#307094] transition-all duration-300"
+              class="px-4 md:px-6 md:mt-0 mt-2 py-2 text-center bg-[#2A6490] whitespace-nowrap rounded-full w-fit text-white hover:bg-[#307094] transition-all duration-300"
             >
               اطلب الشهادة
             </button>
           </div>
           <div class="bg-[#E8F1F8] p-6 md:p-12 rounded-lg">
             <h1
-              class="text-center text-[22px] md:text-[32px] leading-9 text-[#042925] mb-6"
+              class="text-center text-[22px] md:text-[28px] leading-9 text-[#042925] mb-6 font-light"
             >
               الحاصلون على الشهادة
             </h1>
@@ -544,7 +636,9 @@
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
           >
-            <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">
+            <h3
+              class="text-[22px] md:text-[32px] leading-9 text-[#042925] font-light"
+            >
               فعاليات الابتكار التجاري
             </h3>
           </div>
@@ -556,19 +650,31 @@
                 <div
                   class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4"
                 >
-                  <p class="text-[#158456] text-[28px] leading-[26px]">28</p>
-                  <p class="text-[#158456] text-[16px] leading-[18px]">مارس</p>
+                  <p
+                    class="text-[#158456] text-[28px] leading-[26px] font-extralight"
+                  >
+                    28
+                  </p>
+                  <p
+                    class="text-[#158456] text-[16px] leading-[18px] font-extralight"
+                  >
+                    مارس
+                  </p>
                 </div>
                 <div class="flex flex-col items-start justify-center space-y-3">
                   <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold"
+                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
                   >
                     كيف اختبر فكرتي؟
                   </p>
                   <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    ورشة عمل<span class="text-[#158456]">(قادمة)</span>
+                    ورشة عمل<span class="text-[#158456] font-light"
+                      >(قادمة)</span
+                    >
                   </p>
-                  <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
+                  <p
+                    class="text-[#3F3F3F] text-[16px] leading-[18px] font-normal"
+                  >
                     ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك
                     قبل اللإطلاق”
                   </p>
@@ -587,17 +693,27 @@
                 <div
                   class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4"
                 >
-                  <p class="text-[#158456] text-[28px] leading-[26px]">04</p>
-                  <p class="text-[#158456] text-[16px] leading-[18px]">مارس</p>
+                  <p
+                    class="text-[#158456] text-[28px] leading-[26px] font-extralight"
+                  >
+                    04
+                  </p>
+                  <p
+                    class="text-[#158456] text-[16px] leading-[18px] font-extralight"
+                  >
+                    مارس
+                  </p>
                 </div>
                 <div class="flex flex-col items-start justify-center space-y-3">
                   <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold"
+                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
                   >
                     ورشة ذكاء: انترنت الأشياء في صناعة المستقبل
                   </p>
                   <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    ورشة عمل<span class="text-[#158456]">(قادمة)</span>
+                    ورشة عمل<span class="text-[#158456] font-light"
+                      >(قادمة)</span
+                    >
                   </p>
                   <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
                     ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك
@@ -618,14 +734,20 @@
                 <div
                   class="bg-[#FEF3F2] border border-[#FDA29B] text-center py-4 px-2 rounded-lg ml-4"
                 >
-                  <p class="text-[#912018] text-[28px] leading-[26px]">17</p>
-                  <p class="text-[#912018] text-[16px] leading-[18px]">
+                  <p
+                    class="text-[#912018] text-[28px] leading-[26px] font-light"
+                  >
+                    17
+                  </p>
+                  <p
+                    class="text-[#912018] text-[16px] leading-[18px] font-light"
+                  >
                     فبراير
                   </p>
                 </div>
                 <div class="flex flex-col items-start justify-center space-y-3">
                   <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold"
+                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
                   >
                     استشارات للشركات الناشئة
                   </p>
@@ -729,7 +851,7 @@
           class="flex items-center justify-center mx-auto w-[95%] md:w-[85%] xl:w-[70%] z-10 bg-[#2A6490] rounded-[10px] mt-20 overflow-hidden"
         >
           <img
-            src="../assets/img/IntrestedIndividual.svg"
+            src="../assets/img/IntrestedIndividual.png"
             alt="Coin In Hand"
             class="hidden h-full mx-3 -mb-1 md:block"
           />
@@ -755,7 +877,7 @@
           <div
             class="flex flex-col items-start justify-between w-full mb-6 md:items-center md:flex-row"
           >
-            <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925]">
+            <h3 class="text-[22px] md:text-[36px] leading-9 text-[#042925]">
               الأسئلة الأكثر شيوعًا
             </h3>
           </div>
@@ -772,7 +894,7 @@
               @click="toggleFaq(index)"
             >
               <div class="flex items-center justify-between mb-[8px]">
-                <h3 class="text-[22px] leading-[26px] font-bold w-[75%]">
+                <h3 class="text-[22px] leading-[26px] font-normal w-[75%]">
                   {{ item.question }}
                 </h3>
                 <div class="flex">
@@ -790,7 +912,7 @@
               </div>
               <p
                 v-if="openIndex === index"
-                class="text-[16px] leading-[22px] font-medium w-[75%]"
+                class="text-[16px] leading-[22px] font-extralight w-[75%]"
               >
                 {{ item.answer }}
               </p>

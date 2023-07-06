@@ -8,15 +8,13 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="flex items-center gap-x-5 flex-row-reverse h-[60px] menu">
-          <li @click="closeMenu" class="">
-            <router-link
-              v-if="!isLoggedIn"
-              to="/signin"
-              class="px-5 py-2 text-white rounded-full loginBtn"
-            >
-              تسجيل الدخول
-            </router-link>
-          </li>
+          <a
+            href="https://fikra-app.qewamx.com/login"
+            target="_blank"
+            class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-extralight"
+          >
+            تسجيل الدخول
+          </a>
           <!-- <li @click="closeMenu">
                   <router-link v-if="isLoggedIn" to="/profile" class="profileImg">
                     <img src="../assets/img/user.svg" class="h-[50px]" alt="User" />
@@ -78,7 +76,7 @@ nav {
   display: block;
   padding: 20px 0px;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   color: #1e1e1e;
 
   white-space: nowrap;
@@ -97,12 +95,12 @@ nav {
 }
 
 .loginBtn {
-  background: linear-gradient(90deg, #007598 21.23%, #019390 75.88%);
   color: #f4fafb !important;
   border-radius: 20px;
   padding: 12px 20px;
   min-width: 156px !important;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 950px) {
