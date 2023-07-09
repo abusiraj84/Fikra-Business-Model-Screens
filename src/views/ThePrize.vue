@@ -85,7 +85,7 @@
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
       <h2 class="text-[24px] font-light text-center mb-[32px]">
         المنشآت الابتكارية التي
-        <span class="font-normal">يمكنها المشاركة بمسابقة ابتكر السنوية</span>
+        <span class="font-normal">يمكنها المشاركة </span>
       </h2>
 
       <div class="grid grid-cols-12 gap-[25px]">
@@ -283,54 +283,78 @@
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
       <h2 class="text-[24px] font-light text-center mb-[32px]">لجنة التحكيم</h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="grid grid-cols-center-3 gap-[25px] justify-center m-auto">
         <!-- 1 -->
         <div
-          class="col-span-3 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
         >
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQF6eTdjS8JlbA/profile-displayphoto-shrink_800_800/0/1666802207986?e=1694044800&v=beta&t=dMhlXP0DAcBtSQMwd6T_icGQbyh3wwv55WeVXrSUHWI"
+            src="/images/waleed.png"
             alt=""
             class="mb-5 w-[157px] rounded-full"
           />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">وائل الترابي</h3>
-          <p class="font-light">رئيس مجلس ادارة شركة قوام</p>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">د.وليد البلاع</h3>
+          <p class="font-light">
+            مستثمر رأس مال جريء، وعضو منتدب لشركة مباشر السعودية، وشريك في صندوق
+            STV للاستثمار، ومهتم بريادة الأعمال
+          </p>
         </div>
         <!-- 2 -->
         <div
-          class="col-span-3 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
         >
           <img
-            src="https://media.licdn.com/dms/image/C5603AQGo1-8hIaX0QQ/profile-displayphoto-shrink_800_800/0/1650195192973?e=1694044800&v=beta&t=mo4x1-kc7ho2jFYbQT6Dd7b8FKNYNOKoTV4yYzswuzI"
+            src="/images/ryad.png"
             alt=""
             class="mb-5 w-[157px] rounded-full"
           />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">عادل الصاعدي</h3>
-          <p class="font-light">مؤسس في شركة قوام</p>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">أ.رياض الزامل</h3>
+          <p class="font-light">
+            عضو مجلس إدارة الغرفة التجارية الصناعية في الرياض، ورجل اعمال
+            ومستثمر
+          </p>
         </div>
         <!-- 3 -->
         <div
-          class="col-span-3 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
         >
           <img
-            src="https://media.licdn.com/dms/image/C4D03AQFH_V5MNxyVAg/profile-displayphoto-shrink_800_800/0/1648829370094?e=1694044800&v=beta&t=HbuncSuSfGT1lJKrWL3-P8keT-eBlkRe-L8qzS4RvSE"
+            src="/images/maha.png"
             alt=""
             class="mb-5 w-[157px] rounded-full"
           />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">ألاء بكداش</h3>
-          <p class="font-light">مؤسس في شركة قوام</p>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">أ.مها طيبة</h3>
+          <p class="font-light">رائدة اعمال، ومستثمرة</p>
         </div>
         <!-- 4 -->
         <div
-          class="col-span-3 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
         >
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQFlzFJsJE51Kg/profile-displayphoto-shrink_800_800/0/1669216976684?e=1694044800&v=beta&t=oTCX5pfrpxuUh4ar_9PYNAFVlqMdCFMnxHSbn70uaDI"
+            src="/images/omar.png"
             alt=""
             class="mb-5 w-[157px] rounded-full"
           />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">عايدة الحجازي</h3>
-          <p class="font-light">مساعدة المدير التنفيذي</p>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">عمر كتبي</h3>
+          <p class="font-light">
+            مدير خدمات الابتكار للمنشآت الصغيرة والمتوسطة في جامعة الملك عبدالله
+            للعلوم والتقنية
+          </p>
+        </div>
+        <!-- 5 -->
+        <div
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+        >
+          <img
+            src="/images/mazen.png"
+            alt=""
+            class="mb-5 w-[157px] rounded-full"
+          />
+          <h3 class="text-[22px] font-medium text-[#2A6490]">د.مازن الزايدي</h3>
+          <p class="font-light">
+            شريك في صندوق STV للاستثمار، وهو أكبر صندوق رأس مال جريء في الشرق
+            الأوسط. عضو مجلس الإدارة في شبكة ريادة الاعمال العالمية
+          </p>
         </div>
       </div>
     </div>
