@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-auto mx-auto">
+  <div
+    class="flex flex-col items-center justify-center h-auto mx-auto px-2 lg:px-0"
+  >
     <div class="flex flex-col w-full">
       <div class="flex flex-col flex-1 overflow-hidden pb-28">
         <!-- SECTION 1 -->
@@ -22,7 +24,7 @@
             من خلال تسخير خدمات أكثر من 100 جهة حكومية وخاصة
           </p>
           <div
-            class="flex items-center gap-5 justify-center max-w-[1200px] lg:w-[23%]"
+            class="flex items-center md:flex-row flex-col gap-5 justify-center max-w-[1200px] lg:w-[23%]"
           >
             <button
               type="submit"

@@ -88,10 +88,7 @@
           >
             <img src="../assets/img/linkedin.svg" class="w-16 h-11" alt="" />
           </a>
-          <a
-            href="https://twitter.com/i/flow/login?redirect_after_login=%2FMonshaatSA%3Fs%3Dfikra"
-            target="_blank"
-          >
+          <a href="https://twitter.com/MonshaatSA?s=1" target="_blank">
             <img src="../assets/img/twitter.svg" class="w-16 h-11" alt="" />
           </a>
         </div>

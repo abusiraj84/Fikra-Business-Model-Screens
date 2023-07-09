@@ -12,7 +12,7 @@
         >
           جائزة ابتكر
         </h3>
-        <p class="text-[22px] text-[#042925] font-light leading-7">
+        <p class="text-[22px] text-[#042925] font-light leading-7 text-justify">
           هي جائزة سنوية تطلقها منشآت كواحدة من المبادرات النوعية التي تعمل على
           نشر ثقافة الابتكار واكتشاف المنشآت الابتكارية.
           <br />
