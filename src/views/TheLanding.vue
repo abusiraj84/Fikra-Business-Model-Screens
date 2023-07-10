@@ -152,7 +152,7 @@
               class="flex items-center justify-around p-2 bg-white rounded-lg md:p-5 hover:bg-[#f1f1f1] transition-all"
             >
               <div class="flex flex-col items-start">
-                <p class="text-[#042925] text-3xl md:text-4xl">60+</p>
+                <p class="text-[#042925] text-3xl md:text-4xl">100+</p>
                 <p
                   class="text-black font-normal text-md md:text-xl leading-[20px]"
                 >
@@ -220,7 +220,7 @@
         </div>
         <!-- SECTION 4 -->
         <div
-          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] mx-auto z-10 bg-white rounded-[10px] mt-10 mb-8"
+          class="flex flex-col justify-start flex-1 py-8 max-w-[1200px] w-full mx-auto z-10 bg-white rounded-[10px] mt-10 mb-8"
         >
           <h3 class="mb-6 text-[32px] leading-9 text-[#042925] font-light">
             قصص نجاح في بوابة فكرة
@@ -228,7 +228,9 @@
           <div
             class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
           >
-            <div
+            <a
+              href="https://www.foodics.com/"
+              target="_blank"
               class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
@@ -236,8 +238,10 @@
                 class="w-[140] h-[36px]"
                 alt="Icon"
               />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://www.jahez.net/"
+              target="_blank"
               class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
@@ -245,8 +249,10 @@
                 class="w-[140] h-[36px]"
                 alt="Icon"
               />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://www.hyperpay.com"
+              target="_blank"
               class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
@@ -254,8 +260,10 @@
                 class="w-[140] h-[36px]"
                 alt="Icon"
               />
-            </div>
-            <div
+            </a>
+            <a
+              href="https://marn.io/"
+              target="_blank"
               class="flex items-center justify-center p-5 bg-white rounded-lg border border-[#EAECF0] hover:bg-[#f1f1f1] transition-all"
             >
               <img
@@ -263,7 +271,7 @@
                 class="w-[140] h-[36px]"
                 alt="Icon"
               />
-            </div>
+            </a>
           </div>
         </div>
         <!-- SECTION 5 -->
@@ -527,7 +535,7 @@
                 class="md:text-[22px] leading-[26px] text-[19px] w-full font-light"
               >
                 هل تمثل منشأة صغيرة أو متوسطة نجحت في تنفيذ ابتكار أو تقنية
-                صاعدة؟ أحصل على الشهادة اليوم واستفد من المزايا!
+                صاعدة؟!
               </p>
             </div>
             <button
@@ -874,10 +882,9 @@
             </h3>
             <button
               type="button"
-              @click="showModal = true"
               class="px-4 py-2 mx-1 text-center text-white border border-white rounded-full hover:bg-white hover:text-[#2A6490] duration-300"
             >
-              شاهد ماهي بوابة فكرة
+              المزيد من المعلومات
             </button>
 
             <div
