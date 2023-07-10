@@ -23,6 +23,7 @@
         >
         </BaseInput>
         <button
+          v-if="search"
           class="absolute bg-white top-[10px] left-4"
           @click="searchArticles"
         >
