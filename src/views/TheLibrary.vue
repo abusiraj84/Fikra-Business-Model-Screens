@@ -101,7 +101,7 @@
           </p>
           <div class="flex items-center justify-between">
             <p class="text-[18px] leading-[22px] text-[#00000046]">
-              {{ item.date }}
+              {{ formatDate(item.created_at) }}
             </p>
             <router-link
               :to="`/article/${item.id}`"
@@ -212,6 +212,7 @@ const { result, onError, onResult, refetch, loading } = useQuery(
           description
           content
           featured_image
+          created_at
           files {
             file_id
             file_name
@@ -346,6 +347,14 @@ categoriesOnResult(({ data, errors }) => {
     console.warn("Unexpected data structure:", data);
   }
 });
+
+function formatDate(date) {
+  let d = new Date(date);
+  let month = d.toLocaleString("ar-EG", { month: "long" });
+  let day = d.getDate();
+  let year = d.getFullYear();
+  return `${day} ${month} ${year}`;
+}
 </script>
 
 <style scoped>

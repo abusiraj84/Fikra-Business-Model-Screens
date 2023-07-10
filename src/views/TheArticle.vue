@@ -14,10 +14,14 @@
             alt="Calendar"
             class="w-6 h-6 ml-2"
           />
-          <p class="text-[20px] text-[#191A1F]">{{ article.date }}</p>
+          <p class="text-[20px] text-[#191A1F]">
+            {{ formatDate(article.created_at) }}
+          </p>
         </div>
         <div class="rounded-full bg-[#FABE2C66] py-1 px-2">
-          <p class="text-[16px] text-[#191A1F]">{{ article.category?.name }}</p>
+          <p class="text-[16px] text-[#191A1F] px-[8px]">
+            {{ article.category?.name }}
+          </p>
         </div>
       </div>
     </div>
@@ -89,33 +93,45 @@
       >
         تصفح المزيد
       </h3>
+
       <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
-        <div class="relative" v-for="item in similarArticles" :key="item.id">
+        <router-link
+          :to="`/article/${item.id}`"
+          class="relative hover:bg-[#EAF1F7] cursor-pointer group transition-all overflow-hidden rounded-lg"
+          v-for="item in articles"
+          :key="item.id"
+        >
           <div
-            class="text-[16px] leading-[22px] py-1 px-3 top-5 right-5 absolute bg-[#FFFFFFCC] rounded-xl"
+            class="text-[16px] leading-[22px] py-1 px-3 top-5 right-5 absolute bg-[#FFFFFFCC] rounded-xl z-10"
           >
-            {{ item.category }}
+            {{ item.category.name }}
           </div>
-          <img :src="item.img" :alt="item.title" class="rounded-t-lg" />
+          <div class="overflow-hidden">
+            <img
+              :src="item.featured_image"
+              :alt="item.title"
+              class="rounded-t-lg group-hover:scale-110 transition-all duration-300 group-hover:saturate-150 w-full"
+            />
+          </div>
           <div class="border rounded-b-lg border-[#EAECF0] p-4 text-right">
             <p class="text-[22px] leading-[26px] text-[#042925] mb-1">
               {{ item.title }}
             </p>
             <p class="text-[16px] leading-[22px] mb-7">
-              {{ truncateString(item.desc) }}
+              {{ truncateString(item.description) }}
             </p>
             <div class="flex items-center justify-between">
               <p class="text-[18px] leading-[22px] text-[#00000046]">
-                {{ item.date }}
+                {{ formatDate(item.created_at) }}
               </p>
               <router-link
-                to="/article/1"
-                class="text-[16px] leading-[22px] text-primary underline"
+                :to="`/article/${item.id}`"
+                class="text-[16px] leading-[22px] text-primary underline invisible group-hover:visible"
                 >قراءة المقال</router-link
               >
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -132,6 +148,7 @@ const route = useRoute();
 let articleID = route.params.id;
 
 const article = ref({});
+const categoryID = ref(0);
 let similarArticles = [
   {
     id: 1,
@@ -163,7 +180,13 @@ function truncateString(str) {
   return str.length > 80 ? str.slice(0, 80) + "..." : str;
 }
 
-const { onError, onResult, refetch, loading } = useQuery(
+// First Query
+const {
+  onError: onError1,
+  onResult: onResult1,
+  loading: loading1,
+  refetch: refetch1,
+} = useQuery(
   gql`
     query getLibraryArticle($article_id: Int!) {
       getLibraryArticle(article_id: $article_id) {
@@ -172,8 +195,9 @@ const { onError, onResult, refetch, loading } = useQuery(
         description
         content
         featured_image
-
+        created_at
         category {
+          id
           name
         }
         content_types {
@@ -202,21 +226,119 @@ const { onError, onResult, refetch, loading } = useQuery(
     article_id: articleID,
   }
 );
-onError((error) => {
+onError1((error) => {
   console.log(error.message);
 });
-onResult(({ data, errors }) => {
+onResult1(async ({ data, errors }) => {
   if (errors) {
     console.error(errors);
     return;
   }
 
   if (data?.getLibraryArticle) {
-    console.log(data.getLibraryArticle, "data");
     article.value = data.getLibraryArticle;
-    console.log(article.value, "article");
+    categoryID.value = data.getLibraryArticle.category?.id;
+    console.log(categoryID.value, "category");
+    // manually refetch the second query with the new categoryID value
+    await refetch2({
+      first: 3,
+      page: 1,
+      category_id: categoryID.value,
+    });
   } else {
     console.warn("Unexpected data structure:", data);
   }
 });
+
+// Related Articles
+
+let articles = ref([]);
+const {
+  onError: onError2,
+  onResult: onResult2,
+  loading: loading2,
+  refetch: refetch2,
+} = useQuery(
+  gql`
+    query getLibraryArticles(
+      $first: Int!
+      $page: Int
+      $keyword: String
+      $category_id: Int
+    ) {
+      getLibraryArticles(
+        first: $first
+        page: $page
+        keyword: $keyword
+        category_id: $category_id
+      ) {
+        paginatorInfo {
+          count
+          currentPage
+          hasMorePages
+          lastPage
+          total
+        }
+        data {
+          id
+          title
+          description
+          content
+          featured_image
+          created_at
+          files {
+            file_id
+            file_name
+            file_type
+            url
+          }
+          content_types {
+            name
+          }
+          category {
+            name
+          }
+          video {
+            source
+            code
+          }
+        }
+      }
+    }
+  `,
+  ref({
+    first: 12,
+    page: 1,
+    category_id: categoryID.value,
+  }),
+
+  {
+    fetchPolicy: "no-cache",
+  }
+);
+onError2((error) => {
+  console.log(error.message);
+});
+onResult2(({ data, errors }) => {
+  if (errors) {
+    console.error(errors);
+    return;
+  }
+
+  if (data?.getLibraryArticles) {
+    console.log(data.getLibraryArticles, "data");
+    articles.value = data.getLibraryArticles.data;
+    console.log(articles.value, "articles");
+  } else {
+    console.warn("Unexpected data structure:", data);
+  }
+});
+
+function formatDate(date) {
+  let d = new Date(date);
+  let month = d.toLocaleString("ar-EG", { month: "long" });
+  let day = d.getDate();
+  let year = d.getFullYear();
+  return `${day} ${month} ${year}`;
+}
 </script>
