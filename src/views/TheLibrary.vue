@@ -114,9 +114,15 @@
       </router-link>
     </div>
 
-    <div v-if="!loading && articles.length === 0" class="text-[20px] h-[500px]">
-      لا يوجد نتائج
-    </div>
+    <template v-if="!loading && articles.length === 0">
+      <div
+        class="py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col items-center justify-center"
+      >
+        <p class="text-[#3F3F3F] text-[18px] leading-[18px] font-bold">
+          لا توجد نتائج
+        </p>
+      </div>
+    </template>
     <div class="flex items-center justify-center w-full mt-12">
       <button
         @click="loadMore"
@@ -134,7 +140,6 @@ import BaseInput from "../components/Base/Input.vue";
 import { ref } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
-import { watch } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
 import LoadingJson from "../assets/loading.json";
 

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen w-full">
     <the-header />
-    <router-view />
+    <router-view class="flex-grow w-full" />
     <the-footer />
   </div>
 </template>
@@ -42,5 +42,10 @@ ul li:hover {
   transition: all 0.2s ease-in-out;
   color: #285679 !important;
   border-bottom: 0px !important;
+}
+</style>
+<style scoped>
+.flex-grow {
+  flex: 1 0 auto;
 }
 </style>

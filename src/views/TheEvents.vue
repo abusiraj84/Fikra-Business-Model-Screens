@@ -10,7 +10,7 @@
       </h3>
     </div>
     <div class="flex items-center justify-between w-full mb-6">
-      <div class="relative w-full ml-4">
+      <div class="relative w-full">
         <BaseInput
           type="text"
           name="search"
@@ -18,22 +18,18 @@
           v-model="search"
           :icon="true"
           label=""
+          @keydown.enter.prevent="searchEvents"
+          @input="updateSearch"
         >
         </BaseInput>
         <button
           class="absolute bg-white top-[10px] left-4"
-          @click="searchArticles"
+          @click="searchEvents"
+          v-if="search"
         >
           <img src="../assets/img/arrow-left.svg" alt="Arrow" />
         </button>
       </div>
-      <!-- <button
-        type="button"
-        class="flex items-center justify-center px-4 py-[11px] text-center bg-[#F2F2F2] rounded-lg"
-      >
-        <img src="../assets/img/filter.svg" alt="Filter" />
-        <p class="mr-2 text-[20px] leading-5">فرز</p>
-      </button> -->
     </div>
     <div
       class="flex items-start mb-6 border-b border-b-[#F2F2F2] -w-full overflow-x-scroll snap-x snap-proximity disable-scrollbars"
@@ -43,7 +39,7 @@
         :class="{ selected: selectedTab === 0 }"
         @click="changeTab(0)"
       >
-        عرض الجميع (74)
+        عرض الجميع ({{ events.length }})
       </div>
       <div
         class="text-[16px] text-[#1e1e1e] cursor-pointer ml-10 pb-3 min-w-max snap-center"
@@ -61,18 +57,32 @@
       </div>
     </div>
     <div class="grid w-full grid-cols-1 gap-4">
+      <template v-if="filteredEvents.length === 0">
+        <div
+          class="py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col items-center justify-center"
+        >
+          <p class="text-[#3F3F3F] text-[18px] leading-[18px] font-bold">
+            لا توجد نتائج
+          </p>
+        </div>
+      </template>
       <div
-        v-for="item in events"
+        v-else
+        v-for="item in filteredEvents"
         :key="item.id"
-        class="py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F8] cursor-pointer"
+        class="group py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F8] cursor-pointer"
       >
         <div class="flex items-center">
           <div
-            class="px-2 py-4 ml-4 text-center rounded-lg"
+            class="px-2 py-4 ml-4 text-center rounded-lg w-[72px] h-[79px]"
             :class="[item.status]"
           >
-            <p class="text-[28px] leading-[26px]">{{ item.day }}</p>
-            <p class="text-[16px] leading-[18px]">{{ item.month }}</p>
+            <p class="text-[28px] leading-[26px]">
+              {{ item.day }}
+            </p>
+            <p class="text-[16px] leading-[18px]">
+              {{ item.month }}
+            </p>
           </div>
           <div class="flex flex-col items-start justify-center space-y-3">
             <p class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold">
@@ -85,137 +95,173 @@
                 :class="[
                   item.status === 'upcoming'
                     ? 'text-[#158456]'
-                    : 'text-[#912018]',
+                    : 'text-[#FF3A46]',
                 ]"
                 >{{
-                  item.status === "upcoming" ? " (قادمة)" : " (أنتهت)"
+                  item.status === "upcoming" ? " (قادمة)" : " (انتهت)"
                 }}</span
               >
             </p>
-            <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-              {{ item.desc }}
-            </p>
+            <div
+              class="text-[#3F3F3F] text-[16px] leading-[18px]"
+              v-html="item.desc"
+            />
           </div>
         </div>
         <button
           v-if="item.status === 'upcoming'"
-          class="text-[16px] text-[#307094] hover:underline mt-3 md:mt-0"
+          class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0"
         >
           سجل الآن
         </button>
-        <p v-else class="text-[16px] text-[#FF3A46] mt-3 md:mt-0">
-          التسجيل مغلق
+        <p
+          v-else
+          class="text-[16px] text-[#000] font-medium mt-3 md:mt-0 group-hover:underline"
+        >
+          تفاصيل الفعالية
         </p>
       </div>
     </div>
-    <div class="flex items-center justify-center w-full mt-12">
-      <button
-        class="py-2 px-4 border-[1.5px] border-black rounded-full hover:bg-[#afafaf13] leading-[20px] hover:font-bold"
-      >
-        <p>المزيد</p>
-      </button>
-    </div>
+    <div class="flex items-center justify-center w-full mt-12"></div>
   </div>
 </template>
 
 <script setup>
 import BaseInput from "../components/Base/Input.vue";
+import { useQuery } from "@vue/apollo-composable";
+import gql from "graphql-tag";
+import { LottieAnimation } from "lottie-web-vue";
+import LoadingJson from "../assets/loading.json";
 import { ref } from "vue";
 window.scroll(0, 0);
 
-let events = [
-  {
-    id: 1,
-    title: "كيف اختبر فكرتي؟",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "28",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 2,
-    title: "كيف اختبر فكرتي؟",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "28",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 3,
-    title: "كيف اختبر فكرتي؟",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "28",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 4,
-    title: "كيف اختبر فكرتي؟",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "28",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 5,
-    title: "ورشة ذكاء: انترنت الأشياء في صناعة المستقبل",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "04",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 6,
-    title: "ورشة ذكاء: انترنت الأشياء في صناعة المستقبل",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "04",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 7,
-    title: "ورشة ذكاء: انترنت الأشياء في صناعة المستقبل",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "04",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 8,
-    title: "ورشة ذكاء: انترنت الأشياء في صناعة المستقبل",
-    desc: "ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك قبل اللإطلاق”",
-    day: "04",
-    month: "مارس",
-    status: "upcoming",
-    category: "ورشة عمل",
-  },
-  {
-    id: 9,
-    title: "استشارات للشركات الناشئة",
-    desc: "تبدأ عملية اختيار الفكرة بعد وضع الاساسيات واختبارها مع مجموعة من العملاء بطرق متنوعة ومختلفة....",
-    day: "17",
-    month: "فبراير",
-    status: "ended",
-    category: "دورة تدريبية",
-  },
-];
-
 let selectedTab = ref(0);
+let search = ref("");
+let events = ref([]);
+let filteredEvents = ref([]);
+
 function changeTab(newTab) {
   selectedTab.value = newTab;
+  filterEvents(); // filter events after changing tab
 }
 
-let search = ref("");
-function searchArticles() {
-  console.log("PERFORM SEARCH", search.value);
+function searchEvents() {
+  filterEvents(); // filter events after a search is done
 }
+
+const { result, onError, onResult, refetch, loading } = useQuery(
+  gql`
+    query getAllWorkshops {
+      getAllWorkshops {
+        id
+        title
+        description
+        meeting_type
+        meeting_location
+        duration
+        instructor_name
+        instructor_email
+        instructor_bio
+        thumbnail
+        video_src
+        video_id
+        category {
+          id
+          name
+        }
+        start_at
+        end_at
+        created_at
+        updated_at
+      }
+    }
+  `,
+
+  {
+    fetchPolicy: "no-cache",
+  }
+);
+
+onError((error) => {
+  console.log(error.message);
+});
+onResult(({ data, errors }) => {
+  if (errors) {
+    console.error(errors);
+    return;
+  }
+  let loading = ref(true);
+
+  if (data?.getAllWorkshops) {
+    // update current page and hasMorePages
+    events.value = data.getAllWorkshops.map((event) => {
+      return {
+        id: event.id,
+        title: event.title,
+        desc: event.description,
+        day: getDay(event.start_at),
+        month: getMonthArabic(event.start_at),
+        status: getStatus(event.start_at),
+        category: event.category.name,
+      };
+    });
+    filterEvents(); // filter events initially after fetching
+  } else {
+    console.warn("Unexpected data structure:", data);
+  }
+});
+function filterEvents() {
+  let status;
+  if (selectedTab.value === 1) status = "upcoming";
+  else if (selectedTab.value === 2) status = "ended";
+
+  filteredEvents.value = events.value.filter(
+    (event) =>
+      (!status || event.status === status) &&
+      (!search.value ||
+        event.title.toLowerCase().includes(search.value.toLowerCase()))
+  );
+}
+
+function updateSearch(event) {
+  search.value = event.target.value;
+}
+
+const getDay = (date) => {
+  // return day as number
+  return new Date(date).getDate();
+};
+
+const getMonthArabic = (date) => {
+  // return month as arabic
+  const month = new Date(date).getMonth();
+  const months = [
+    "يناير",
+    "فبراير",
+    "مارس",
+    "ابريل",
+    "مايو",
+    "يونيو",
+    "يوليو",
+    "اغسطس",
+    "سبتمبر",
+    "اكتوبر",
+    "نوفمبر",
+    "ديسمبر",
+  ];
+  return months[month];
+};
+
+const getStatus = (date) => {
+  const today = new Date();
+  const eventDate = new Date(date);
+
+  if (eventDate > today) {
+    return "upcoming";
+  } else {
+    return "ended";
+  }
+};
 </script>
 
 <style scoped>
