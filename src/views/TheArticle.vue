@@ -1,6 +1,7 @@
 <template>
   <!-- SECTION 5 -->
   <div
+    v-if="!loading1"
     class="flex flex-col justify-start flex-1 p-8 mx-auto ] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
   >
     <div class="flex flex-col items-start justify-between w-full mb-6">
@@ -138,12 +139,30 @@
       </div>
     </div>
   </div>
+
+  <div v-else class="flex w-full justify-center items-center min-h-[500px]">
+    <LottieAnimation
+      style="width: 150px; height: 150px"
+      ref="anim"
+      :animation-data="LoadingJson"
+      :loop="true"
+      :auto-play="true"
+      :speed="1"
+      @loopComplete="loopComplete"
+      @complete="complete"
+      @enterFrame="enterFrame"
+      @segmentStart="segmentStart"
+      @stopped="stopped"
+    />
+  </div>
 </template>
 
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 import { ref } from "vue";
+import { LottieAnimation } from "lottie-web-vue";
+import LoadingJson from "../assets/loading.json";
 
 window.scroll(0, 0);
 import { useRoute } from "vue-router";
