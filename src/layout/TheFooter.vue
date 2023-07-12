@@ -9,59 +9,54 @@
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
-            <h2 class="mb-3 text-white font-medium">خدماتنا</h2>
             <ul class="text-white font-light">
               <li class="mb-3">
                 <a
-                  href="https://monshaat.gov.sa/all-services-page"
-                  class="hover:text-white hover:underline"
-                  >خدمات منشآت</a
-                >
-              </li>
-              <li class="mb-3">
-                <a
                   href="https://www.thakaa.sa/"
+                  target="_blank"
                   class="hover:text-white hover:underline"
                   >مركز ذكاء</a
                 >
               </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-3 text-white font-medium">مراجع</h2>
-            <ul class="text-white font-light">
               <li class="mb-3">
                 <a
-                  href="https://fikra.qewamx.com/#:~:text=%D9%85%D8%B1%D8%A7%D8%AC%D8%B9-,%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7%20%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D9%83%D8%A7%D9%85,-%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9"
+                  href="https://swic.sa/"
+                  target="_blank"
                   class="hover:text-white hover:underline"
-                  >الشروط والاحكام</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.monshaat.gov.sa/policy"
-                  class="hover:text-white hover:underline"
-                  >سياسة الخصوصية</a
+                  >مركز مياه</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h2 class="mb-3 text-white font-medium">عامة</h2>
             <ul class="text-white font-light">
               <li class="mb-3">
                 <a
+                  target="_blank"
                   href="https://monshaat.gov.sa/about"
                   class="hover:text-white hover:underline"
-                  >عن منشآت</a
-                >
+                  >عن منشآت
+                </a>
               </li>
               <li>
                 <a
+                  target="_blank"
+                  href="https://monshaat.gov.sa/all-services-page"
+                  class="hover:text-white hover:underline"
+                  >خدمات منشآت
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="text-white font-light">
+              <li class="mb-3">
+                <a
+                  target="_blank"
                   href="https://monshaat.gov.sa/media-center"
                   class="hover:text-white hover:underline"
-                  >المركز الإعلامي</a
-                >
+                  >المركز الإعلامي
+                </a>
               </li>
             </ul>
           </div>
@@ -99,3 +94,9 @@
     </div>
   </footer>
 </template>
+<style scoped>
+a:hover,
+line:hover {
+  color: #fff !important;
+}
+</style>

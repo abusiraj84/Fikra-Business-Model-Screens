@@ -66,7 +66,8 @@
           </p>
         </div>
       </template>
-      <div
+      <router-link
+        :to="`/events/${item.id}`"
         v-else
         v-for="item in filteredEvents"
         :key="item.id"
@@ -97,10 +98,9 @@
                     ? 'text-[#158456]'
                     : 'text-[#FF3A46]',
                 ]"
-                >{{
-                  item.status === "upcoming" ? " (قادمة)" : " (انتهت)"
-                }}</span
               >
+                {{ item.status === "upcoming" ? item.duration : "( انتهت )" }}
+              </span>
             </p>
             <div
               class="text-[#3F3F3F] text-[16px] leading-[18px]"
@@ -120,7 +120,7 @@
         >
           تفاصيل الفعالية
         </p>
-      </div>
+      </router-link>
     </div>
     <div class="flex items-center justify-center w-full mt-12"></div>
   </div>
@@ -203,6 +203,7 @@ onResult(({ data, errors }) => {
         month: getMonthArabic(event.start_at),
         status: getStatus(event.start_at),
         category: event.category.name,
+        duration: durationSecToMin(event.duration),
       };
     });
     filterEvents(); // filter events initially after fetching
@@ -261,6 +262,12 @@ const getStatus = (date) => {
   } else {
     return "ended";
   }
+};
+
+const durationSecToMin = (duration) => {
+  const minutes = Math.floor(duration / 60);
+  const seconds = duration - minutes * 60;
+  return ` (${minutes} ساعات)`;
 };
 </script>
 
