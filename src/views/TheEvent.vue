@@ -81,13 +81,13 @@
               </p>
               <div
                 class="text-[#3F3F3F] text-[16px] leading-[18px]"
-                v-html="item.desc"
+                v-html="truncateString2(item.desc, 140)"
               />
             </div>
           </div>
           <button
             v-if="item.status === 'upcoming'"
-            class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0"
+            class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0 whitespace-nowrap"
           >
             سجل الآن
           </button>
@@ -132,6 +132,9 @@ let filteredEvents = ref([]);
 
 function truncateString(str) {
   return str.length > 80 ? str.slice(0, 80) + "..." : str;
+}
+function truncateString2(str, num) {
+  return str.length > num ? str.slice(0, num) + "..." : str;
 }
 
 // First Query
