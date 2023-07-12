@@ -20,7 +20,7 @@ import App from "./App.vue";
 import router from "./router";
 
 const httpLink = createHttpLink({
-  uri: "https://dev-fikra-api.qewamx.com/graphql",
+  uri: import.meta.env.VITE_GRAPHQL_URL,
 });
 const cache = new InMemoryCache();
 const apolloClient = new ApolloClient({
