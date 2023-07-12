@@ -125,7 +125,6 @@ const pushToPage = async (id) => {
 
 let workshopId = route.params.id;
 let currentEventId = ref(route.params.id);
-console.log("currentEventId", currentEventId.value);
 const event = ref({});
 const categoryID = ref(0);
 let events = ref([]);
@@ -183,7 +182,6 @@ onResult1(async ({ data, errors }) => {
   if (data?.getWorkshopDetails) {
     event.value = await data.getWorkshopDetails;
     categoryID.value = await data.getWorkshopDetails.category?.id;
-    console.log(categoryID.value, "category");
   } else {
     console.warn("Unexpected data structure:", data);
   }
@@ -262,17 +260,12 @@ onResult2(({ data, errors }) => {
 function relatedEvents() {
   // category
 
-  console.log({
-    catID: event.categoryID,
-    categoryID: categoryID.value,
-  });
   if (categoryID.value !== 0) {
     filteredEvents.value = events.value.filter(
       (event) =>
         event.categoryID === categoryID.value &&
         event.id.toString() !== currentEventId.value
     );
-    console.log(filteredEvents.value, "filteredEvents" + categoryID.value);
   } else {
     filteredEvents.value = events.value;
   }

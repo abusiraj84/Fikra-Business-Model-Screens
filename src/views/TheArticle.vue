@@ -241,7 +241,6 @@ onResult1(async ({ data, errors }) => {
   if (data?.getLibraryArticle) {
     article.value = data.getLibraryArticle;
     categoryID.value = data.getLibraryArticle.category?.id;
-    console.log(categoryID.value, "category");
     // manually refetch the second query with the new categoryID value
     await refetch2({
       first: 3,
@@ -331,7 +330,6 @@ onResult2(({ data, errors }) => {
   if (data?.getLibraryArticles) {
     console.log(data.getLibraryArticles, "data");
     articles.value = data.getLibraryArticles.data;
-    console.log(articles.value, "articles");
   } else {
     console.warn("Unexpected data structure:", data);
   }
