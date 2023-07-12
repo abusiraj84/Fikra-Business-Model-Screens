@@ -816,12 +816,13 @@
               هل لديك اهتمام بالاستثمار في الشركات الابتكارية؟ لدينا مجموعة من
               الفرص المتاحة..
             </h3>
-            <button
-              type="button"
+            <a
+              href="https://fikra.sa/project-investment"
+              target="_blank"
               class="px-4 py-2 mx-1 text-center text-white border border-white rounded-full hover:bg-white hover:text-[#2A6490] duration-300"
             >
               المزيد من المعلومات
-            </button>
+            </a>
 
             <div
               v-if="showModal"
