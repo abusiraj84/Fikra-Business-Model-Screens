@@ -48,7 +48,9 @@
           <h3 class="text-[24px] leading-3 font-medium">
             كيف يمكن لمنشأتك الابتكارية أن تشارك؟
           </h3>
-          <ul class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px]">
+          <ul
+            class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px] text-justify"
+          >
             <li>أن يكون مقر المنشأة الرئيسي في المملكة العربية السعودية</li>
             <li>أن يكون للمنشأة سجل تجاري قائم</li>
             <li>
@@ -62,7 +64,9 @@
           <h3 class="text-[24px] leading-3 font-medium">
             أهداف المعرض والجائزة
           </h3>
-          <ul class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px]">
+          <ul
+            class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px] text-justify"
+          >
             <li>
               المساهمة في نمو الاقتصاد الوطني من خلال تشجيع المنشآت الابتكارية
               على النمو و التوسع
@@ -505,7 +509,7 @@
           </div>
           <p
             v-if="openIndex === index"
-            class="text-[16px] leading-[22px] font-extralight w-[75%]"
+            class="text-[16px] leading-[22px] font-extralight w-[85%] text-justify"
           >
             {{ item.answer }}
           </p>

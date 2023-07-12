@@ -31,7 +31,10 @@
         alt="test"
         class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl"
       />
-      <div class="text-[18px] leading-7 mt-6 mb-8" v-html="article.content" />
+      <div
+        class="text-[18px] leading-7 mt-6 mb-8 text-justify"
+        v-html="article.content"
+      />
       <div class="flex flex-col items-start justify-between mb-6">
         <p class="text-[18px] mb-2" v-if="article.files?.length">
           و بالأمان الحصول على ملف التقرير من خلال الضغط أدناه:

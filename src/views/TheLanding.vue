@@ -898,7 +898,7 @@
               </div>
               <p
                 v-if="openIndex === index"
-                class="text-[16px] leading-[22px] font-extralight w-[75%]"
+                class="text-[16px] leading-[22px] font-extralight w-[85%] text-justify"
               >
                 {{ item.answer }}
               </p>
