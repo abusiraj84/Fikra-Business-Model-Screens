@@ -662,135 +662,70 @@
           </div>
           <div class="grid w-full grid-cols-1 gap-4">
             <div
-              class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F7] cursor-pointer"
+              @click="pushToPage(item.id)"
+              v-for="item in filteredEvents.slice(0, 3)"
+              :key="item.id"
+              class="group py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F8] cursor-pointer"
             >
               <div class="flex items-center">
                 <div
-                  class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4"
+                  class="px-2 py-4 ml-4 text-center rounded-lg w-[72px] h-[79px]"
+                  :class="[item.status]"
                 >
-                  <p
-                    class="text-[#158456] text-[28px] leading-[26px] font-extralight"
-                  >
-                    28
+                  <p class="text-[28px] leading-[26px]">
+                    {{ item.day }}
                   </p>
-                  <p
-                    class="text-[#158456] text-[16px] leading-[18px] font-extralight"
-                  >
-                    مارس
+                  <p class="text-[16px] leading-[18px]">
+                    {{ item.month }}
                   </p>
                 </div>
                 <div class="flex flex-col items-start justify-center space-y-3">
                   <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
+                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-bold"
                   >
-                    كيف اختبر فكرتي؟
+                    {{ item.title }}
                   </p>
                   <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    ورشة عمل<span class="text-[#158456] font-light"
-                      >(قادمة)</span
+                    {{ item.category
+                    }}<span
+                      class="text-[#158456]"
+                      :class="[
+                        item.status === 'upcoming'
+                          ? 'text-[#158456]'
+                          : 'text-[#FF3A46]',
+                      ]"
                     >
+                      {{
+                        item.status === "upcoming" ? item.duration : "( انتهت )"
+                      }}
+                    </span>
                   </p>
-                  <p
-                    class="text-[#3F3F3F] text-[16px] leading-[18px] font-normal"
-                  >
-                    ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك
-                    قبل اللإطلاق”
-                  </p>
+                  <div
+                    class="text-[#3F3F3F] text-[16px] leading-[18px]"
+                    v-html="item.desc"
+                  />
                 </div>
               </div>
               <button
-                class="text-[16px] text-[#307094] hover:underline mt-3 md:mt-0"
+                v-if="item.status === 'upcoming'"
+                class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0"
               >
                 سجل الآن
               </button>
-            </div>
-            <div
-              class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F7] cursor-pointer"
-            >
-              <div class="flex items-center">
-                <div
-                  class="bg-[#E1F2E8] border border-[#027A48] text-center py-4 px-2 rounded-lg ml-4"
-                >
-                  <p
-                    class="text-[#158456] text-[28px] leading-[26px] font-extralight"
-                  >
-                    04
-                  </p>
-                  <p
-                    class="text-[#158456] text-[16px] leading-[18px] font-extralight"
-                  >
-                    مارس
-                  </p>
-                </div>
-                <div class="flex flex-col items-start justify-center space-y-3">
-                  <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
-                  >
-                    ورشة ذكاء: انترنت الأشياء في صناعة المستقبل
-                  </p>
-                  <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    ورشة عمل<span class="text-[#158456] font-light"
-                      >(قادمة)</span
-                    >
-                  </p>
-                  <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    ورشة عمل مجانية لمدة ساعة في جدة بعنون “ابحث عن صحة فكرتك
-                    قبل اللإطلاق”
-                  </p>
-                </div>
-              </div>
-              <button
-                class="text-[16px] text-[#307094] hover:underline mt-3 md:mt-0"
+              <p
+                v-else
+                class="text-[16px] text-[#000] font-medium mt-3 md:mt-0 group-hover:underline"
               >
-                سجل الآن
-              </button>
-            </div>
-            <div
-              class="py-5 px-4 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F7] cursor-pointer"
-            >
-              <div class="flex items-center">
-                <div
-                  class="bg-[#FEF3F2] border border-[#FDA29B] text-center py-4 px-2 rounded-lg ml-4"
-                >
-                  <p
-                    class="text-[#912018] text-[28px] leading-[26px] font-light"
-                  >
-                    17
-                  </p>
-                  <p
-                    class="text-[#912018] text-[16px] leading-[18px] font-light"
-                  >
-                    فبراير
-                  </p>
-                </div>
-                <div class="flex flex-col items-start justify-center space-y-3">
-                  <p
-                    class="text-[#3F3F3F] text-[24px] leading-[18px] font-normal"
-                  >
-                    استشارات للشركات الناشئة
-                  </p>
-                  <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    دورة تدريبية<span class="text-[#FF3A46]">(أنتهت)</span>
-                  </p>
-                  <p class="text-[#3F3F3F] text-[16px] leading-[18px]">
-                    تبدأ عملية اختيار الفكرة بعد وضع الاساسيات واختبارها مع
-                    مجموعة من العملاء بطرق متنوعة ومختلفة.
-                  </p>
-                </div>
-              </div>
-              <button
-                class="text-[16px] text-[#FF3A46] hover:underline mt-3 md:mt-0"
-              >
-                التسجيل مغلق
-              </button>
-            </div>
-            <button
-              class="py-5 bg-[#EAECF0] rounded-lg outline outline-[#EAECF0] hover:outline-1 hover:outline-primary"
-            >
-              <p class="text-[16px] text-center w-full text-[#307094]">
-                عرض جميع الفعاليات
+                تفاصيل الفعالية
               </p>
-            </button>
+            </div>
+
+            <router-link
+              to="/events"
+              class="flex items-center justify-center bg-[#F5F5F5] border border-[#EAECF0] rounded-[15px] py-[20px] px-[30px] mt-[10px] cursor-pointer hover:bg-[#EAF1F8]"
+            >
+              عرض جميع الفعاليات
+            </router-link>
           </div>
         </div>
         <!-- SECTION 8 Courasael -->
@@ -980,9 +915,22 @@ import { Carousel, Slide, Navigation } from "vue3-carousel";
 import { ref } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
+import { useRoute, useRouter } from "vue-router";
 
 const showModal = ref(false);
+window.scroll(0, 0);
+const route = useRoute();
+const router = useRouter();
 
+const pushToPage = async (id) => {
+  // router.push({ path: `/events/${id}` });
+  await router.push({ path: `/events/${id}` });
+  await window.scroll(0, 0);
+  await window.location.reload();
+
+  await refetch1();
+  // await refetch2();
+};
 const { result, onError, onResult, refetch, loading } = useQuery(
   gql`
     query getLibraryArticles(
@@ -1117,4 +1065,148 @@ function formatDate(date) {
   let year = d.getFullYear();
   return `${day} ${month} ${year}`;
 }
+const categoryID = ref(0);
+
+let events = ref([]);
+let filteredEvents = ref([]);
+const {
+  onError: onError2,
+  onResult: onResult2,
+  loading: loading2,
+  refetch: refetch2,
+} = useQuery(
+  gql`
+    query getAllWorkshops {
+      getAllWorkshops {
+        id
+        title
+        description
+        meeting_type
+        meeting_location
+        duration
+        instructor_name
+        instructor_email
+        instructor_bio
+        thumbnail
+        video_src
+        video_id
+        category {
+          id
+          name
+        }
+        start_at
+        end_at
+        created_at
+        updated_at
+      }
+    }
+  `,
+
+  {
+    fetchPolicy: "no-cache",
+  }
+);
+onError2((error) => {
+  console.log(error.message);
+});
+onResult2(({ data, errors }) => {
+  if (errors) {
+    console.error(errors);
+    return;
+  }
+  let loading = ref(true);
+
+  if (data?.getAllWorkshops) {
+    // update current page and hasMorePages
+    events.value = data.getAllWorkshops.map((event) => {
+      return {
+        id: event.id,
+        title: event.title,
+        desc: event.description,
+        day: getDay(event.start_at),
+        month: getMonthArabic(event.start_at),
+        status: getStatus(event.start_at),
+        category: event.category.name,
+        categoryID: event.category.id,
+        duration: durationSecToMin(event.duration),
+      };
+    });
+    relatedEvents(); // filter events initially after fetching
+  } else {
+    console.warn("Unexpected data structure:", data);
+  }
+});
+
+function relatedEvents() {
+  // category
+  if (categoryID.value !== 0) {
+    filteredEvents.value = events.value.filter(
+      (event) => event.categoryID === categoryID.value
+    );
+    console.log(filteredEvents.value, "filteredEvents" + categoryID.value);
+  } else {
+    filteredEvents.value = events.value;
+  }
+}
+const getDay = (date) => {
+  // return day as number
+  return new Date(date).getDate();
+};
+
+const getMonthArabic = (date) => {
+  // return month as arabic
+  const month = new Date(date).getMonth();
+  const months = [
+    "يناير",
+    "فبراير",
+    "مارس",
+    "ابريل",
+    "مايو",
+    "يونيو",
+    "يوليو",
+    "اغسطس",
+    "سبتمبر",
+    "اكتوبر",
+    "نوفمبر",
+    "ديسمبر",
+  ];
+  return months[month];
+};
+
+const getStatus = (date) => {
+  const today = new Date();
+  const eventDate = new Date(date);
+
+  if (eventDate > today) {
+    return "upcoming";
+  } else {
+    return "ended";
+  }
+};
+
+const durationSecToMin = (duration) => {
+  const minutes = Math.floor(duration / 60);
+  const seconds = duration - minutes * 60;
+  return ` (${minutes} ساعات)`;
+};
+
+function formatDate2(date) {
+  let d = new Date(date);
+  let month = d.toLocaleString("ar-EG", { month: "long" });
+  let day = d.getDate();
+  let year = d.getFullYear();
+  return `${day} ${month} ${year}`;
+}
 </script>
+<style scoped>
+.upcoming {
+  background-color: #e1f2e8;
+  border: 1px solid #027a48;
+  color: #158456;
+}
+.ended {
+  background-color: #fef3f2;
+  border: 1px solid #fda29b;
+  color: #912018;
+}
+</style>
