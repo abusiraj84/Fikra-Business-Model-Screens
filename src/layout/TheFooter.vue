@@ -3,9 +3,9 @@
     <div class="mx-auto w-full max-w-[1200px] py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-          <a href="https://flowbite.com/" class="flex items-center">
+          <router-link to="/" class="flex items-center">
             <img src="../assets/img/logo_white.svg" class="h-20" alt="Logo" />
-          </a>
+          </router-link>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>

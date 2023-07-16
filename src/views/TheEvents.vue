@@ -99,7 +99,7 @@
                     : 'text-[#FF3A46]',
                 ]"
               >
-                {{ item.status === "upcoming" ? item.duration : "( انتهت )" }}
+                {{ item.status === "upcoming" ? item.duration : " (انتهت)" }}
               </span>
             </p>
             <div

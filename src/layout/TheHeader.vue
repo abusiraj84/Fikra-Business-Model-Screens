@@ -1,9 +1,9 @@
 <template>
   <header class="header">
     <nav class="flex items-center justify-between w-full">
-      <div class="logo">
+      <RouterLink to="/" class="logo">
         <img src="../assets/img/logo.svg" class="h-16" />
-      </div>
+      </RouterLink>
       <div>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">&#9776;</label>

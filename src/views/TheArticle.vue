@@ -8,8 +8,8 @@
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">
         {{ article.title }}
       </h3>
-      <div class="flex items-center">
-        <div class="flex items-start justify-center ml-12">
+      <div class="flex items-center gap-x-[50px]">
+        <div class="flex items-start justify-center">
           <img
             src="../assets/img/calendar.svg"
             alt="Calendar"
@@ -24,13 +24,14 @@
             {{ article.category?.name }}
           </p>
         </div>
+        <ShareSocial :title="article?.title" :image="article.featured_image" />
       </div>
     </div>
     <div class="flex flex-col items-start justify-between w-full mb-6">
       <img
         :src="article.featured_image"
         alt="test"
-        class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl"
+        class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl md:max-h-[246px]"
       />
       <div
         class="text-[18px] leading-7 mt-6 mb-8 text-justify"
@@ -38,7 +39,7 @@
       />
       <div class="flex flex-col items-start justify-between mb-6">
         <p class="text-[18px] mb-2" v-if="article.files?.length">
-          و بالأمان الحصول على ملف التقرير من خلال الضغط أدناه:
+          يمكنك الحصول على ملف المقال من خلال الضغط أدناه:
         </p>
         <a
           :href="file.url"
@@ -99,9 +100,9 @@
       </h3>
 
       <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
-        <router-link
-          :to="`/article/${item.id}`"
-          class="relative hover:bg-[#EAF1F7] cursor-pointer group transition-all overflow-hidden rounded-lg"
+        <a
+          :href="`/article/${item.id}`"
+          class="relative hover:bg-[#EAF1F7] cursor-pointer group transition-all overflow-hidden rounded-lg border border-[#EAECF0]"
           v-for="item in articles"
           :key="item.id"
         >
@@ -114,28 +115,30 @@
             <img
               :src="item.featured_image"
               :alt="item.title"
-              class="rounded-t-lg group-hover:scale-110 transition-all duration-300 group-hover:saturate-150 w-full"
+              class="rounded-t-lg group-hover:scale-110 transition-all duration-300 group-hover:saturate-150 w-full max-h-[213px]"
             />
           </div>
-          <div class="border rounded-b-lg border-[#EAECF0] p-4 text-right">
-            <p class="text-[22px] leading-[26px] text-[#042925] mb-1">
-              {{ item.title }}
-            </p>
-            <p class="text-[16px] leading-[22px] mb-7">
-              {{ truncateString(item.description) }}
-            </p>
+          <div class="rounded-b-lg p-4 text-right">
+            <div class="h-[80px] mb-4">
+              <p class="text-[22px] leading-[26px] text-[#042925] mb-1">
+                {{ item.title }}
+              </p>
+              <p class="text-[16px] leading-[22px] mb-7">
+                {{ truncateString(item.description) }}
+              </p>
+            </div>
             <div class="flex items-center justify-between">
               <p class="text-[18px] leading-[22px] text-[#00000046]">
                 {{ formatDate(item.created_at) }}
               </p>
               <router-link
                 :to="`/article/${item.id}`"
-                class="text-[16px] leading-[22px] text-primary underline invisible group-hover:visible"
+                class="text-[16px] leading-[22px] text-primary underline lg:invisible group-hover:visible"
                 >قراءة المقال</router-link
               >
             </div>
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
   </div>
@@ -166,6 +169,7 @@ import LoadingJson from "../assets/loading.json";
 
 window.scroll(0, 0);
 import { useRoute } from "vue-router";
+import ShareSocial from "../components/Base/ShareSocial.vue";
 const route = useRoute();
 let articleID = route.params.id;
 

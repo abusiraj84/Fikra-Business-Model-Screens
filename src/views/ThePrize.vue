@@ -24,7 +24,7 @@
         <a
           href="https://fikra-app.qewamx.com/login"
           target="_blank"
-          class="loginBtn mt-[44px] w-fit py-2 px-8 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
+          class="loginBtn mt-[44px] md:w-[280px] w-fit py-2 px-8 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
         >
           تسجيل
         </a>
@@ -43,43 +43,83 @@
       </div>
 
       <!-- 2 blocks -->
-      <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 col-span-6">
-        <div class="px-2">
-          <h3 class="text-[24px] leading-3 font-medium">
+      <div class="w-full bg-[#F5F5F7] rounded-[10px] col-span-12">
+        <div>
+          <h3 class="text-[24px] leading-3 font-medium text-center mt-[32px]">
             كيف يمكن لمنشأتك الابتكارية أن تشارك؟
           </h3>
-          <ul
-            class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px] text-justify"
-          >
-            <li>أن يكون مقر المنشأة الرئيسي في المملكة العربية السعودية</li>
-            <li>أن يكون للمنشأة سجل تجاري قائم</li>
-            <li>
-              أن تكون المنشأة قد استفادت ماليًا من تبني تقنية صاعدة أو ابتكار
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 pb-1 col-span-6">
-        <div class="px-2 mb-5">
-          <h3 class="text-[24px] leading-3 font-medium">
-            أهداف المعرض والجائزة
-          </h3>
-          <ul
-            class="p-3 md:p-4 lg:p-5 space-y-1 list-disc text-[18px] text-justify"
-          >
-            <li>
-              المساهمة في نمو الاقتصاد الوطني من خلال تشجيع المنشآت الابتكارية
-              على النمو و التوسع
-            </li>
-            <li>
-              دعم وتمكين المنشآت الابتكارية السعودية وتسهيل وصولهم للشركاء في
-              منظومة الابتكار
-            </li>
-            <li>
-              نشر ثقافة الابتكار في المملكة وإبراز المنشآت
-              الابتكارية محليًا وعالميً
-            </li>
-          </ul>
+
+          <div class="grid grid-cols-12 gap-[25px] p-8">
+            <!-- 1 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+            >
+              <div
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+              >
+                <img src="/images/saudi-arabia-1.png" alt="" />
+              </div>
+
+              <p class="font-light text-[18px]">
+                أن يكون مقر المنشأة الرئيسي في المملكة العربية السعودية
+              </p>
+            </div>
+            <!-- 2 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+            >
+              <div
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+              >
+                <img src="/images/stamp-1.png" alt="" />
+              </div>
+
+              <p class="font-light text-[18px]">
+                أن يكون للمنشأة سجل تجاري قائم
+              </p>
+            </div>
+            <!-- 3 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+            >
+              <div
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+              >
+                <img src="/images/salary-1.png" alt="" />
+              </div>
+
+              <p class="font-light text-[18px]">
+                أن تكون المنشأة قد استفادت ماليًا من تبني تقنية صاعدة أو ابتكار
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#EEE] p-8 border-t flex items-start w-full">
+            <img
+              src="/images/note-211.svg"
+              alt=""
+              class="translate-y-[-10px] w-[48px] h-[48px] me-4"
+            />
+
+            <div class="ms-4">
+              <h3 class="text-[24px] leading-3 font-medium mb-[8px]">
+                أهداف المعرض والجائزة
+              </h3>
+              <ul class="space-y-1 list-disc text-[18px] text-justify">
+                <li>
+                  المساهمة في نمو الاقتصاد الوطني من خلال تشجيع المنشآت
+                  الابتكارية على النمو و التوسع
+                </li>
+                <li>
+                  دعم وتمكين المنشآت الابتكارية السعودية وتسهيل وصولهم للشركاء
+                  في منظومة الابتكار
+                </li>
+                <li>
+                  نشر ثقافة الابتكار في المملكة وإبراز المنشآت
+                  الابتكارية محليًا وعالميًا
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -87,47 +127,56 @@
     <!-- Sizes -->
 
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
-      <h2 class="text-[24px] font-light text-center mb-[32px]">
-        المنشآت الابتكارية التي
-        <span class="font-normal">يمكنها المشاركة </span>
+      <h2 class="text-[24px] font-medium text-center mb-[32px]">
+        المنشآت الابتكارية التي يمكنها المشاركة
       </h2>
 
       <div class="grid grid-cols-12 gap-[25px]">
         <!-- xs -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
-          <img src="/images/xsCompanies.png" alt="" class="mb-5 w rounded-lg" />
+        <div
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+        >
+          <div
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+          >
+            <img src="/images/icons-8-connected-people-1.svg" alt="" />
+          </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">
             منشآت متناهية الصغر
           </h3>
           <p class="font-light">
-            حيث يكون عدد موظفيها الأساسيين – دوام كامل- من 1 إلى 5 وألّا تتجاوز
-            إيراداتها 3 مليون ريال سعودي
+            موظفون بدوام كامل من 1 إلى 5 أشخاص مع إيرادات من صفر إلى 3 مليون
+            ريال سعودي
           </p>
         </div>
         <!-- small -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
-          <img
-            src="/images/smaalCompanies.png"
-            alt=""
-            class="mb-5 rounded-lg"
-          />
+        <div
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+        >
+          <div
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+          >
+            <img src="/images/people-1.svg" alt="" />
+          </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">منشآت صغيرة</h3>
           <p class="font-light">
-            حيث يكون عدد موظفيها الأساسيين – دوام كامل- من 6 إلى 49 و إيراداتها
-            بين 3 إلى 40 مليون ريال سعودي
+            موظفون بدوام كامل من 6 إلى 49 شخص مع إيرادات من 3 إلى 40 مليون ريال
+            سعودي
           </p>
         </div>
         <!-- medium -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
-          <img
-            src="/images/mediumCompanies.png"
-            alt=""
-            class="mb-5 rounded-lg"
-          />
+        <div
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+        >
+          <div
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+          >
+            <img src="/images/icons-8-new-company-1.svg" alt="" />
+          </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">منشآت متوسطة</h3>
           <p class="font-light">
-            حيث يكون عدد موظفيها الأساسيين – دوام كامل- من 50 إلى 249 و
-            إيراداتها بين 40 إلى 200 مليون ريال سعودي
+            موظفون بدوام كامل من 50 إلى 249 شخص مع إيرادات من 40 إلى 200 مليون
+            ريال سعودي
           </p>
         </div>
       </div>
@@ -137,38 +186,51 @@
 
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
       <h2 class="text-[24px] font-medium text-center mb-[32px]">
-        مزايا المنشآت الفائزة بجائزة ابتكر
+        المزايا المقدمة للمنشآت الفائزة
       </h2>
 
       <div class="grid grid-cols-12 gap-[25px]">
         <!-- 1 -->
-        <div class="col-span-3 bg-white rounded-2xl p-8 text-center">
-          <img src="/images/xsCompanies.png" alt="" class="mb-5 rounded-lg" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">تمييز وطني</h3>
+        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
+          <img
+            src="/images/rectangle-3243.png"
+            alt=""
+            class="mb-5 rounded-lg"
+          />
+          <h3
+            class="text-[22px] font-medium text-[#2A6490] min-h-[52px] leading-[26px] mb-2"
+          >
+            تمييز وطني
+          </h3>
           <p class="font-light">
             الدعاية الإعلامية للمنشأة بكونها ضمن المنشآت الأكثر ابتكارًا في
             السعودية للعام.
           </p>
         </div>
         <!-- 2 -->
-        <div class="col-span-3 bg-white rounded-2xl p-8 text-center">
+        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
           <img src="/images/xsCompanies.png" alt="" class="mb-5 rounded-lg" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">
-            التأهيل لمسابقة كأس العالم لريادة الأعمال
+          <h3
+            class="text-[22px] font-medium text-[#2A6490] min-h-[52px] leading-[26px] mb-2"
+          >
+            التأهيل لمسابقة كأس العالم<br />
+            لريادة الأعمال
           </h3>
           <p class="font-light">
-            حيث يكون عدد موظفيها الأساسيين – دوام كامل- من 6 إلى 49 و إيراداتها
-            بين 3 إلى 40 مليون ريال سعودي
+            الحصول على فرصة التأهل لتمثيل المملكة<br />
+            العربية السعودية لمسابقة كأس العالم لريادة الأعمال.
           </p>
         </div>
         <!-- 3 -->
-        <div class="col-span-3 bg-white rounded-2xl p-8 text-center">
+        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
           <img
-            src="/images/smaalCompanies.png"
+            src="/images/rectangle-324322.png"
             alt=""
             class="mb-5 rounded-lg"
           />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">
+          <h3
+            class="text-[22px] font-medium text-[#2A6490] min-h-[52px] leading-[26px] mb-2"
+          >
             الوصول للمستثمرين
           </h3>
           <p class="font-light">
@@ -176,31 +238,13 @@
             وملفاتهم الاستثمارية، والوصول للمستثمرين.
           </p>
         </div>
-        <!-- 4 -->
-        <div class="col-span-3 bg-white rounded-2xl p-8 text-center">
-          <img
-            src="/images/mediumCompanies.png"
-            alt=""
-            class="mb-5 rounded-lg"
-          />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">دعم وتدريب</h3>
-          <p class="font-light">
-            معسكر تدريبي للمنشآت السعودية الابتكارية الناشئة يتم من خلاله تقديم
-            عدد من ورش العمل والاستشارات عن طريق نخبة من المدربين والمستشارين
-            بالإضافة لصقل مواهب المنشآت الابتكارية السعودية وإعدادهم على أكمل
-            وجه لتقديم أفضل العروض الاستثمارية أمام لجنة التحكيم النهائية.
-          </p>
-        </div>
       </div>
     </div>
     <!-- Prizes -->
 
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
-      <h2 class="text-[24px] font-light text-center mb-[32px]">
-        المنشآت الابتكارية التي
-        <span class="font-normal"
-          >الفائزة بالنسخ السابقة من جائزة ابتكر السنوية</span
-        >
+      <h2 class="text-[24px] font-medium text-center mb-[32px]">
+        المنشآت الابتكارية الفائزة بالنسخة السابقة
       </h2>
 
       <div class="grid grid-cols-12 gap-[25px]">
@@ -209,10 +253,10 @@
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
           <img src="/images/wateen.png" alt="" class="mb-5 w-[200px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">وتين Wateen</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">وتين - Wateen</h3>
           <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
+            مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين
+            المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل
           </p>
         </div>
         <!-- 2 -->
@@ -226,10 +270,10 @@
               class="mb-5 w-[200px] h-[28.5px]"
             />
           </div>
-          <h3 class="text-[22px] font-medium text-[#2A6490]">CASHIN</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">كاشن - Cashin</h3>
           <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
+            آلية ذكية متكاملة لإدارة المدفوعات والفواتير الإلكترونية ونقاط البيع
+            وتقارير الأعمال بطريقة آمنة ومبتكرة
           </p>
         </div>
         <!-- 3 -->
@@ -237,23 +281,27 @@
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <img src="/images/erq.png" alt="" class="mb-5 w-[148px] h-[112px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">
-            شركة عرق الذهب للمقاولات
+          <h3
+            class="text-[22px] font-medium text-[#2A6490] leading-[26px] mb-2"
+          >
+            شركة عرق الذهب للمقاولات <br />
+            ERQ ELTHAHAB CO
           </h3>
-          <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
-          </p>
+          <p class="font-light">المفهوم الرّاقي للأعمال المعماريّة والمدنية</p>
         </div>
         <!-- 4 -->
         <div
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
-          <img src="/images/queed.png" alt="" class="mb-5 w-[112px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">Queed</h3>
+          <img
+            src="/images/image-43.png"
+            alt=""
+            class="mb-5 mt-[30px] w-[112px]"
+          />
+          <h3 class="text-[22px] font-medium text-[#2A6490]">كيود - Queed</h3>
           <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
+            حلول ذكية لإدارة وتحليل استهلاك الكهرباء في المنازل لتعزيز كفاءة
+            الطاقة والوعي بالاستهلاك
           </p>
         </div>
         <!-- 5 -->
@@ -263,10 +311,11 @@
           <div class="h-[112px] flex justify-center items-center mb-5">
             <img src="/images/algooru.png" alt="" class="mb-5 w-[200px]" />
           </div>
-          <h3 class="text-[22px] font-medium text-[#2A6490]">AlGooru</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">
+            القورو - algooru
+          </h3>
           <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
+            مدرس خصوصي موثوق يمكن أبنك من التفوق والامتياز
           </p>
         </div>
         <!-- 6 -->
@@ -274,10 +323,11 @@
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <img src="/images/whelmet.png" alt="" class="mb-5 w-[149px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">WhiteHelemt</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490]">
+            وايتهلمت - White Helmet
+          </h3>
           <p class="font-light">
-            التطبيق المعتمد من وزارة الصحة السعودية للتبرع بالدم مميزات وتين: -
-            يعلمك متى تكون مؤهل للتبرع بالدم
+            كل ما تحتاجه لتبدأ متابعة وتوثيق مراحل البناء رقمياً
           </p>
         </div>
       </div>
@@ -285,7 +335,9 @@
     <!-- Jories -->
 
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
-      <h2 class="text-[24px] font-light text-center mb-[32px]">لجنة التحكيم</h2>
+      <h2 class="text-[24px] font-light text-center mb-[32px]">
+        أبرز أعضاء لجنة التحكيم للنسخة السابقة
+      </h2>
 
       <div class="grid grid-cols-center-3 gap-[25px] justify-center m-auto">
         <!-- 1 -->
@@ -362,6 +414,64 @@
         </div>
       </div>
     </div>
+
+    <!-- stories -->
+
+    <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
+      <h2 class="text-[24px] font-medium text-center mb-[32px]">
+        قصص نجاح المنشآت الابتكارية المشاركة
+      </h2>
+
+      <div class="grid grid-cols-12 gap-[25px]">
+        <!-- 1 -->
+        <div class="col-span-4 bg-white rounded-2xl p-4 text-start">
+          <iframe
+            width="100%"
+            height="155px"
+            src="https://www.youtube.com/embed/BrKHt3WoKBU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="mb-5 rounded-lg"
+          ></iframe>
+
+          <p class="font-normal text-[22px]">تطبيق #يوما | #جائزة_ابتكر2021</p>
+        </div>
+        <!-- 2 -->
+        <div class="col-span-4 bg-white rounded-2xl p-4 text-start">
+          <!-- <img src="/images/xsCompanies.png" alt="" class="mb-5 rounded-lg" /> -->
+
+          <iframe
+            width="100%"
+            height="155px"
+            src="https://www.youtube.com/embed/BrKHt3WoKBU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="mb-5 rounded-lg"
+          ></iframe>
+
+          <p class="font-normal text-[22px]">شركة #ملاءة | #جائزة_ابتكر2021</p>
+        </div>
+        <!-- 3 -->
+        <div class="col-span-4 bg-white rounded-2xl p-4 text-start">
+          <iframe
+            width="100%"
+            height="155px"
+            src="https://www.youtube.com/embed/BrKHt3WoKBU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="mb-5 rounded-lg"
+          ></iframe>
+
+          <p class="font-normal text-[22px]">شركة #IBoat | #جائزة_ابتكر2021</p>
+        </div>
+      </div>
+    </div>
     <!-- Tesrmonials -->
 
     <div class="w-full bg-[#F5F5F7] rounded-[10px] p-8 mb-[48px]">
@@ -393,9 +503,7 @@
             <img src="/images/1.png" alt="" class="w-[47px] rounded-full" />
 
             <div class="flex flex-col justify-start text-start">
-              <h3 class="text-[18px] font-medium text-[#2A6490]">
-                أحمد الجابر
-              </h3>
+              <h3 class="text-[18px] font-medium text-[#2A6490]">سلمى محمد</h3>
               <p class="font-light text-[16px]">
                 المدير التنفيذي لدى وتين Wateen
               </p>
@@ -457,9 +565,7 @@
             <img src="/images/3.png" alt="" class="w-[47px] rounded-full" />
 
             <div class="flex flex-col justify-start text-start">
-              <h3 class="text-[18px] font-medium text-[#2A6490]">
-                أحمد الجابر
-              </h3>
+              <h3 class="text-[18px] font-medium text-[#2A6490]">خالد أحمد</h3>
               <p class="font-light text-[16px]">
                 المدير التنفيذي لدى وتين Wateen
               </p>

@@ -8,22 +8,25 @@
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">
         {{ event.title }}
       </h3>
-      <div class="flex items-center">
-        <div class="flex items-start justify-center ml-12">
+      <div class="flex items-center gap-x-[50px]">
+        <div class="flex items-center justify-center">
           <img
             src="../assets/img/calendar.svg"
             alt="Calendar"
             class="w-6 h-6 ml-2"
           />
-          <p class="text-[20px] text-[#191A1F]">
+          <p
+            class="md:text-[20px] text-[14px] whitespace-nowrap text-[#191A1F]"
+          >
             {{ formatDate(event.start_at) }}
           </p>
         </div>
         <div class="rounded-full bg-[#FABE2C66] py-1 px-2">
-          <p class="text-[16px] text-[#191A1F] px-[8px]">
+          <p class="text-[16px] text-[#191A1F] px-[8px] whitespace-nowrap">
             {{ event.category?.name }}
           </p>
         </div>
+        <ShareSocial :title="event?.title" />
       </div>
     </div>
     <div class="flex flex-col items-start justify-between w-full mb-6">
@@ -77,7 +80,7 @@
                       : 'text-[#FF3A46]',
                   ]"
                 >
-                  {{ item.status === "upcoming" ? item.duration : "( انتهت )" }}
+                  {{ item.status === "upcoming" ? item.duration : " (انتهت)" }}
                 </span>
               </p>
               <div
@@ -88,7 +91,7 @@
           </div>
           <button
             v-if="item.status === 'upcoming'"
-            class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0 whitespace-nowrap"
+            class="text-[16px] text-[#307094] font-medium group-hover:underline mt-3 md:mt-0 whitespace-nowrap float-left"
           >
             سجل الآن
           </button>
@@ -126,6 +129,7 @@ import { watch, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { LottieAnimation } from "lottie-web-vue";
 import LoadingJson from "../assets/loading.json";
+import ShareSocial from "../components/Base/ShareSocial.vue";
 
 window.scroll(0, 0);
 const route = useRoute();

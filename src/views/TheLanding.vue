@@ -664,7 +664,7 @@
           <div class="grid w-full grid-cols-1 gap-4">
             <div
               @click="pushToPage(item.id)"
-              v-for="item in filteredEvents.slice(0, 3)"
+              v-for="item in filteredEvents.slice(0, 5)"
               :key="item.id"
               class="group py-5 px-6 bg-white rounded-lg border border-[#EAECF0] flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-[#EAF1F8] cursor-pointer"
             >
@@ -697,7 +697,7 @@
                       ]"
                     >
                       {{
-                        item.status === "upcoming" ? item.duration : "( انتهت )"
+                        item.status === "upcoming" ? item.duration : " (انتهت)"
                       }}
                     </span>
                   </p>
@@ -762,7 +762,7 @@
             <Slide v-for="item in carouselItems" :key="item.title">
               <router-link
                 :to="`/article/${item.id}`"
-                class="carousel__item hover:bg-[#EAF1F7] cursor-pointer group transition-all overflow-hidden rounded-lg"
+                class="carousel__item hover:bg-[#EAF1F7] cursor-pointer group transition-all overflow-hidden rounded-lg border border-[#EAECF0] w-full"
               >
                 <div class="relative">
                   <div
@@ -773,24 +773,24 @@
                   <img
                     :src="item.featured_image"
                     :alt="item.title"
-                    class="rounded-t-lg"
+                    class="rounded-t-lg w-full max-h-[372px] md:max-h-[246px]"
                   />
-                  <div
-                    class="border rounded-b-lg border-[#EAECF0] p-4 text-right"
-                  >
-                    <p class="text-[22px] leading-[26px] text-[#042925] mb-1">
-                      {{ item.title }}
-                    </p>
-                    <p class="text-[16px] leading-[22px] mb-7">
-                      {{ truncateString(item.description) }}
-                    </p>
+                  <div class="rounded-b-lg p-4 text-right">
+                    <div class="h-[80px] mb-4">
+                      <p class="text-[22px] leading-[26px] text-[#042925] mb-1">
+                        {{ item.title }}
+                      </p>
+                      <p class="text-[16px] leading-[22px] mb-7">
+                        {{ truncateString(item.description) }}
+                      </p>
+                    </div>
                     <div class="flex items-center justify-between">
                       <p class="text-[18px] leading-[22px] text-[#00000046]">
                         {{ formatDate(item.created_at) }}
                       </p>
                       <router-link
                         :to="`/article/${item.id}`"
-                        class="text-[16px] leading-[22px] text-primary underline invisible group-hover:visible"
+                        class="text-[16px] leading-[22px] text-primary underline lg:invisible group-hover:visible"
                         >قراءة المقال</router-link
                       >
                     </div>
