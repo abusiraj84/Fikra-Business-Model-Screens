@@ -54,7 +54,7 @@
         >
           <p>شارك على</p>
           <img
-            src="../../assets/img/whatsApp.svg"
+            src="../../assets/img/WhatsApp.svg"
             alt="whatsapp"
             class="w-4 me-2"
           />
