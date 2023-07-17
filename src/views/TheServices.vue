@@ -69,9 +69,9 @@
     <div class="bg-[#FCFCFC] p-10">
       <header class="flex justify-between items-center h-[45px]">
         <h2 class="text-[32px] font-medium">خدمة التمويل والاستثمار</h2>
-        <div class="rounded-full px-[20px] py-[10px] leading-4">
+        <!-- <div class="rounded-full px-[20px] py-[10px] leading-4">
           تصفية متقدمة
-        </div>
+        </div> -->
       </header>
       <h2 class="text-[#78787A] text-[18px] mb-10 font-light">
         10 جهات تقدم الخدمة
@@ -105,6 +105,13 @@
               طلب الخدمة
             </div>
           </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-[44px]">
+        <div
+          class="rounded-full border-2 border-[#307094] text-[#307094] px-[20px] py-[10px] leading-4 w-fit font-normal cursor-pointer hover:bg-[#307094] hover:text-white transition-all duration-300"
+        >
+          المزيد
         </div>
       </div>
     </div>
