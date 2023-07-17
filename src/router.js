@@ -8,6 +8,7 @@ import TheArticle from "./views/TheArticle.vue";
 import ThePrize from "./views/ThePrize.vue";
 import TheEvents from "./views/TheEvents.vue";
 import TheEvent from "./views/TheEvent.vue";
+import TheServices from "./views/TheServices.vue";
 import test from "./views/test.vue";
 
 const router = createRouter({
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: "/article", children: [{ path: ":id", component: TheArticle }] },
     { path: "/prize", component: ThePrize },
     { path: "/events", component: TheEvents },
+    { path: "/services", component: TheServices },
     {
       path: "/events",
       children: [{ path: ":id", component: TheEvent, props: true }],

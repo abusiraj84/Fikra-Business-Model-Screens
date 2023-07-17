@@ -303,7 +303,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/training_icon.svg"
                   class="w-[36px] h-[36px] ml-1 group-hover:text-white"
@@ -331,7 +331,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/checkboard.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -359,7 +359,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/ruler.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -387,7 +387,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/tv_input.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -415,7 +415,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/training_icon.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -443,7 +443,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/checkboard.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -471,7 +471,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/ruler.svg"
                   class="w-[36px] h-[36px] ml-1"
@@ -499,7 +499,7 @@
               >
                 10 جهات
               </p>
-              <div class="flex items-start">
+              <div class="flex items-start gap-2">
                 <img
                   src="../assets/img/tv_input.svg"
                   class="w-[36px] h-[36px] ml-1"

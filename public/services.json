@@ -1,0 +1,58 @@
+[
+    {
+        "title": "10 جهات",
+        "subtitle": "التدريب",
+        "description": "يهدف اكتساب مهارات لبناء فكرتك",
+        "imgUrl": "images/training_icon.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "دراسة السوق",
+        "description": "اكتشاف الفرص والاحتياجات لفكرتك",
+        "imgUrl": "images/checkboard.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "اختبار الافكار",
+        "description": "ابحث عن صحة فكرتك قبل الإطلاق",
+        "imgUrl": "images/ruler.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "التصميم والتنفيذ",
+        "description": "طور وابدأ بعملية اختبار فكرتك",
+        "imgUrl": "images/tv_input.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "التدريب",
+        "description": "يهدف اكتساب مهارات لبناء فكرتك",
+        "imgUrl": "images/training_icon.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "دراسة السوق",
+        "description": "اكتشاف الفرص والاحتياجات لفكرتك",
+        "imgUrl": "images/checkboard.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "اختبار الافكار",
+        "description": "ابحث عن صحة فكرتك قبل الإطلاق",
+        "imgUrl": "images/ruler.svg",
+        "selected": false
+    },
+    {
+        "title": "10 جهات",
+        "subtitle": "التصميم والتنفيذ",
+        "description": "طور وابدأ بعملية اختبار فكرتك",
+        "imgUrl": "images/tv_input.svg",
+        "selected": false
+    }
+]
