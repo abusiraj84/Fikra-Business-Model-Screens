@@ -8,7 +8,7 @@
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">
         {{ event.title }}
       </h3>
-      <div class="flex items-center gap-x-[50px]">
+      <div class="flex flex-wrap items-center gap-x-[50px] gap-y-2">
         <div class="flex items-center justify-center">
           <img
             src="../assets/img/calendar.svg"

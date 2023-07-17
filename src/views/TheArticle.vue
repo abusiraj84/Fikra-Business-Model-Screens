@@ -8,19 +8,21 @@
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">
         {{ article.title }}
       </h3>
-      <div class="flex items-center gap-x-[50px]">
+      <div class="flex flex-wrap items-center gap-x-[50px] gap-y-2">
         <div class="flex items-start justify-center">
           <img
             src="../assets/img/calendar.svg"
             alt="Calendar"
             class="w-6 h-6 ml-2"
           />
-          <p class="text-[20px] text-[#191A1F]">
+          <p
+            class="md:text-[20px] text-[14px] whitespace-nowrap text-[#191A1F]"
+          >
             {{ formatDate(article.created_at) }}
           </p>
         </div>
         <div class="rounded-full bg-[#FABE2C66] py-1 px-2">
-          <p class="text-[16px] text-[#191A1F] px-[8px]">
+          <p class="text-[16px] text-[#191A1F] px-[8px] whitespace-nowrap">
             {{ article.category?.name }}
           </p>
         </div>

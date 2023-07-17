@@ -8,7 +8,7 @@
         class="flex flex-col items-start justify-between w-full mb-6 lg:col-span-6 md:col-span-12 col-span-12"
       >
         <h3
-          class="text-[22px] md:text-[50px] font-medium leading-9 text-[#042925] mb-5"
+          class="text-[22px] md:text-[50px] font-medium leading-9 text-[#042925] mb-5 whitespace-nowrap"
         >
           جائزة ابتكر
         </h3>
