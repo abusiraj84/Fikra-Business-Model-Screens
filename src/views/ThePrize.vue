@@ -3,9 +3,9 @@
     class="flex flex-col justify-start flex-1 p-8 mx-auto max-w-[1200px] z-10 bg-white rounded-[10px] mt-4 mb-20"
   >
     <!-- Hero -->
-    <div class="grid grid-cols-12 gap-x-[30px] gap-y-[48px] mb-[48px]">
+    <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px] w-full">
       <div
-        class="flex flex-col items-start justify-between w-full mb-6 col-span-6"
+        class="flex flex-col items-start justify-between w-full mb-6 lg:col-span-6 md:col-span-12 col-span-12"
       >
         <h3
           class="text-[22px] md:text-[50px] font-medium leading-9 text-[#042925] mb-5"
@@ -30,7 +30,7 @@
         </a>
       </div>
       <!-- Video -->
-      <div class="col-span-6 w-full">
+      <div class="w-full lg:col-span-6 md:col-span-12 col-span-12">
         <iframe
           width="100%"
           height="315"
@@ -39,20 +39,23 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          class="h-[200px] xl:h-[315px] md:h-[400px] rounded-[10px]"
         ></iframe>
       </div>
 
       <!-- 2 blocks -->
       <div class="w-full bg-[#F5F5F7] rounded-[10px] col-span-12">
         <div>
-          <h3 class="text-[24px] leading-3 font-medium text-center mt-[32px]">
+          <h3
+            class="text-[24px] md:leading-3 font-medium text-center mt-[32px] md:px-2"
+          >
             كيف يمكن لمنشأتك الابتكارية أن تشارك؟
           </h3>
 
-          <div class="grid grid-cols-12 gap-[25px] p-8">
+          <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px] p-8">
             <!-- 1 -->
             <div
-              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+              class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
                 class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
@@ -66,7 +69,7 @@
             </div>
             <!-- 2 -->
             <div
-              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+              class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
                 class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
@@ -80,7 +83,7 @@
             </div>
             <!-- 3 -->
             <div
-              class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+              class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
                 class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
@@ -101,10 +104,10 @@
             />
 
             <div class="ms-4">
-              <h3 class="text-[24px] leading-3 font-medium mb-[8px]">
+              <h3 class="text-[24px] md:leading-3 font-medium mb-[8px]">
                 أهداف المعرض والجائزة
               </h3>
-              <ul class="space-y-1 list-disc text-[18px] text-justify">
+              <ul class="space-y-1 list-disc text-[18px] md:text-justify">
                 <li>
                   المساهمة في نمو الاقتصاد الوطني من خلال تشجيع المنشآت
                   الابتكارية على النمو و التوسع
@@ -131,10 +134,10 @@
         المنشآت الابتكارية التي يمكنها المشاركة
       </h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px] w-full">
         <!-- xs -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
             class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
@@ -151,7 +154,7 @@
         </div>
         <!-- small -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
             class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
@@ -166,7 +169,7 @@
         </div>
         <!-- medium -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
+          class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
             class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
@@ -189,9 +192,11 @@
         المزايا المقدمة للمنشآت الفائزة
       </h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px] w-full">
         <!-- 1 -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
+        <div
+          class="lg:col-span-4 md:col-span-12 col-span-12 w-full bg-white rounded-2xl p-8 text-center flex items-center flex-col"
+        >
           <img
             src="/images/rectangle-3243.png"
             alt=""
@@ -208,7 +213,9 @@
           </p>
         </div>
         <!-- 2 -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
+        <div
+          class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex items-center flex-col"
+        >
           <img src="/images/xsCompanies.png" alt="" class="mb-5 rounded-lg" />
           <h3
             class="text-[22px] font-medium text-[#2A6490] min-h-[52px] leading-[26px] mb-2"
@@ -222,7 +229,9 @@
           </p>
         </div>
         <!-- 3 -->
-        <div class="col-span-4 bg-white rounded-2xl p-8 text-center">
+        <div
+          class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex items-center flex-col"
+        >
           <img
             src="/images/rectangle-324322.png"
             alt=""
@@ -247,7 +256,7 @@
         المنشآت الابتكارية الفائزة بالنسخة السابقة
       </h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px]">
         <!-- 1 -->
         <div
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
@@ -339,7 +348,9 @@
         أبرز أعضاء لجنة التحكيم للنسخة السابقة
       </h2>
 
-      <div class="grid grid-cols-center-3 gap-[25px] justify-center m-auto">
+      <div
+        class="md:grid flex flex-col grid-cols-center-3 gap-[25px] justify-center m-auto"
+      >
         <!-- 1 -->
         <div
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
@@ -422,7 +433,7 @@
         قصص نجاح المنشآت الابتكارية المشاركة
       </h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px]">
         <!-- 1 -->
         <div class="col-span-4 bg-white rounded-2xl p-4 text-start">
           <iframe
@@ -479,7 +490,7 @@
         آراء المشاركين
       </h2>
 
-      <div class="grid grid-cols-12 gap-[25px]">
+      <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px]">
         <!-- 1 -->
         <div
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"

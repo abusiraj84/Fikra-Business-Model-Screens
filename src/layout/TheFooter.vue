@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-primary">
-    <div class="mx-auto w-full max-w-[1200px] py-6 lg:py-8">
+    <div class="mx-auto w-full max-w-[1200px] py-6 lg:py-8 px-3 xl:px-0">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <router-link to="/" class="flex items-center">
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-white w-full">
+    <div class="bg-white w-full px-3 xl:px-0">
       <div
         class="w-full max-w-[1200px] flex flex-col items-center justify-between space-y-4 mx-auto md:flex-row md:space-y-0 py-6"
       >

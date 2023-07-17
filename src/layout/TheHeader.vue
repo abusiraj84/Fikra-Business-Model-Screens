@@ -121,6 +121,7 @@ nav {
     top: 80px;
     left: 0;
     width: 100%;
+    height: 433px;
     z-index: 100;
     transform: scale(1, 0);
     transform-origin: top;
@@ -134,7 +135,6 @@ nav {
 
   .menu li {
     margin-bottom: 10px;
-    min-width: 30%;
   }
 
   .menu li:first-child {
