@@ -19,8 +19,12 @@
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB] cursor-pointer transition-all duration-300"
-        :class="{ 'from-[#407ead] to-[#589ed3d5] text-white': card.selected }"
+        class="py-3 px-3 bg-gradient-to-b hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB] cursor-pointer transition-all duration-300"
+        :class="
+          card.selected
+            ? 'from-[#407ead] to-[#589ed3d5] text-white'
+            : 'from-[#BED8ED] to-[#ECF6FF]'
+        "
         @click="selectCard(index)"
       >
         <p
@@ -94,7 +98,6 @@
           v-for="(item, index) in items"
           :key="index"
           class="p-[32px] bg-gradient-to-b bg-[#FFF] hover:bg-[#EAF1F8] group rounded-lg border border-[rgba(120, 120, 122, 0.26)] cursor-pointer transition-all duration-300 min-h-[198px]"
-          :class="{ 'from-[#6abbf9] to-[#295576d5] ': item.selected }"
           @click="selectitem(index)"
         >
           <div class="flex items-start justify-between mb-5 h-[52px]">
