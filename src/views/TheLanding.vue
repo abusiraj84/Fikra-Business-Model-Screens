@@ -293,233 +293,50 @@
               عرض جميع الخدمات
             </RouterLink>
           </div>
+          <!-- List of Services categories -->
           <div
             class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4"
           >
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
+            <RouterLink
+              to="/services"
+              v-for="(card, index) in cards"
+              :key="index"
+              class="py-3 px-3 bg-gradient-to-b hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB] cursor-pointer transition-all duration-300"
+              :class="
+                card.selected && !isShowAllItems
+                  ? 'from-[#407ead] to-[#589ed3d5] text-white'
+                  : 'from-[#BED8ED] to-[#ECF6FF]'
+              "
             >
               <p
                 class="text-[14px] text-left w-full font-extralight group-hover:text-white"
+                :class="{ 'text-white': card.selected && !isShowAllItems }"
               >
-                10 جهات
+                {{ card.title }}
               </p>
               <div class="flex items-start gap-2">
                 <img
-                  src="../assets/img/training_icon.svg"
+                  :src="card.imgUrl"
                   class="w-[36px] h-[36px] ml-1 group-hover:text-white"
-                  alt="Icon"
+                  :class="{ 'text-white': card.selected && !isShowAllItems }"
+                  :alt="card.title"
                 />
                 <div>
                   <p
                     class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                    :class="{ 'text-white': card.selected && !isShowAllItems }"
                   >
-                    التدريب
+                    {{ card.subtitle }}
                   </p>
                   <p
                     class="text-[15px] text-[#78787A] font-light group-hover:text-white"
+                    :class="{ 'text-white': card.selected && !isShowAllItems }"
                   >
-                    يهدف اكتساب مهارات لبناء فكرتك
+                    {{ card.description }}
                   </p>
                 </div>
               </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/checkboard.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    دراسة السوق
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    اكتشاف الفرص والاحتياجات لفكرتك
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/ruler.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    اختبار الافكار
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    ابحث عن صحة فكرتك قبل الإطلاق
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/tv_input.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    التصميم والتنفيذ
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    طور وابدأ بعملية اختبار فكرتك
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/training_icon.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    التدريب
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    يهدف اكتساب مهارات لبناء فكرتك
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/checkboard.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    دراسة السوق
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    اكتشاف الفرص والاحتياجات لفكرتك
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/ruler.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    اختبار الافكار
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-                  >
-                    ابحث عن صحة فكرتك قبل الإطلاق
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB]"
-            >
-              <p
-                class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-              >
-                10 جهات
-              </p>
-              <div class="flex items-start gap-2">
-                <img
-                  src="../assets/img/tv_input.svg"
-                  class="w-[36px] h-[36px] ml-1"
-                  alt="Icon"
-                />
-                <div>
-                  <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-                  >
-                    التصميم والتنفيذ
-                  </p>
-                  <p
-                    class="text-[15px] text-[#78787A] font-ligh group-hover:text-white"
-                  >
-                    طور وابدأ بعملية اختبار فكرتك
-                  </p>
-                </div>
-              </div>
-            </div>
+            </RouterLink>
           </div>
         </div>
         <!-- SECTION 6 -->
@@ -818,8 +635,7 @@
               الفرص المتاحة..
             </h3>
             <a
-              href="https://fikra.sa/project-investment"
-              target="_blank"
+              href="/project-investment"
               class="px-4 py-2 mx-1 text-center text-white border border-white rounded-full hover:bg-white hover:text-[#2A6490] duration-300"
             >
               المزيد من المعلومات
@@ -1220,6 +1036,15 @@ function formatDate2(date) {
   let year = d.getFullYear();
   return `${day} ${month} ${year}`;
 }
+
+let cards = ref([]);
+async function fetchCards() {
+  // Fetch your data from the server and set the cards array
+  // Replace with the actual server call
+  const response = await fetch("/services.json");
+  cards = await response.json();
+}
+fetchCards();
 </script>
 <style scoped>
 .upcoming {

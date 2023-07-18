@@ -8,7 +8,7 @@
         to="/provider-features"
         class="rounded-full border-2 border-black px-[20px] py-[10px] leading-4"
       >
-        هل انت مزود خدمة؟
+        هل أنت مزود خدمة؟
       </router-link>
     </header>
     <h2 class="text-[#78787A] text-[24px] mb-10">
