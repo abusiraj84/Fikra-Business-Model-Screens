@@ -21,7 +21,7 @@
         :key="index"
         class="py-3 px-3 bg-gradient-to-b hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB] cursor-pointer transition-all duration-300"
         :class="
-          card.selected
+          card.selected && !isShowAllItems
             ? 'from-[#407ead] to-[#589ed3d5] text-white'
             : 'from-[#BED8ED] to-[#ECF6FF]'
         "
@@ -29,7 +29,7 @@
       >
         <p
           class="text-[14px] text-left w-full font-extralight group-hover:text-white"
-          :class="{ 'text-white': card.selected }"
+          :class="{ 'text-white': card.selected && !isShowAllItems }"
         >
           {{ card.title }}
         </p>
@@ -37,19 +37,19 @@
           <img
             :src="card.imgUrl"
             class="w-[36px] h-[36px] ml-1 group-hover:text-white"
-            :class="{ 'text-white': card.selected }"
+            :class="{ 'text-white': card.selected && !isShowAllItems }"
             :alt="card.title"
           />
           <div>
             <p
               class="text-[22px] text-[#042925] font-normal group-hover:text-white"
-              :class="{ 'text-white': card.selected }"
+              :class="{ 'text-white': card.selected && !isShowAllItems }"
             >
               {{ card.subtitle }}
             </p>
             <p
               class="text-[15px] text-[#78787A] font-light group-hover:text-white"
-              :class="{ 'text-white': card.selected }"
+              :class="{ 'text-white': card.selected && !isShowAllItems }"
             >
               {{ card.description }}
             </p>
