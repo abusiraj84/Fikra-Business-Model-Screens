@@ -14,13 +14,13 @@
       ماهو تصنيف الخدمة التي ترغب بطلبها؟
     </h2>
 
-    <!-- List of cards -->
+    <!-- List of Services categories -->
     <div class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4">
       <div
         v-for="(card, index) in cards"
         :key="index"
         class="py-3 px-3 bg-gradient-to-b from-[#BED8ED] to-[#ECF6FF] hover:from-[#4882AE] hover:to-[#4882AE] group rounded-lg border border-[#BACDDB] cursor-pointer transition-all duration-300"
-        :class="{ 'from-[#6abbf9] to-[#295576d5] text-white': card.selected }"
+        :class="{ 'from-[#407ead] to-[#589ed3d5] text-white': card.selected }"
         @click="selectCard(index)"
       >
         <p
@@ -54,27 +54,37 @@
       </div>
     </div>
 
-    <!-- <div class="flex items-center justify-center mt-[40px]">
+    <div class="flex items-center justify-center mt-[40px]">
       <div
-        class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light"
+        @click="showAllItems"
+        v-if="!isShowAllItems"
+        class="w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light cursor-pointer"
       >
         عرض جميع الجهات
       </div>
-    </div> -->
+    </div>
 
     <!-- Diveder -->
-    <div class="bg-[#F7F7F7] h-[1px] w-full my-10"></div>
-    <!-- Results -->
+    <div
+      class="bg-[#F7F7F7] h-[1px] w-full my-10"
+      v-if="selectedCard !== null"
+    ></div>
 
-    <div class="bg-[#FCFCFC] p-10">
+    <!-- List of services -->
+
+    <div class="bg-[#FCFCFC] p-10" v-if="selectedCard !== null">
       <header class="flex justify-between items-center h-[45px]">
-        <h2 class="text-[32px] font-medium">خدمة التمويل والاستثمار</h2>
+        <h2 class="text-[32px] font-medium">
+          {{
+            isShowAllItems ? "عرض جميع الخدمات" : cards[selectedCard].subtitle
+          }}
+        </h2>
         <!-- <div class="rounded-full px-[20px] py-[10px] leading-4">
           تصفية متقدمة
         </div> -->
       </header>
       <h2 class="text-[#78787A] text-[18px] mb-10 font-light">
-        10 جهات تقدم الخدمة
+        {{ cards.length }} جهات تقدم الخدمة
       </h2>
       <!-- list of cards -->
       <div
@@ -108,11 +118,11 @@
         </div>
       </div>
       <div class="flex justify-center items-center mt-[44px]">
-        <div
+        <!-- <div
           class="rounded-full border-2 border-[#307094] text-[#307094] px-[20px] py-[10px] leading-4 w-fit font-normal cursor-pointer hover:bg-[#307094] hover:text-white transition-all duration-300"
         >
           المزيد
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -125,11 +135,11 @@ export default {
       cards: [],
       items: [],
       selectedCard: null, // This will hold the index of the selected card
+      isShowAllItems: false,
     };
   },
   created() {
     this.fetchCards();
-    this.fetchItems();
   },
   methods: {
     async fetchCards() {
@@ -140,15 +150,30 @@ export default {
     },
     selectCard(index) {
       // Set selectedCard to the index of the card that was clicked
-      // If the card was already selected, deselect it
-      this.selectedCard = this.selectedCard === index ? null : index;
-      this.cards.forEach((card, i) => {
-        card.selected = i === this.selectedCard;
-      });
+      // If another card was already selected, select the new one
+      if (this.selectedCard !== index) {
+        this.selectedCard = index;
+        this.cards.forEach((card, i) => {
+          card.selected = i === this.selectedCard;
+        });
+        // Fetch items for the selected card
+        this.fetchItemsForCard(this.cards[this.selectedCard].id);
+        this.isShowAllItems = false;
+      }
     },
-
+    async fetchItemsForCard(cardId) {
+      // Fetch your items from the server with the given cardId
+      // Replace with the actual server call
+      const response = await fetch(`/items.json?cardId=${cardId}`);
+      this.items = await response.json();
+    },
+    showAllItems() {
+      this.fetchItems();
+      this.selectedCard = 1;
+      this.isShowAllItems = true;
+    },
     async fetchItems() {
-      // Fetch your data from the server and set the cards array
+      // Fetch your data from the server and set the items array
       // Replace with the actual server call
       const response = await fetch("/items.json");
       this.items = await response.json();
