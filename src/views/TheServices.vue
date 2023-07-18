@@ -4,11 +4,12 @@
   >
     <header class="flex justify-between items-center h-[45px]">
       <h2 class="text-[32px] font-medium">خدمات منظومة الابتكار</h2>
-      <div
+      <router-link
+        to="/provider-features"
         class="rounded-full border-2 border-black px-[20px] py-[10px] leading-4"
       >
         هل انت مزود خدمة؟
-      </div>
+      </router-link>
     </header>
     <h2 class="text-[#78787A] text-[24px] mb-10">
       ماهو تصنيف الخدمة التي ترغب بطلبها؟
@@ -94,11 +95,11 @@
       <div
         class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 gap-y-[23px] gap-x-[20px]"
       >
-        <div
+        <router-link
+          :to="`/service/${item.id}`"
           v-for="(item, index) in items"
           :key="index"
           class="p-[32px] bg-gradient-to-b bg-[#FFF] hover:bg-[#EAF1F8] group rounded-lg border border-[rgba(120, 120, 122, 0.26)] cursor-pointer transition-all duration-300 min-h-[198px]"
-          @click="selectitem(index)"
         >
           <div class="flex items-start justify-between mb-5 h-[52px]">
             <p class="text-[20px] text-[#042925] font-medium">
@@ -118,7 +119,7 @@
               طلب الخدمة
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div class="flex justify-center items-center mt-[44px]">
         <!-- <div

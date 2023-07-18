@@ -1,7 +1,10 @@
 <template>
   <div class="relative inline-block text-left">
     <div class="flex items-center">
-      <button @click="toggleOpen" class="inline-flex justify-center">
+      <button
+        @click="toggleOpen"
+        class="inline-flex justify-center bg-[#FCFCFC] py-1 px-[20px] rounded-[31px]"
+      >
         <img
           src="../../assets/img/share.svg"
           alt="share"

@@ -285,12 +285,13 @@
             <h3 class="text-[36px] md:text-[32px] leading-9 text-[#042925]">
               خدمات منظومة الابتكار
             </h3>
-            <button
+            <RouterLink
+              to="/services"
               type="button"
               class="px-4 py-2 text-center bg-white border rounded-full md:px-6 text-primary border-primary hover:bg-[#EAF1F8]"
             >
               عرض جميع الخدمات
-            </button>
+            </RouterLink>
           </div>
           <div
             class="grid w-full grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4"

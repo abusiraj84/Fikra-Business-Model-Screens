@@ -9,7 +9,11 @@ import ThePrize from "./views/ThePrize.vue";
 import TheEvents from "./views/TheEvents.vue";
 import TheEvent from "./views/TheEvent.vue";
 import TheServices from "./views/TheServices.vue";
-import test from "./views/test.vue";
+import ProviderFeatures from "./views/ProviderFeatures.vue";
+import ServiceForm from "./views/ServiceForm.vue";
+import ServiceFormSuccess from "./views/ServiceFormSuccess.vue";
+import ProjectInvestment from "./views/ProjectInvestment.vue";
+import ServiceDetail from "./views/ServiceDetail.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,14 +23,24 @@ const router = createRouter({
     { path: "/docs", component: TheDocuments },
     { path: "/library", component: TheLibrary },
     { path: "/article", children: [{ path: ":id", component: TheArticle }] },
+
     { path: "/prize", component: ThePrize },
+
     { path: "/events", component: TheEvents },
-    { path: "/services", component: TheServices },
     {
       path: "/events",
       children: [{ path: ":id", component: TheEvent, props: true }],
     },
-    { path: "/test", component: test },
+
+    { path: "/services", component: TheServices },
+    { path: "/service", children: [{ path: ":id", component: ServiceDetail }] },
+
+    { path: "/provider-features", component: ProviderFeatures },
+
+    { path: "/service-form", component: ServiceForm },
+    { path: "/service-form-success", component: ServiceFormSuccess },
+
+    { path: "/project-investment", component: ProjectInvestment },
   ],
 });
 
