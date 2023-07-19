@@ -47,7 +47,7 @@
             </p>
             <img
               :src="item.imgUrl"
-              class="me-2 max-w-[80px]"
+              class="me-2 max-w-[80px] max-h-full"
               :alt="item.title"
             />
           </div>
