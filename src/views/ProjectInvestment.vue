@@ -14,7 +14,7 @@
         class="grid w-full grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 gap-y-[23px] gap-x-[20px]"
       >
         <a
-          href="https://fikra-app.qewamx.com/dashboard/startup/deals"
+          :href="item.url"
           target="_blank"
           v-for="(item, index) in items.slice(0, 9)"
           :key="index"
