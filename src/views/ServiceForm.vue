@@ -48,6 +48,10 @@ export default {
       isShowAllItems: false,
     };
   },
+  mounted() {
+    // Fetch cards and items when the component is mounted
+    window.scroll(0, 0);
+  },
   created() {
     this.fetchCards();
   },
