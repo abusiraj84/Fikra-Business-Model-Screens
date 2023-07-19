@@ -20,11 +20,15 @@
           :key="index"
           class="p-[32px] bg-gradient-to-b bg-[#FFF] hover:bg-[#EAF1F8] group rounded-lg border border-[rgba(120, 120, 122, 0.26)] cursor-pointer transition-all duration-300 min-h-[198px]"
         >
-          <div class="flex items-start justify-between mb-5 h-[52px]">
+          <div class="flex items-center justify-between mb-5 h-[52px]">
             <p class="text-[20px] text-[#042925] font-medium">
               {{ item.title }}
             </p>
-            <img :src="item.imgUrl" class="me-2" :alt="item.title" />
+            <img
+              :src="item.imgUrl"
+              class="me-2 max-w-[80px]"
+              :alt="item.title"
+            />
           </div>
           <div>
             <p class="text-[15px] text-[#78787A] font-light mb-[24px]">

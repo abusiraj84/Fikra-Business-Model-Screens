@@ -1,86 +1,86 @@
 [
     {
         "id": 1,
-        "title": "منصة توظيف",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-22.png",
-        "selected": false
+        "title": "روبوتكس",
+        "description": "منصة تدريب وأبحاث وتطوير تقنيات بالذكاء الاصطناعي والروبوت تستهدف الموهوبين والمهتمين في التقنيات  التقنيات المتقدمة",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-03/%D8%B1%D9%88%D8%A8%D9%88%D8%AA%D9%83%D8%B3.png?h=8ca20106&itok=vnUq-pkO",
+        "url": "https://robotics.sa/"
     },
     {
         "id": 2,
-        "title": "خدمات التطوير التكنولوجي",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-16.png",
-        "selected": false
+        "title": "لبيه",
+        "description": "لبيه يقدم حل تقني متكامل لتقديم خدمات الرعاية النفسية أونلاين، عبر الاستشارات والمحاضرات من المختصين بكل سهولة وسرية من خلال منصة لبيه.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-03/%D9%84%D8%A8%D9%8A%D9%87.png?h=ef27ebac&itok=jHMdh5wS",
+        "url": "https://labayh.net/"
     },
     {
         "id": 3,
-        "title": "تسجيل علامة تجارية",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-17.png",
-        "selected": false
+        "title": "الأساليب الذكية",
+        "description": "تصنيع روبوتات تقوم بعمليات الضيافة وتقديم القهوة العربية والطعام والمباشرات في المطاعم الفخمة والفنادق والمعارض والمؤتمرات ولدينا براءات اختراع.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-03/%D8%A7%D9%84%D8%A7%D8%B3%D8%A7%D9%84%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%D8%A9.png?h=6c7ae441&itok=HMsa-fOb",
+        "url": "https://s-m.com.sa/ar/index.html"
     },
     {
         "id": 4,
-        "title": "الاستثمار والمشاركة في المشاريع الابتكارية",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-13.png",
-        "selected": false
+        "title": "شتل",
+        "description": "فرع ذاتي يمكن المتاجر الالكترونية من توصيل الطلبات الى العملاء بتكلفة أقل بنسبة %50 لتوفير خدمة الشحن والتوصيل على مدار الساعة.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-03/%D8%B4%D8%AA%D9%84.png?h=d15d7203&itok=gTSJmuf-",
+        "url": "https://shuttle-sa.com/en/"
     },
     {
         "id": 5,
-        "title": "معمل النمذجة",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-20.png",
-        "selected": false
+        "title": "شركة رود اللوجستية",
+        "description": "شركة سعودية 100% انطلقت عام 2011 رائدة في مجال الخدمات اللوجستية والنقل المبرد للمنتجات الغذائية والمستحضرات الطبية والتجميلية.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/raod_company_0.png?h=4bfbafbc&itok=gkK60HM4",
+        "url": "https://roadco.com.sa/"
     },
     {
         "id": 6,
-        "title": "خدمة إدارة الشاشات عن بعد",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-12.png",
-        "selected": false
+        "title": "فاريفر بوكس",
+        "description": "منصة تقدم منتجات خاصة بالسيدات عبر الاشتراك في فاريفر بوكس ليتم توصيل آخر المنتجات لهم شهريًا بما يتناسب مع حاجاتهم وتفضيلاتهم المختارة.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/pharever%20box.png?h=9f061f0e&itok=lbuhPK7K",
+        "url": "https://pharever.com/"
     },
     {
         "id": 7,
-        "title": "اختبار الافكار",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-15.png",
-        "selected": false
+        "title": "شركة لينير المحدودة",
+        "description": "شركة سعودية متخصصة في تصميم وتصنيع معدات معالجة المياه والنفط والغاز.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/linear%20ksa.jpg?h=94112adb&itok=LSCfbLNY",
+        "url": "https://www.linearsaudi.com/"
     },
     {
         "id": 8,
-        "title": "التصميم والتنفيذ",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-18.png",
-        "selected": false
+        "title": "كارتنجو",
+        "description": "متخصصة في البقالات الذكية داخل المباني الإدارية والفنادق وتعمل على مدار ٢٤ ساعة. تقوم الشركة بإنشاء وإدارة المتجر وتوفير العديد من الخدمات.",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/kartngo.jpg?h=2f9e6f82&itok=WGZsZjCj",
+        "url": "http://web.kartngo.store/"
     },
     {
         "id": 9,
-        "title": "الاستثمار والمشاركة في المشاريع الابتكارية",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-20.png",
-        "selected": false
+        "title": "منصة راقبها",
+        "description": "منصة سعودية رائدة في حلول إنترنت الأشياء وتطبيقاتها وتوفر حلول عديدة في مجالات المدن الذكية والمباني الذكية والنقل الذكي والصناعة الذكية.\n",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/%D8%B1%D8%A7%D9%82%D8%A8%D9%87%D8%A7.png?h=0e06f27c&itok=1s7DK1oj",
+        "url": "https://censorit.net/"
     },
     {
         "id": 10,
-        "title": "معمل النمذجة",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-11.png",
-        "selected": false
+        "title": "منصة مرن",
+        "description": "تقدم حلول توظيف متكاملة للعمل بالساعة تربط الشركات مع شباب سعوديين متميزين في وظائف مختارة باستخدام تقنيات متقدمة.\n",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/marn.jpg?h=736b66d2&itok=a5g_0102",
+        "url": "https://marn.io/"
     },
     {
         "id": 11,
-        "title": "خدمة إدارة الشاشات عن بعد",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-12.png",
-        "selected": false
+        "title": "آد آسترا",
+        "description": "منصة تساعد على اختيار أفضل الأخصائيين المؤهلين، وبدء جلسات الاستشارة عبر الإنترنت، وحجز جلسات تدريبية في المنزل ومتابعة حالة التقدم بعد كل جلسة.\n",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/ad%20astra.png?h=83972b8b&itok=Rona4R76",
+        "url": "https://adastra-therapy.com/"
     },
     {
         "id": 12,
-        "title": "اختبار الافكار",
-        "description": "الاستثمار الجريء والدعم النشط للشركات المحفظة يتم الاستثمار بعد التحليل العميق للشركة المستهدف",
-        "imgUrl": "/images/services-image-15.png",
-        "selected": false
+        "title": "آي بوت",
+        "description": "يعتبر آي بوت مرسى ذكي يتيح للمستخدم استئجار قارب والتخطيط لرحلة بحرية متكاملة والتسوق في المتجر الإلكتروني من خلال منصة واحدة فقط.\n",
+        "imgUrl": "https://fikra.sa/sites/default/files/styles/crop_logo_front_slider/public/2022-02/iboat.png?h=6ed285d5&itok=T0MSj8qY",
+        "url": "https://iboatapp.com/"
     }
 ]

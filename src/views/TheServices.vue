@@ -105,7 +105,11 @@
             <p class="text-[20px] text-[#042925] font-medium">
               {{ item.title }}
             </p>
-            <img :src="item.imgUrl" class="me-2" :alt="item.title" />
+            <img
+              :src="item.imgUrl"
+              class="me-2 max-w-[80px]"
+              :alt="item.title"
+            />
           </div>
           <div>
             <p class="text-[15px] text-[#78787A] font-light mb-[24px]">
