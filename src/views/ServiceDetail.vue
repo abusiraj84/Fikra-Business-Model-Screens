@@ -101,6 +101,9 @@ export default {
       const response = await fetch("/items.json");
       this.items = await response.json();
     },
+    mounted() {
+      window.scroll(0, 0);
+    },
   },
 };
 </script>

@@ -149,6 +149,10 @@ export default {
   created() {
     this.fetchCards();
   },
+  mounted() {
+    // Fetch cards and items when the component is mounted
+    window.scroll(0, 0);
+  },
   methods: {
     async fetchCards() {
       // Fetch your data from the server and set the cards array
