@@ -30,12 +30,17 @@
       </div>
     </div>
     <div class="flex flex-col items-start justify-between w-full mb-6">
+      <img
+        :src="event.thumbnail"
+        alt="test"
+        class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl md:max-h-[246px] border border-[#eaecf092]"
+      />
       <div class="text-[18px] leading-7 mt-6 mb-8" v-html="event.description" />
       <!-- url link -->
       <a
         :href="event.meeting_location"
         target="_blank"
-        class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light mb-[119px]"
+        class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light mb-[50px]"
       >
         رابط الاشتراك
       </a>

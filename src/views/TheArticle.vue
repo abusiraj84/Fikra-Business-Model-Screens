@@ -33,7 +33,7 @@
       <img
         :src="article.featured_image"
         alt="test"
-        class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl md:max-h-[246px]"
+        class="w-full aspect-square md:aspect-[12/4] object-cover max-h-[372px] rounded-2xl md:max-h-[246px] border border-[#eaecf06a]"
       />
       <div
         class="text-[18px] leading-7 mt-6 mb-8 text-justify"
