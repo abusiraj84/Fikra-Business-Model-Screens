@@ -52,7 +52,25 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { LottieAnimation } from "lottie-web-vue";
 import success from "../assets/success.json";
+
+export default {
+  components: {},
+  props: {},
+  data() {
+    return {};
+  },
+  head: {},
+  computed: {},
+  watch: {},
+  mounted() {
+    setTimeout(() => {
+      // redirect to https://fikra-provider.qewamx.com/admin
+      window.location.href = "https://fikra-provider.qewamx.com/admin";
+    }, 2000);
+  },
+  methods: {},
+};
 </script>
