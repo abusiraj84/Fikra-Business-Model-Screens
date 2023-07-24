@@ -20,7 +20,7 @@
               </li>
               <li class="mb-3">
                 <a
-                  href="https://swic.sa/"
+                  href="http://swin.sa.com/ar/Pages/default.aspx"
                   target="_blank"
                   class="hover:text-white hover:underline"
                   >مركز مياه</a
