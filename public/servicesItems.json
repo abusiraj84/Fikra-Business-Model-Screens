@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "منصة توظيف",
+        "description": "منصة توظيف تتميز بتوفير فرص عمل متعددة وتسهيل عملية التوظيف بين الباحثين عن عمل وأصحاب الأعمال.",
+        "imgUrl": "/images/services-image-22.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 2,
+        "title": "خدمات التطوير التكنولوجي",
+        "description": "نقدم مجموعة من الخدمات التكنولوجية، بدءًا من التطوير البرمجي حتى الحلول المتكاملة.",
+        "imgUrl": "/images/services-image-16.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 3,
+        "title": "تسجيل علامة تجارية",
+        "description": "خدماتنا تشمل تسجيل العلامات التجارية وحماية الحقوق الفكرية للأعمال والمنتجات.",
+        "imgUrl": "/images/services-image-17.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 4,
+        "title": "الاستثمار والمشاركة في المشاريع الابتكارية",
+        "description": "نعمل على دعم المشاريع الابتكارية بالاستثمار المادي والفكري لتحقيق النجاح والازدهار.",
+        "imgUrl": "/images/services-image-13.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 5,
+        "title": "معمل النمذجة",
+        "description": "نوفر معملا متكاملا لنمذجة المنتجات والأفكار الجديدة لتحويلها إلى منتجات حقيقية.",
+        "imgUrl": "/images/services-image-20.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 6,
+        "title": "خدمة إدارة الشاشات عن بعد",
+        "description": "نقدم خدمة متميزة للتحكم والإدارة الفعالة للشاشات عن بعد وذلك لتسهيل عملية التواصل والتحكم.",
+        "imgUrl": "/images/services-image-12.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 7,
+        "title": "اختبار الافكار",
+        "description": "نقوم بتقديم استشارات واختبارات للأفكار الجديدة للتأكد من قدرتها على النجاح في السوق.",
+        "imgUrl": "/images/services-image-15.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 8,
+        "title": "التصميم والتنفيذ",
+        "description": "نقدم خدمات التصميم والتنفيذ للمشاريع الجديدة بكفاءة عالية وجودة مضمونة.",
+        "imgUrl": "/images/services-image-18.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 9,
+        "title": "الاستثمار والمشاركة في المشاريع الابتكارية",
+        "description": "نعمل على دعم المشاريع الابتكارية بالاستثمار المادي والفكري لتحقيق النجاح والازدهار.",
+        "imgUrl": "/images/services-image-20.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 10,
+        "title": "معمل النمذجة",
+        "description": "نوفر معملا متكاملا لنمذجة المنتجات والأفكار الجديدة لتحويلها إلى منتجات حقيقية.",
+        "imgUrl": "/images/services-image-11.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 11,
+        "title": "خدمة إدارة الشاشات عن بعد",
+        "description": "نقدم خدمة متميزة للتحكم والإدارة الفعالة للشاشات عن بعد وذلك لتسهيل عملية التواصل والتحكم.",
+        "imgUrl": "/images/services-image-12.png",
+        "url": "https://google.com"
+    },
+    {
+        "id": 12,
+        "title": "اختبار الافكار",
+        "description": "نقوم بتقديم استشارات واختبارات للأفكار الجديدة للتأكد من قدرتها على النجاح في السوق.",
+        "imgUrl": "/images/services-image-15.png",
+        "url": "https://google.com"
+    }
+]

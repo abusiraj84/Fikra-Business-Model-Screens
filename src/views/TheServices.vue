@@ -43,7 +43,7 @@
           />
           <div>
             <p
-              class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+              class="text-[22px] text-[#042925] font-medium group-hover:text-white"
               :class="{ 'text-white': card.selected && !isShowAllItems }"
             >
               {{ card.subtitle }}
@@ -102,7 +102,7 @@
           class="p-[32px] bg-gradient-to-b bg-[#FFF] hover:bg-[#EAF1F8] group rounded-lg border border-[rgba(120, 120, 122, 0.26)] cursor-pointer transition-all duration-300 min-h-[198px]"
         >
           <div class="flex items-start justify-between mb-5 h-[52px]">
-            <p class="text-[20px] text-[#042925] font-medium">
+            <p class="text-[20px] text-[#042925] font-medium ms-3">
               {{ item.title }}
             </p>
             <img
@@ -187,7 +187,7 @@ export default {
     async fetchItems() {
       // Fetch your data from the server and set the items array
       // Replace with the actual server call
-      const response = await fetch("/items.json");
+      const response = await fetch("/servicesItems.json");
       this.items = await response.json();
     },
   },

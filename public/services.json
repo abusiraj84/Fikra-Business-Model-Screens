@@ -2,14 +2,14 @@
     {
         "title": "10 جهات",
         "subtitle": "التدريب",
-        "description": "يهدف اكتساب مهارات لبناء فكرتك",
+        "description": "اكتسب مهارات لبناء فكرتك",
         "imgUrl": "images/training_icon.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
         "subtitle": "دراسة السوق",
-        "description": "اكتشاف الفرص والاحتياجات لفكرتك",
+        "description": "اكتشف الفرص والاحتياجات لفكرتك",
         "imgUrl": "images/checkboard.svg",
         "selected": false
     },
@@ -17,42 +17,42 @@
         "title": "10 جهات",
         "subtitle": "اختبار الافكار",
         "description": "ابحث عن صحة فكرتك قبل الإطلاق",
-        "imgUrl": "images/ruler.svg",
+        "imgUrl": "/images/services-icons-8-heart-health-1.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
         "subtitle": "التصميم والتنفيذ",
         "description": "طور وابدأ بعملية اختبار فكرتك",
-        "imgUrl": "images/tv_input.svg",
+        "imgUrl": "/images/services-color-profile-1.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
-        "subtitle": "التدريب",
-        "description": "يهدف اكتساب مهارات لبناء فكرتك",
-        "imgUrl": "images/training_icon.svg",
+        "subtitle": "التسويق",
+        "description": "جهات تساعدك بإيصال فكرتك للعملاء",
+        "imgUrl": "/images/services-bullhorn-marketing-affiliate-broadcast-22.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
-        "subtitle": "دراسة السوق",
-        "description": "اكتشاف الفرص والاحتياجات لفكرتك",
-        "imgUrl": "images/checkboard.svg",
+        "subtitle": "مساحات العمل",
+        "description": "اكتشف مساحات العمل من حولك",
+        "imgUrl": "/images/services-icons-8-workspace-1.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
-        "subtitle": "اختبار الافكار",
-        "description": "ابحث عن صحة فكرتك قبل الإطلاق",
-        "imgUrl": "images/ruler.svg",
+        "subtitle": "التمويل",
+        "description": "اكتشف جهات لتمويل فكرتك",
+        "imgUrl": "/images/services-icons-8-money-bag-with-coins-1.svg",
         "selected": false
     },
     {
         "title": "10 جهات",
-        "subtitle": "التصميم والتنفيذ",
-        "description": "طور وابدأ بعملية اختبار فكرتك",
-        "imgUrl": "images/tv_input.svg",
+        "subtitle": "الاستشارات",
+        "description": "تواصل مع الخبراء في مجال مشروعك",
+        "imgUrl": "/images/services-icons-8-meeting-arrows-globe-1.svg",
         "selected": false
     }
 ]
