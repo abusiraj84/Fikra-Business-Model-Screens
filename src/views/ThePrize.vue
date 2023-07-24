@@ -264,7 +264,9 @@
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
           <img src="/images/wateen.png" alt="" class="mb-5 w-[200px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">وتين - Wateen</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490] md:h-[52px]">
+            وتين - Wateen
+          </h3>
           <p class="font-light">
             مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين
             المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل
@@ -283,7 +285,9 @@
               class="mb-5 w-[200px] h-[28.5px]"
             />
           </div>
-          <h3 class="text-[22px] font-medium text-[#2A6490]">كاشن - Cashin</h3>
+          <h3 class="text-[22px] font-medium text-[#2A6490] md:h-[52px]">
+            كاشن - Cashin
+          </h3>
           <p class="font-light">
             آلية ذكية متكاملة لإدارة المدفوعات والفواتير الإلكترونية ونقاط البيع
             وتقارير الأعمال بطريقة آمنة ومبتكرة
@@ -297,7 +301,7 @@
         >
           <img src="/images/erq.png" alt="" class="mb-5 w-[148px] h-[112px]" />
           <h3
-            class="text-[22px] font-medium text-[#2A6490] leading-[26px] mb-2"
+            class="text-[22px] font-medium text-[#2A6490] leading-[26px] mb-2 md:h-[50px]"
           >
             شركة عرق الذهب للمقاولات <br />
             ERQ ELTHAHAB CO
@@ -309,12 +313,16 @@
           target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
-          <img
-            src="/images/image-43.png"
-            alt=""
-            class="mb-5 mt-[30px] w-[112px]"
-          />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">كيود - Queed</h3>
+          <div class="h-[112px] flex justify-center items-start mb-5">
+            <img
+              src="/images/image-43.png"
+              alt=""
+              class="mb-5 mt-[30px] w-[112px]"
+            />
+          </div>
+          <h3 class="text-[22px] font-medium text-[#2A6490] md:h-[52px]">
+            كيود - Queed
+          </h3>
           <p class="font-light">
             حلول ذكية لإدارة وتحليل استهلاك الكهرباء في المنازل لتعزيز كفاءة
             الطاقة والوعي بالاستهلاك
@@ -329,7 +337,7 @@
           <div class="h-[112px] flex justify-center items-center mb-5">
             <img src="/images/algooru.png" alt="" class="mb-5 w-[200px]" />
           </div>
-          <h3 class="text-[22px] font-medium text-[#2A6490]">
+          <h3 class="text-[22px] font-medium text-[#2A6490] md:h-[52px]">
             القورو - algooru
           </h3>
           <p class="font-light">
@@ -342,8 +350,10 @@
           target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
-          <img src="/images/whelmet.png" alt="" class="mb-5 w-[149px]" />
-          <h3 class="text-[22px] font-medium text-[#2A6490]">
+          <div class="h-[112px] flex justify-center items-center mb-5">
+            <img src="/images/whelmet.png" alt="" class="mb-5 w-[149px]" />
+          </div>
+          <h3 class="text-[22px] font-medium text-[#2A6490] md:h-[52px]">
             وايتهلمت - White Helmet
           </h3>
           <p class="font-light">
@@ -364,7 +374,7 @@
       >
         <!-- 1 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-self-center mx-auto"
         >
           <img
             src="/images/waleed.png"
@@ -379,7 +389,7 @@
         </div>
         <!-- 2 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-self-center mx-auto"
         >
           <img
             src="/images/ryad.png"
@@ -394,7 +404,7 @@
         </div>
         <!-- 3 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-self-center mx-auto"
         >
           <img
             src="/images/maha.png"
@@ -406,7 +416,7 @@
         </div>
         <!-- 4 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-self-center mx-auto"
         >
           <img
             src="/images/omar.png"
@@ -421,7 +431,7 @@
         </div>
         <!-- 5 -->
         <div
-          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-center justify-self-center mx-auto"
+          class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center w-full justify-self-center mx-auto"
         >
           <img
             src="/images/mazen.png"

@@ -280,6 +280,11 @@ onResult1(async ({ data, errors }) => {
 
   if (data?.getLibraryArticle) {
     article.value = data.getLibraryArticle;
+
+    // remove the id of the current article from the list of similar articles
+    // similarArticles = articles.value.filter((item) => item.id !== 50);
+    // console.log(articles.value, "similarArticles");
+
     categoryID.value = data.getLibraryArticle.category?.id;
     // manually refetch the second query with the new categoryID value
     await refetch2({
@@ -370,6 +375,11 @@ onResult2(({ data, errors }) => {
   if (data?.getLibraryArticles) {
     console.log(data.getLibraryArticles, "data");
     articles.value = data.getLibraryArticles.data;
+    // filter the current article from the list of similar articles
+    articles.value = articles.value.filter(
+      (item) => item.id !== parseInt(route.params.id)
+    );
+    console.log(route.params.id);
   } else {
     console.warn("Unexpected data structure:", data);
   }
