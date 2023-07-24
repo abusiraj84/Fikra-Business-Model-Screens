@@ -323,7 +323,7 @@
                 />
                 <div>
                   <p
-                    class="text-[22px] text-[#042925] font-normal group-hover:text-white"
+                    class="text-[22px] text-[#042925] group-hover:text-white font-medium"
                     :class="{ 'text-white': card.selected && !isShowAllItems }"
                   >
                     {{ card.subtitle }}
