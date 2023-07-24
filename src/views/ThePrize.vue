@@ -34,7 +34,7 @@
         <iframe
           width="100%"
           height="315"
-          src="https://www.youtube.com/embed/xHywEra-_KQ"
+          src="https://www.youtube.com/embed/w2SUnUgjXiQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -58,9 +58,9 @@
               class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
-                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-2 border-[#ECECEC] mb-5"
               >
-                <img src="/images/saudi-arabia-1.png" alt="" />
+                <img src="/images/saudi.svg" alt="" />
               </div>
 
               <p class="font-light text-[18px]">
@@ -72,9 +72,9 @@
               class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
-                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-2 border-[#ECECEC] mb-5"
               >
-                <img src="/images/stamp-1.png" alt="" />
+                <img src="/images/stamp.svg" alt="" />
               </div>
 
               <p class="font-light text-[18px]">
@@ -86,9 +86,9 @@
               class="xl:col-span-4 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
             >
               <div
-                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#ECECEC] border-2 border-[#ECECEC] mb-5"
+                class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-2 border-[#ECECEC] mb-5"
               >
-                <img src="/images/salary-1.png" alt="" />
+                <img src="/images/generous-1.svg" alt="" />
               </div>
 
               <p class="font-light text-[18px]">
@@ -140,9 +140,9 @@
           class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
-            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-[#ECECEC] border-[2px] mb-[20px]"
           >
-            <img src="/images/icons-8-connected-people-1.svg" alt="" />
+            <img src="/images/image-46.svg" alt="" />
           </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">
             منشآت متناهية الصغر
@@ -157,9 +157,9 @@
           class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
-            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-[#ECECEC] border-[2px] mb-[20px]"
           >
-            <img src="/images/people-1.svg" alt="" />
+            <img src="/images/image-45.svg" alt="" />
           </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">منشآت صغيرة</h3>
           <p class="font-light">
@@ -172,9 +172,9 @@
           class="lg:col-span-4 md:col-span-12 col-span-12 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div
-            class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-[#E9FAFF] mb-[20px]"
+            class="flex items-center justify-center w-[90px] h-[90px] rounded-full border-[#ECECEC] border-[2px] mb-[20px]"
           >
-            <img src="/images/icons-8-new-company-1.svg" alt="" />
+            <img src="/images/image-48.svg" alt="" />
           </div>
           <h3 class="text-[22px] font-medium text-[#2A6490]">منشآت متوسطة</h3>
           <p class="font-light">
@@ -258,7 +258,9 @@
 
       <div class="md:grid md:grid-cols-12 flex flex-col gap-[25px]">
         <!-- 1 -->
-        <div
+        <a
+          href="https://wateenapp.org/"
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center relative"
         >
           <img src="/images/wateen.png" alt="" class="mb-5 w-[200px]" />
@@ -267,9 +269,11 @@
             مبادرة بالتعاون مع وزارة الصحة تسعى إلى تقليص فجوة التواصل بين
             المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل
           </p>
-        </div>
+        </a>
         <!-- 2 -->
-        <div
+        <a
+          href="https://cashin.sa/ar"
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div class="h-[112px] flex justify-center items-center mb-5">
@@ -284,9 +288,11 @@
             آلية ذكية متكاملة لإدارة المدفوعات والفواتير الإلكترونية ونقاط البيع
             وتقارير الأعمال بطريقة آمنة ومبتكرة
           </p>
-        </div>
+        </a>
         <!-- 3 -->
-        <div
+        <a
+          href="https://eirqaldhahab.com.sa/"
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <img src="/images/erq.png" alt="" class="mb-5 w-[148px] h-[112px]" />
@@ -297,9 +303,10 @@
             ERQ ELTHAHAB CO
           </h3>
           <p class="font-light">المفهوم الرّاقي للأعمال المعماريّة والمدنية</p>
-        </div>
+        </a>
         <!-- 4 -->
-        <div
+        <a
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <img
@@ -312,9 +319,11 @@
             حلول ذكية لإدارة وتحليل استهلاك الكهرباء في المنازل لتعزيز كفاءة
             الطاقة والوعي بالاستهلاك
           </p>
-        </div>
+        </a>
         <!-- 5 -->
-        <div
+        <a
+          href="https://algooru.com/"
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <div class="h-[112px] flex justify-center items-center mb-5">
@@ -326,9 +335,11 @@
           <p class="font-light">
             مدرس خصوصي موثوق يمكن أبنك من التفوق والامتياز
           </p>
-        </div>
+        </a>
         <!-- 6 -->
-        <div
+        <a
+          href="https://whitehelmet.sa/%d9%88%d8%a7%d9%8a%d8%aa%d9%87%d9%84%d9%85%d8%aa/"
+          target="_blank"
           class="col-span-4 bg-white rounded-2xl p-8 text-center flex flex-col items-center"
         >
           <img src="/images/whelmet.png" alt="" class="mb-5 w-[149px]" />
@@ -338,7 +349,7 @@
           <p class="font-light">
             كل ما تحتاجه لتبدأ متابعة وتوثيق مراحل البناء رقمياً
           </p>
-        </div>
+        </a>
       </div>
     </div>
     <!-- Jories -->
