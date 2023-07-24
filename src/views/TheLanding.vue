@@ -353,8 +353,8 @@
               <p
                 class="md:text-[22px] leading-[26px] text-[19px] w-full font-light"
               >
-                هل تمثل منشأة صغيرة أو متوسطة نجحت في تنفيذ ابتكار أو تقنية
-                صاعدة؟!
+                هل تمثل منشأة صغيرة أو متوسطة نجحت في تبني ابتكار أو تقنية
+                صاعدة؟
               </p>
             </div>
             <button
@@ -968,6 +968,7 @@ onResult2(({ data, errors }) => {
         category: event.category.name,
         categoryID: event.category.id,
         duration: durationSecToMin(event.duration),
+        fullDate: event.start_at,
       };
     });
     relatedEvents(); // filter events initially after fetching
@@ -982,9 +983,12 @@ function relatedEvents() {
     filteredEvents.value = events.value.filter(
       (event) => event.categoryID === categoryID.value
     );
-    console.log(filteredEvents.value, "filteredEvents" + categoryID.value);
   } else {
     filteredEvents.value = events.value;
+    // reorder by start_at desc
+    filteredEvents.value.sort((a, b) => {
+      return new Date(b.fullDate) - new Date(a.fullDate);
+    });
   }
 }
 const getDay = (date) => {

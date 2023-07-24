@@ -1,8 +1,24 @@
 <template>
-  <!-- SECTION 5 -->
+  <!-- breadcromp-->
+
+  <div class="bg-[#F7F7F7]" v-if="!loading1">
+    <div
+      class="md:flex justify-start items-center gap-x-2 text-[16px] font-normal text-[#78787A] p-2 mx-auto max-w-[1200px] xl:w-[70%] hidden"
+    >
+      <!-- first -->
+      <router-link to="/"><span>الصفحة الرئيسية</span></router-link>
+      <span> > </span>
+      <!-- second -->
+      <router-link to="/events"><span>الفعاليات</span></router-link>
+      <!-- third if found -->
+      <span> > </span>
+      <span> {{ event.title }}</span>
+    </div>
+  </div>
+  <!-- page -->
   <div
     v-if="!loading1"
-    class="flex flex-col justify-start flex-1 p-8 mx-auto ] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
+    class="flex flex-col justify-start flex-1 p-8 mx-auto max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
   >
     <div class="flex flex-col items-start justify-between w-full mb-6">
       <h3 class="text-[22px] md:text-[32px] leading-9 text-[#042925] mb-5">
@@ -42,7 +58,7 @@
         target="_blank"
         class="loginBtn w-fit py-2 px-12 mx-1 text-center text-white rounded-full bg-primary hover:bg-[#307094] transition-all duration-300 font-light mb-[50px]"
       >
-        رابط الاشتراك
+        رابط التسجيل
       </a>
     </div>
     <div class="flex flex-col items-start justify-between w-full mb-6">
@@ -211,7 +227,8 @@ onResult1(async ({ data, errors }) => {
 
   if (data?.getWorkshopDetails) {
     event.value = await data.getWorkshopDetails;
-    categoryID.value = await data.getWorkshopDetails.category?.id;
+    categoryID.value = await data.getWorkshopDetails?.category?.id;
+    // relatedEvents(); // filter events initially after fetching
   } else {
     console.warn("Unexpected data structure:", data);
   }
@@ -286,10 +303,12 @@ onResult2(({ data, errors }) => {
   }
 });
 
-function relatedEvents() {
+async function relatedEvents() {
   // category
+  console.log(categoryID.value, "categoryID");
 
   if (categoryID.value !== 0) {
+    console.log("im here");
     filteredEvents.value = events.value.filter(
       (event) =>
         event.categoryID === categoryID.value &&
@@ -297,6 +316,11 @@ function relatedEvents() {
     );
   } else {
     filteredEvents.value = events.value;
+    // filter by status upcoming
+    filteredEvents.value = filteredEvents.value.filter(
+      (event) => event.status === "upcoming"
+    );
+    console.log(filteredEvents.value, "filteredEvents");
   }
 }
 const getDay = (date) => {

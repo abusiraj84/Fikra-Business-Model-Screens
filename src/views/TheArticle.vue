@@ -1,5 +1,20 @@
 <template>
-  <!-- SECTION 5 -->
+  <!-- breadcromp-->
+
+  <div class="bg-[#F7F7F7]" v-if="!loading1">
+    <div
+      class="md:flex justify-start items-center gap-x-2 text-[16px] font-normal text-[#78787A] p-2 mx-auto max-w-[1200px] xl:w-[70%] hidden"
+    >
+      <!-- first -->
+      <router-link to="/"><span>الصفحة الرئيسية</span></router-link>
+      <span> > </span>
+      <!-- second -->
+      <router-link to="/library"><span>مكتبة الإبتكار</span></router-link>
+      <!-- third if found -->
+      <span> > </span>
+      <span> {{ article.title }}</span>
+    </div>
+  </div>
   <div
     v-if="!loading1"
     class="flex flex-col justify-start flex-1 p-8 mx-auto ] max-w-[1200px] xl:w-[70%] z-10 bg-white rounded-[10px] mt-4 mb-8"
